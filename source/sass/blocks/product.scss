@@ -1,0 +1,86 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.product {
+  display: flex;
+  border: 1px solid #dce7fd;
+  border-radius: 20px;
+  padding: 20px;
+  color: #000;
+  gap: 20px;
+  height: 100%;
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+  }
+  &__content {
+    display: flex;
+    gap: 20px;
+    flex-basis: 54%;
+    @include vp-1023 {
+      flex-basis: unset;
+      display: block;
+    }
+  }
+
+  &__body {
+      flex-grow: 1;
+  }
+
+  &__image {
+    flex-basis: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    border-radius: 10px;
+    img {
+      max-height: 100px;
+      object-fit: contain;
+    }
+  }
+
+  &__characteristics {
+    line-height: 140%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    span + span {
+      margin-left: 5px;
+    }
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 10px;
+    display: block;
+  }
+  &__article {
+    font-size: 14px;
+    line-height: 145%;
+
+    span + span {
+      margin-left: 5px;
+    }
+  }
+  &__actions {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex-shrink: 0;
+  }
+  &__price {
+    flex-grow: 1;
+    line-height: 145%;
+    span {
+      font-weight: 700;
+      font-size: 25px;
+    }
+  }
+}
+

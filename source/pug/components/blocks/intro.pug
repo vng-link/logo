@@ -1,23 +1,19 @@
 mixin intro()
-  section.intro
-    .intro__background
-      +picture("content", "intro-background", "png", 1920, 850, "background")
-    //- вставлять блоки во внешний контейнер неверно (если это не фон, например)
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
+  section.page__intro.intro
     .container
-      .intro__wrapper
-        h1.intro__title
-          span Lorem ipsum
-          = " dolor sit ametconsectetur "
-          span adipiscing
-        p.intro__description At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos
-        ul.intro__list
-          li.intro__item
-            span Totam rem aperiam eaque ipsa
-          li.intro__item
-            span Sit voluptatem accusantium doloremque laudantium
-          li.intro__item
-            span Sed ut perspiciatis, unde omnis iste natus error
-        .intro__buttons
-          +btn({text: "заказать", type: "button"}).intro__button
-          +btn({text: "подробнее", type: "button"}).btn--white.intro__button
+          .intro__background
+            .intro__wrapper
+              .intro__content
+                .intro__title Железобетонные изделия от завода-изготовителя
+                .intro__text Производство и продажа железобетонных изделий (ЖБИ) от завода-изготовителя. Собственное производство, контроль качества на всех этапах, соответствие ГОСТ. Работаем с оптовыми и розничными покупателями. Гарантируем прочность, долговечность и конкурентные цены на всю продукцию!
+                a.btn получить консультацию
+            .intro__image-bg.intro__image-bg--draft-bottom
+              +img("content/intro", "draft-bottom", "png", 485, 166, "")
+            .intro__image-bg.intro__image-bg--draft-top
+              +img("content/intro", "draft-top", "png", 433, 95, "")
+            .intro__image-bg.intro__image-bg--picture-top
+              +img("content/intro", "picture-top", "png", 388, 233, "")
+            .intro__image-bg.intro__image-bg--picture-bottom
+              +img("content/intro", "picture-bottom", "png", 490, 286, "")
+
+
