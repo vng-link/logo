@@ -1,6 +1,7 @@
 @use "../mixins" as *;
 @use "../variables" as *;
 
+/*
 .header {
   z-index: 11;
   position: fixed;
@@ -81,5 +82,90 @@
         width: 165px;
       }
     }
+  }
+}
+*/
+
+.header {
+  &__top-header {
+  }
+  &__bottom-header {
+
+  }
+}
+
+.top-header {
+  background-color: #003865;
+  padding: 10px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__email {
+    color: $color-default-white;
+    text-decoration: underline;
+    @include vp-1023 {
+      display: none;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    @include vp-1023 {
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+  }
+  &__contacts {
+      display: flex;
+  }
+  &__button {
+    color: $color-default-white;
+    text-transform: uppercase;
+    height: 35px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 40px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    @include vp-1023 {
+      margin-right: 0;
+    }
+  }
+  &__social-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--telegram {
+      margin-right: 25px;
+    }
+    &--whatsapp {
+      margin-right: 10px;
+    }
+  }
+  &__phone {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-default-white;
+  }
+}
+
+.bottom-header {
+  padding: 30px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__burger {
+
   }
 }

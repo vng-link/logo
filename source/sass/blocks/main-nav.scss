@@ -1,6 +1,7 @@
 @use "../mixins" as *;
 @use "../variables" as *;
 
+/*
 .main-nav {
   &__toggle {
     z-index: 11;
@@ -125,6 +126,117 @@
 
     @include hover-focus {
       opacity: 0.8;
+    }
+  }
+}
+*/
+
+
+.main-nav {
+  @include vp-1199 {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include vp-1439 {
+      gap: 20px;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 10px 0;
+    &:hover {
+      .main-nav__link::after {
+        transform: rotate(180deg);
+      }
+      .main-nav__sublist {
+        opacity: 1;
+        pointer-events: all;
+        transform: translate(0, 0);
+      }
+    }
+  }
+  &__link {
+    line-height: 100%;
+    &--dropdown {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      &::after {
+        content: url("../../img/sprite/dropdown.svg");
+        width: 16px;
+        height: 16px;
+        transition: transform 0.3s;
+      }
+    }
+  }
+  &__sublist {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: max-content;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(0, 10%);
+    transition: all 0.2s;
+
+    background-color: #003865;
+    display: grid;
+    gap: 16px;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 10;
+  }
+  &__sublink {
+    color: #ffffff;
+  }
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: none;
+  padding: 12px 9px;
+  border: 1px solid #3F82FF;
+  border-radius: 4px;
+  @include vp-1199 {
+    display: block;
+  }
+  &__lines {
+    position: relative;
+    height: 100%;
+  }
+  span {
+    transition: all 0.2s;
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #003865;
+    width: 100%;
+    top: 0;
+    left: 0;
+    &:nth-child(2) {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &:last-child {
+      top: auto;
+      bottom: 0;
+    }
+  }
+  &.active span {
+    transform: rotate(45deg);
+    top: calc(50% - 1px);
+    &:nth-child(2) {
+      transform: scale(0);
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+      bottom: calc(50% - 1px);
     }
   }
 }

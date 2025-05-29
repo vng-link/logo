@@ -1,43 +1,90 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Lato";
-
+  font-family: "Inter";
   font-display: swap;
   src:
-    url("../fonts/Lato-Regular.woff2") format("woff2"),
-    url("../fonts/Lato-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 600;
-  font-family: "Lato";
-
-  font-display: swap;
-  src:
-    url("../fonts/Lato-SemiBold.woff2") format("woff2"),
-    url("../fonts/Lato-SemiBold.woff") format("woff");
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Lato";
-
+  font-family: "Montserrat";
   font-display: swap;
   src:
-    url("../fonts/Lato-Bold.woff2") format("woff2"),
-    url("../fonts/Lato-Bold.woff") format("woff");
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 800;
-  font-family: "Lato";
-
+  font-family: "Montserrat";
   font-display: swap;
   src:
-    url("../fonts/Lato-ExtraBold.woff2") format("woff2"),
-    url("../fonts/Lato-ExtraBold.woff") format("woff");
+    url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-display: swap;
+  src:
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "OpenSans";
+  font-display: swap;
+  src:
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "OpenSans";
+  font-display: swap;
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Oswald";
+  font-display: swap;
+  src:
+    url("../fonts/Oswald-Bold.woff2") format("woff2"),
+    url("../fonts/Oswald-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-display: swap;
+  src:
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-display: swap;
+  src:
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
 }

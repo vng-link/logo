@@ -35,6 +35,10 @@
 @use "blocks/custom-radio";
 @use "blocks/custom-select";
 @use "blocks/custom-textarea";
+@use "blocks/categories";
+@use "blocks/category-card";
+@use "blocks/products";
+@use "blocks/product";
 
 // ---------------------------------
 
@@ -88,3 +92,13 @@
 
 // для любых transition обязательно указывайте transition-property
 // transition: $trans-default ❌ ---> transition: color $trans-default ✅
+
+
+.page {
+  &__intro {
+    margin-bottom: 60px;
+  }
+  &__categories {
+    margin-bottom: 60px;
+  }
+}
