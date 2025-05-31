@@ -101,8 +101,6 @@
     }
 
     &--dropdown {
-      cursor: pointer;
-
       .main-nav__link {
         &::after {
           content: "";
@@ -256,6 +254,9 @@
   &__subitem {
     display: flex;
     border-bottom: 1px solid #dadada;
+    &:last-child {
+      border-bottom: unset;
+    }
     @include vp-1199 {
       border-bottom: none;
     }

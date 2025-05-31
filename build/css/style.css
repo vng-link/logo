@@ -4183,10 +4183,6 @@ button,
   margin: 0 1px 0 0;
 }
 
-.main-nav__item--dropdown {
-  cursor: pointer;
-}
-
 .main-nav__item--dropdown .main-nav__link::after {
   content: "";
   width: 16px;
@@ -4262,6 +4258,10 @@ button,
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #dadada;
+}
+
+.main-nav__subitem:last-child {
+  border-bottom: unset;
 }
 
 .main-nav__sublink {
