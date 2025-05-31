@@ -4253,7 +4253,6 @@ button,
 .main-nav__sublink {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   padding: 14px 20px;
   color: #000000;
   -webkit-transition: opacity 0.3s ease;
@@ -4646,10 +4645,6 @@ button,
     border-bottom: 1px dashed #c4c4c4;
   }
 
-  .main-nav__item--dropdown.is-active .main-nav__link {
-    opacity: 0.8;
-  }
-
   .main-nav__item--dropdown.is-active .main-nav__link svg {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -4684,6 +4679,7 @@ button,
     -webkit-box-shadow: unset;
     box-shadow: unset;
     border: unset;
+    padding-bottom: 19px;
   }
 
   .main-nav__subitem {

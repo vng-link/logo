@@ -155,10 +155,6 @@
 
     &--dropdown.is-active {
       .main-nav__link {
-        @include vp-1199 {
-          opacity: 0.8;
-        }
-
         svg {
           @include vp-1199 {
             transform: rotate(180deg);
@@ -244,13 +240,13 @@
       display: none;
       top: 0;
       left: 0;
-
       width: auto;
       min-width: unset;
       opacity: 1;
       visibility: visible;
       box-shadow: unset;
       border: unset;
+      padding-bottom: 19px;
     }
   }
 
@@ -265,7 +261,6 @@
   &__sublink {
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
     padding: 14px 20px;
     color: $color-default-black;
     transition: opacity $trans-default;
