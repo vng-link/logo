@@ -1,6 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow" viewBox="0 0 30 30"><g fill="none">
 <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#F73B3E"/>
 <path d="M10.7573 13.5858H16.4142V19.2427" stroke="#003865" stroke-width="2" stroke-linecap="round"/>
+</g></symbol><symbol id="dropdown-active" viewBox="0 0 16 16"><g fill="none">
+<path d="M4 7L8 11L12 7" stroke="#3F82FF" stroke-linecap="round"/>
+</g></symbol><symbol id="dropdown-mobile" viewBox="0 0 32 32"><g fill="none">
+<path d="M16 0.5C24.5604 0.5 31.5 7.43959 31.5 16C31.5 24.5604 24.5604 31.5 16 31.5C7.43959 31.5 0.5 24.5604 0.5 16C0.5 7.43959 7.43959 0.5 16 0.5Z" stroke="#F73B3E"/>
+<path d="M13 15L16 18L19 15" stroke="black" stroke-width="2" stroke-linecap="round"/>
 </g></symbol><symbol id="dropdown" viewBox="0 0 16 16"><g fill="none">
 <path d="M8 0.5C12.1421 0.5 15.5 3.85786 15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5Z" stroke="#F73B3E"/>
 <path d="M5 7L8 10L11 7" stroke="black" stroke-width="2" stroke-linecap="round"/>

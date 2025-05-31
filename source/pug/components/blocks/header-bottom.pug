@@ -83,8 +83,6 @@ mixin header-bottom()
               each item in headerLinks
                 li.main-nav__item(class={"main-nav__item--dropdown" : item.dropdown} data-header-accordion-item=!!item.dropdown)
                   a.main-nav__link(href=item.href data-header-link=!item.dropdown data-header-accordion-link=!!item.dropdown)!=item.text
-                    if (item.dropdown)
-                      +icon("dropdown", 16, 16)
                   if (item.dropdown)
                     ul.list-reset.main-nav__sublist
                       each subitem in item.dropdown
