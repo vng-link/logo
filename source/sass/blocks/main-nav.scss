@@ -9,35 +9,21 @@
   &__toggle {
     position: relative;
     display: none;
-
     width: 30px;
     height: 18px;
-
     cursor: pointer;
     user-select: none;
-
     transition: opacity $trans-default;
     position: relative;
     z-index: 11;
 
-    @include vp-1199 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto 0 0;
-    }
-
     span {
       display: block;
       position: absolute;
-
       left: 0;
-
       width: 30px;
       height: 2px;
-
       background-color: $color-default-black;
-
       transition: transform $trans-default, opacity $trans-default,
       visibility $trans-default;
 
@@ -48,13 +34,13 @@
       &:nth-child(2) {
         width: 25px;
         top: 50%;
-
         transform: translateY(-50%);
       }
 
       &:nth-child(3) {
         bottom: 0;
       }
+
     }
 
     @include hover-focus {
@@ -63,8 +49,6 @@
   }
 
   &__menu {
-    margin: 0 auto 0 0;
-
     @include vp-1199 {
       z-index: 10;
       position: fixed;
@@ -99,19 +83,18 @@
       flex-direction: column;
     }
 
-
   }
 
   &__item {
     position: relative;
     margin: 0 1px 0 0;
+
     @include vp-1199 {
       border-bottom: 1px dashed #c4c4c4;
     }
 
     &--dropdown {
       cursor: pointer;
-
       @media (min-width: 1199px) {
         @include focus-within {
           .main-nav__link {
@@ -120,7 +103,6 @@
             &::after {
               content: "";
             }
-
             svg {
               transform: rotate(180deg);
             }
@@ -199,11 +181,9 @@
 
     svg {
       flex-shrink: 0;
-
       width: 16px;
       height: 16px;
       margin: 0 0 0 10px;
-
       transition: transform $trans-default;
       @include vp-1199 {
         width: 32px;
@@ -217,24 +197,16 @@
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
-
     width: max-content;
     margin: 0;
-
     list-style: none;
-
     background-color: $color-default-white;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #dce7fd;
     border-radius: 20px;
-
     transition: transform $trans-default, opacity $trans-default, visibility $trans-default;
-
     opacity: 0;
     visibility: hidden;
-    @media (min-width: 1199px) {
-
-    }
     @include vp-1199 {
       position: static;
       display: none;
