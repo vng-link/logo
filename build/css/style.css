@@ -4101,6 +4101,7 @@ button,
 
 .header-bottom {
   padding: 30px 0;
+  background-color: #ffffff;
 }
 
 .header-bottom__logo {
@@ -4306,6 +4307,10 @@ button,
   height: 100%;
 }
 
+.category-card:focus-visible .category-card__title::after {
+  background: url("../../img/sprite/arrow-active.svg") no-repeat center;
+}
+
 .category-card__image {
   padding-bottom: 26.0869%;
   position: relative;
@@ -4323,7 +4328,7 @@ button,
 }
 
 .category-card__body {
-  padding: 22.5px 20px;
+  padding: 20px;
 }
 
 .category-card__title {
@@ -4343,16 +4348,20 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
+  gap: 10px;
 }
 
 .category-card__title::after {
-  content: url("../../img/sprite/arrow.svg");
+  content: "";
+  background: url("../../img/sprite/arrow.svg") no-repeat center;
   width: 30px;
   height: 30px;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: background 0.3s ease, -webkit-transform;
+  transition: background 0.3s ease, -webkit-transform;
+  transition: transform, background 0.3s ease;
+  transition: transform, background 0.3s ease, -webkit-transform;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .products__item {
@@ -4512,6 +4521,10 @@ button,
     }
   }
 */
+
+.page {
+  padding-top: 159px;
+}
 
 .page__intro {
   margin-bottom: 60px;
@@ -4720,6 +4733,30 @@ button,
 
   .categories__wrapper {
     grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .categories__wrapper {
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .category-card__title {
+    font-size: 16px;
+  }
+
+  .category-card__title {
+    font-size: 14px;
+  }
+
+  .category-card__title::after {
+    font-size: 16px;
   }
 }
 
@@ -4830,6 +4867,16 @@ button,
   .main-nav__menu {
     padding: 80px 30px;
   }
+
+  .category-card__title::after {
+    content: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .categories__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (hover: hover) {
@@ -4860,5 +4907,9 @@ button,
 
   .main-nav__toggle:hover {
     opacity: 0.8;
+  }
+
+  .category-card:hover .category-card__title::after {
+    background: url("../../img/sprite/arrow-active.svg") no-repeat center;
   }
 }
