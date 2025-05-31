@@ -4020,6 +4020,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 10px;
 }
 
 .header-top__contacts {
@@ -4102,6 +4103,12 @@ button,
   padding: 30px 0;
 }
 
+.header-bottom__logo {
+  display: inline-block;
+  width: 286px;
+  height: 44px;
+}
+
 .header-bottom__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4112,6 +4119,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .main-nav {
@@ -4189,10 +4197,10 @@ button,
   width: 16px;
   height: 16px;
   background: url("../../img/sprite/dropdown.svg") no-repeat center;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: background 0.3s ease, -webkit-transform;
+  transition: background 0.3s ease, -webkit-transform;
+  transition: transform, background 0.3s ease;
+  transition: transform, background 0.3s ease, -webkit-transform;
   margin-left: 10px;
 }
 
@@ -4619,16 +4627,7 @@ button,
 
 @media (max-width: 1199px) {
   .main-nav__toggle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0 auto 0 0;
+    display: block;
   }
 
   .main-nav__menu {
@@ -4647,9 +4646,9 @@ button,
     transition: visibility 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
     transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
     transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
   }
 
   .main-nav__list {
