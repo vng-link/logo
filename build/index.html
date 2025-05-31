@@ -144,249 +144,75 @@
     </div>
     <div class="wrapper">
       <header class="header" data-header>
-        <div class="header__top top-header">
+        <div class="header-top">
           <div class="container">
-            <div class="top-header__wrapper"><a class="top-header__email" href="mailto:Flagman.gbi@mail.ru">Flagman.gbi@mail.ru</a>
-              <div class="top-header__actions"><a class="top-header__button" href="#" aria-label="заказать обратный звонок"><span>заказать обратный звонок</span></a>
-                <div class="top-header__contacts"><a class="top-header__social-btn top-header__social-btn--whatsapp" href="#" aria-label="Перейти в whatsapp">
+            <div class="header-top__wrapper"><a class="header-top__email" href="mailto:Flagman.gbi@mail.ru">Flagman.gbi@mail.ru</a>
+              <div class="header-top__actions"><a class="header-top__button" href="#" aria-label="заказать обратный звонок"><span>заказать обратный звонок</span></a>
+                <div class="header-top__contacts"><a class="header-top__social-btn header-top__social-btn--whatsapp" href="#" aria-label="Перейти в whatsapp">
                     <svg width="30" height="31" aria-hidden="true">
                       <use xlink:href="#whatsapp"></use>
-                    </svg></a><a class="top-header__social-btn top-header__social-btn--telegram" href="#" aria-label="Перейти в telegram">
+                    </svg></a><a class="header-top__social-btn header-top__social-btn--telegram" href="#" aria-label="Перейти в telegram">
                     <svg width="26" height="21" aria-hidden="true">
                       <use xlink:href="#telegram"></use>
-                    </svg></a><a class="top-header__phone" href="tel:89166426203" aria-label="Позвонить по телефону">8 (916) 642-62-03</a></div>
+                    </svg></a><a class="header-top__phone" href="tel:89166426203" aria-label="Позвонить по телефону">8 (916) 642-62-03</a></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="header__bottom bottom-header">
+        <div class="header-bottom">
           <div class="container">
-            <div class="bottom-header__wrapper"><a class="bottom-header__logo logo" href="#">
+            <div class="header-bottom__wrapper"><a class="bottom-header__logo logo" href="#">
                 <svg width="286" height="44" aria-hidden="true">
                   <use xlink:href="#logo"></use>
                 </svg></a>
-              <nav class="main-nav">
-                <ul class="main-nav__list list-reset" data-header-accordion>
-                  <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Главная</a>
-                  </li>
-                  <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#" data-header-accordion-link>Каталог ЖБИ</a>
-                    <svg width="16" height="16" aria-hidden="true">
-                      <use xlink:href="#dropdown"></use>
-                    </svg>
-                    <ul class="main-nav__sublist list-reset">
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Сваи железобетонные</a></li>
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Плиты дорожные</a></li>
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Плиты аэродромные ПАГ-14 ПАГ-18</a></li>
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Забор бетонный</a></li>
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Плиты перекрытия пустотелые</a></li>
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Другая продукция</a></li>
-                    </ul>
-                  </li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Цены</a>
-                  </li>
-                  <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#" data-header-accordion-link>О заводе</a>
-                    <svg width="16" height="16" aria-hidden="true">
-                      <use xlink:href="#dropdown"></use>
-                    </svg>
-                    <ul class="main-nav__sublist list-reset">
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">О заводе 1</a></li>
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">О заводе 2</a></li>
-                      <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">О заводе 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Объекты</a>
-                  </li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Статьи о железобетоне</a>
-                  </li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="bottom-header__burger burger" data-toggle-menu>
-                <div class="burger__lines"><span></span><span></span><span></span></div>
+              <div class="main-nav">
+                <div class="main-nav__menu">
+                  <ul class="list-reset main-nav__list" data-header-accordion>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Главная</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#" data-header-accordion-link>Каталог ЖБИ
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="#dropdown"></use>
+                        </svg></a>
+                      <ul class="list-reset main-nav__sublist">
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Сваи железобетонные</a></li>
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Плиты дорожные</a></li>
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Плиты аэродромные ПАГ-14 ПАГ-18</a></li>
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Забор бетонный</a></li>
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Плиты перекрытия пустотелые</a></li>
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Другая продукция</a></li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Цены</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#" data-header-accordion-link>О заводе
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="#dropdown"></use>
+                        </svg></a>
+                      <ul class="list-reset main-nav__sublist">
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">О заводе 1</a></li>
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">О заводе 2</a></li>
+                        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">О заводе 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Объекты</a>
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Статьи о железобетоне</a>
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn-reset main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-toggle-menu><span></span><span></span><span></span></button>
               </div>
             </div>
           </div>
         </div>
       </header>
       <main class="page">
-        <section class="page__intro intro">
-          <div class="container">
-            <div class="intro__background">
-              <div class="intro__wrapper">
-                <div class="intro__content">
-                  <div class="intro__title">Железобетонные изделия от завода-изготовителя</div>
-                  <div class="intro__text">Производство и продажа железобетонных изделий (ЖБИ) от завода-изготовителя. Собственное производство, контроль качества на всех этапах, соответствие ГОСТ. Работаем с оптовыми и розничными покупателями. Гарантируем прочность, долговечность и конкурентные цены на всю продукцию!</div><a class="btn">получить консультацию</a>
-                </div>
-              </div>
-              <div class="intro__image-bg intro__image-bg--draft-bottom"><img src="img/content/intro/draft-bottom.png" srcset="img/content/intro/draft-bottom@2x.png 2x" width="485" height="166" alt="">
-              </div>
-              <div class="intro__image-bg intro__image-bg--draft-top"><img src="img/content/intro/draft-top.png" srcset="img/content/intro/draft-top@2x.png 2x" width="433" height="95" alt="">
-              </div>
-              <div class="intro__image-bg intro__image-bg--picture-top"><img src="img/content/intro/picture-top.png" srcset="img/content/intro/picture-top@2x.png 2x" width="388" height="233" alt="">
-              </div>
-              <div class="intro__image-bg intro__image-bg--picture-bottom"><img src="img/content/intro/picture-bottom.png" srcset="img/content/intro/picture-bottom@2x.png 2x" width="490" height="286" alt="">
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="page__categories categories">
-          <div class="container">
-            <div class="categories__wrapper">
-              <div class="categories__item"><a class="category-card" href="#">
-                  <div class="category-card__image"><img src="img/content/categories/svai-zhelezobetonnye.png" srcset="img/content/categories/svai-zhelezobetonnye@2x.png 2x" width="460" height="120" alt="image">
-                  </div>
-                  <div class="category-card__body">
-                    <h3 class="category-card__title">Сваи железобетонные</h3>
-                  </div></a>
-              </div>
-              <div class="categories__item"><a class="category-card" href="#">
-                  <div class="category-card__image"><img src="img/content/categories/plity-dorozhnye.png" srcset="img/content/categories/plity-dorozhnye@2x.png 2x" width="460" height="120" alt="image">
-                  </div>
-                  <div class="category-card__body">
-                    <h3 class="category-card__title">Плиты дорожные</h3>
-                  </div></a>
-              </div>
-              <div class="categories__item"><a class="category-card" href="#">
-                  <div class="category-card__image"><img src="img/content/categories/plity-aerodromnye.png" srcset="img/content/categories/plity-aerodromnye@2x.png 2x" width="460" height="120" alt="image">
-                  </div>
-                  <div class="category-card__body">
-                    <h3 class="category-card__title">Плиты аэродромные ПАГ-14 ПАГ-18</h3>
-                  </div></a>
-              </div>
-              <div class="categories__item"><a class="category-card" href="#">
-                  <div class="category-card__image"><img src="img/content/categories/zabor-betonnyj.png" srcset="img/content/categories/zabor-betonnyj@2x.png 2x" width="460" height="120" alt="image">
-                  </div>
-                  <div class="category-card__body">
-                    <h3 class="category-card__title">Забор бетонный</h3>
-                  </div></a>
-              </div>
-              <div class="categories__item"><a class="category-card" href="#">
-                  <div class="category-card__image"><img src="img/content/categories/drugaya-produkciya.png" srcset="img/content/categories/drugaya-produkciya@2x.png 2x" width="460" height="120" alt="image">
-                  </div>
-                  <div class="category-card__body">
-                    <h3 class="category-card__title">Другая продукция</h3>
-                  </div></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="page__products products">
-          <div class="container">
-            <div class="products__wrapper">
-              <div class="products__item">
-                <div class="product">
-                  <div class="product__content"><a class="product__image"><img src="img/content/products/svaya-zabivnaya-betonnaya.png" srcset="img/content/products/svaya-zabivnaya-betonnaya@2x.png 2x" width="100" height="100" alt="image"></a>
-                    <div class="product__body"><a class="product__title">Свая забивная бетонная СБ 30-3 Серия 1.011.1-10</a>
-                      <div class="product__article">
-                        <span__article-label>Артикул:</span__article-label>
-                        <span__article-value>240297</span__article-value>
-                      </div>
-                    </div>
-                  </div>
-                  <ul class="product__characteristics list-reset">
-                    <li class="characteristics"><span class="product__characteristics-label">Длина:</span><span class="product__characteristics-value">3000 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Высота:</span><span class="product__characteristics-value">300 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Ширина:</span><span class="product__characteristics-value">300 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Вес изделия:</span><span class="product__characteristics-value">700 кг.</span></li>
-                  </ul>
-                  <div class="product__actions">
-                    <div class="product__price">от <span>2 970</span> ₽/шт.
-                    </div><a class="btn">Оформить заявку</a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__item">
-                <div class="product">
-                  <div class="product__content"><a class="product__image"><img src="img/content/products/betonnye-zabory.png" srcset="img/content/products/betonnye-zabory@2x.png 2x" width="100" height="100" alt="image"></a>
-                    <div class="product__body"><a class="product__title">Бетонные заборы П6В с фартуком Серия 3.017-1, Альбом ИЖ 31-77</a>
-                      <div class="product__article">
-                        <span__article-label>Артикул:</span__article-label>
-                        <span__article-value>240297</span__article-value>
-                      </div>
-                    </div>
-                  </div>
-                  <ul class="product__characteristics list-reset">
-                    <li class="characteristics"><span class="product__characteristics-label">Длина:</span><span class="product__characteristics-value">4000 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Высота:</span><span class="product__characteristics-value">150 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Ширина:</span><span class="product__characteristics-value">2500 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Вес изделия:</span><span class="product__characteristics-value">1 600 кг.</span></li>
-                  </ul>
-                  <div class="product__actions">
-                    <div class="product__price">от <span>4 510</span> ₽/шт.
-                    </div><a class="btn">Оформить заявку</a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__item">
-                <div class="product">
-                  <div class="product__content"><a class="product__image"><img src="img/content/products/plity-2P.png" srcset="img/content/products/plity-2P@2x.png 2x" width="100" height="100" alt="image"></a>
-                    <div class="product__body"><a class="product__title">Плиты 2П 30-18-30 ТУ</a>
-                      <div class="product__article">
-                        <span__article-label>Артикул:</span__article-label>
-                        <span__article-value>240297</span__article-value>
-                      </div>
-                    </div>
-                  </div>
-                  <ul class="product__characteristics list-reset">
-                    <li class="characteristics"><span class="product__characteristics-label">Длина:</span><span class="product__characteristics-value">3000 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Высота:</span><span class="product__characteristics-value">1750 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Ширина:</span><span class="product__characteristics-value">170 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Вес изделия:</span><span class="product__characteristics-value">2 200 кг.</span></li>
-                  </ul>
-                  <div class="product__actions">
-                    <div class="product__price">от <span>8 231</span> ₽/шт.
-                    </div><a class="btn">Оформить заявку</a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__item">
-                <div class="product">
-                  <div class="product__content"><a class="product__image"><img src="img/content/products/plity-2P.png" srcset="img/content/products/plity-2P@2x.png 2x" width="100" height="100" alt="image"></a>
-                    <div class="product__body"><a class="product__title">Плиты 2П 30-18-30 ТУ</a>
-                      <div class="product__article">
-                        <span__article-label>Артикул:</span__article-label>
-                        <span__article-value>240297</span__article-value>
-                      </div>
-                    </div>
-                  </div>
-                  <ul class="product__characteristics list-reset">
-                    <li class="characteristics"><span class="product__characteristics-label">Длина:</span><span class="product__characteristics-value">3000 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Высота:</span><span class="product__characteristics-value">1750 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Ширина:</span><span class="product__characteristics-value">170 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Вес изделия:</span><span class="product__characteristics-value">2 200 кг.</span></li>
-                  </ul>
-                  <div class="product__actions">
-                    <div class="product__price">от <span>12 173</span> ₽/шт.
-                    </div><a class="btn">Оформить заявку</a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__item">
-                <div class="product">
-                  <div class="product__content"><a class="product__image"><img src="img/content/products/plity-2P.png" srcset="img/content/products/plity-2P@2x.png 2x" width="100" height="100" alt="image"></a>
-                    <div class="product__body"><a class="product__title">Плиты 2П 30-15-15 (H=160) ГОСТ 21924.2-84</a>
-                      <div class="product__article">
-                        <span__article-label>Артикул:</span__article-label>
-                        <span__article-value>240297</span__article-value>
-                      </div>
-                    </div>
-                  </div>
-                  <ul class="product__characteristics list-reset">
-                    <li class="characteristics"><span class="product__characteristics-label">Длина:</span><span class="product__characteristics-value">4000 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Высота:</span><span class="product__characteristics-value">150 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Ширина:</span><span class="product__characteristics-value">2500 мм.</span></li>
-                    <li class="characteristics"><span class="product__characteristics-label">Вес изделия:</span><span class="product__characteristics-value">1 600 кг.</span></li>
-                  </ul>
-                  <div class="product__actions">
-                    <div class="product__price">от <span>4 510</span> ₽/шт.
-                    </div><a class="btn">Оформить заявку</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!--+intro()-->
+        <!--+categories()-->
+        <!--+products()-->
       </main>
     </div>
     <script src="js/main.min.js"></script>

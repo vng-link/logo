@@ -22,7 +22,6 @@
 // ---------------------------------
 
 @use "blocks/header";
-@use "blocks/main-nav";
 @use "blocks/footer";
 @use "blocks/btn";
 @use "blocks/data-accordion";
@@ -35,6 +34,9 @@
 @use "blocks/custom-radio";
 @use "blocks/custom-select";
 @use "blocks/custom-textarea";
+@use "blocks/header-top";
+@use "blocks/header-bottom";
+@use "blocks/main-nav";
 @use "blocks/categories";
 @use "blocks/category-card";
 @use "blocks/products";
