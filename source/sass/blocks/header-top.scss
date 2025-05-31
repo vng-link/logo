@@ -49,6 +49,7 @@
     margin-right: 40px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
     transition: opacity $trans-default;
+    flex-shrink: 0;
     @include vp-1023 {
       margin-right: 0;
     }

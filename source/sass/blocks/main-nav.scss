@@ -20,7 +20,7 @@
     position: relative;
     z-index: 11;
 
-    @include vp-1023 {
+    @include vp-1199 {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -65,34 +65,37 @@
   &__menu {
     margin: 0 auto 0 0;
 
-    @include vp-1023 {
+    @include vp-1199 {
       z-index: 10;
       position: fixed;
       overflow: auto;
-
-      top: 60px;
+      top: 55px;
       right: 0;
       bottom: 0;
       left: 0;
-
       width: 100%;
       margin: 0;
-      padding: 25px 20px 20px;
-
-      //background-color: $color-prussian-blue;
-      background-color: red;
+      padding: 80px 196px;
+      background-color: $color-default-white;
       transition: transform $trans-default, visibility $trans-default,
       opacity $trans-default;
       transform: translateX(-100%);
     }
 
+    @include vp-1023 {
+      padding: 80px 96px;
+    }
+
+    @include vp-767 {
+      padding: 80px 30px;
+    }
 
   }
 
   &__list {
     display: flex;
 
-    @include vp-1023 {
+    @include vp-1199 {
       flex-direction: column;
     }
 
@@ -102,12 +105,14 @@
   &__item {
     position: relative;
     margin: 0 1px 0 0;
-
+    @include vp-1199 {
+      border-bottom: 1px dashed #c4c4c4;
+    }
 
     &--dropdown {
       cursor: pointer;
 
-      @media (min-width: 1023px) {
+      @media (min-width: 1199px) {
         @include focus-within {
           .main-nav__link {
             opacity: 0.8;
@@ -150,27 +155,24 @@
 
     &--dropdown.is-active {
       .main-nav__link {
-        @include vp-1023 {
+        @include vp-1199 {
           opacity: 0.8;
         }
 
         svg {
-          @include vp-1023 {
+          @include vp-1199 {
             transform: rotate(180deg);
           }
         }
       }
 
       .main-nav__sublist {
-        @include vp-1023 {
+        @include vp-1199 {
           display: block;
         }
       }
     }
 
-    &:last-child {
-      margin: 0;
-    }
   }
 
   &__link {
@@ -184,24 +186,19 @@
     border: 1px solid transparent;
     border-radius: 100px;
 
-    @include vp-1023 {
-      font-size: 18px;
+    @include vp-1439 {
+      padding: 5px 12px;
     }
 
-    &::after {
-      content: none;
-      position: absolute;
-
-      top: 100%;
-      left: -10px;
-
-      width: 100%;
-      height: 10px;
+    @include vp-1199 {
+      justify-content: space-between;
+      padding: 19px 0;
     }
-
-    @include hover-focus {
-      opacity: 0.8;
-      border: 1px solid #3f82ff;
+    @media (min-width: 1199px) {
+      @include hover-focus {
+        opacity: 0.8;
+        border: 1px solid #3f82ff;
+      }
     }
 
     svg {
@@ -212,6 +209,10 @@
       margin: 0 0 0 10px;
 
       transition: transform $trans-default;
+      @include vp-1199 {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 
@@ -219,7 +220,7 @@
     z-index: 10;
     position: absolute;
     top: calc(100% + 10px);
-    left: -10px;
+    left: 0;
 
     width: max-content;
     margin: 0;
@@ -235,34 +236,29 @@
 
     opacity: 0;
     visibility: hidden;
+    @media (min-width: 1199px) {
 
-    @include vp-1023 {
-      position: relative;
+    }
+    @include vp-1199 {
+      position: static;
       display: none;
       top: 0;
       left: 0;
 
       width: auto;
       min-width: unset;
-      padding: 10px 0 0 10px;
-
-      border-radius: 0;
-      background-color: $color-transparent;
-
       opacity: 1;
       visibility: visible;
+      box-shadow: unset;
+      border: unset;
     }
   }
 
   &__subitem {
     display: flex;
     border-bottom: 1px solid #dadada;
-    @include vp-1279 {
-      margin: 0 0 5px;
-    }
-
-    &:last-child {
-      margin: 0;
+    @include vp-1199 {
+      border-bottom: none;
     }
   }
 
@@ -272,13 +268,17 @@
     line-height: 20px;
     padding: 14px 20px;
     color: $color-default-black;
-
     transition: opacity $trans-default;
     width: 100%;
-    @include hover-focus {
-      opacity: 0.8;
-      background: linear-gradient(180deg, #ff4548 0%, #d21013 100%);
-      color: $color-default-white;
+    @include vp-1199 {
+      padding: 10px 20px;
+    }
+    @media (min-width: 1199px) {
+      @include hover-focus {
+        opacity: 0.8;
+        background: linear-gradient(180deg, #ff4548 0%, #d21013 100%);
+        color: $color-default-white;
+      }
     }
   }
 
