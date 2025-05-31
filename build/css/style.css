@@ -3224,10 +3224,10 @@ button,
 }
 
 .header.is-open .main-nav__toggle span:nth-child(1) {
-  top: 9px;
-  -webkit-transform: rotate(-45deg) translate(0, -50%);
-  -ms-transform: rotate(-45deg) translate(0, -50%);
-  transform: rotate(-45deg) translate(0, -50%);
+  top: calc(50% - 1px);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .header.is-open .main-nav__toggle span:nth-child(2) {
@@ -3236,10 +3236,10 @@ button,
 }
 
 .header.is-open .main-nav__toggle span:nth-child(3) {
-  top: 7px;
-  -webkit-transform: rotate(45deg) translate(0, 50%);
-  -ms-transform: rotate(45deg) translate(0, 50%);
-  transform: rotate(45deg) translate(0, 50%);
+  bottom: calc(50% - 1px);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .header.is-open .main-nav__menu {
@@ -4126,8 +4126,8 @@ button,
 .main-nav__toggle {
   position: relative;
   display: none;
-  width: 30px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4137,15 +4137,17 @@ button,
   transition: opacity 0.3s ease;
   position: relative;
   z-index: 11;
+  border: 1px solid #3f82ff;
+  border-radius: 4px;
 }
 
 .main-nav__toggle span {
   display: block;
   position: absolute;
-  left: 0;
-  width: 30px;
+  left: 9px;
+  width: 20px;
   height: 2px;
-  background-color: #000000;
+  background-color: #003865;
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
@@ -4153,11 +4155,10 @@ button,
 }
 
 .main-nav__toggle span:nth-child(1) {
-  top: 0;
+  top: 12px;
 }
 
 .main-nav__toggle span:nth-child(2) {
-  width: 25px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4165,7 +4166,7 @@ button,
 }
 
 .main-nav__toggle span:nth-child(3) {
-  bottom: 0;
+  bottom: 12px;
 }
 
 .main-nav__toggle:focus-visible {

@@ -15,8 +15,8 @@
     .main-nav__toggle {
       span {
         &:nth-child(1) {
-          top: 9px;
-          transform: rotate(-45deg) translate(0, -50%);
+          top: calc(50% - 1px);
+          transform: rotate(45deg);
         }
 
         &:nth-child(2) {
@@ -25,8 +25,8 @@
         }
 
         &:nth-child(3) {
-          top: 7px;
-          transform: rotate(45deg) translate(0, 50%);
+          bottom: calc(50% - 1px);
+          transform: rotate(-45deg);
         }
       }
     }

@@ -2,7 +2,7 @@
 @use "../variables" as *;
 
 .header-top {
-  background-color: #003865;
+  background-color: $color-prussian-blue;
   padding: 10px 0;
   position: relative;
   z-index: 11;
