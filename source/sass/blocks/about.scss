@@ -2,7 +2,6 @@
 @use "../variables" as *;
 
 .about {
-
   &__title {
     margin-bottom: 20px;
   }
@@ -14,6 +13,9 @@
   &__wrapper {
     display: flex;
     gap: 30px;
+    border: 1px solid $color-solitude;
+    border-radius: 20px;
+    padding: 30px;
     @include vp-1199 {
       display: block;
     }

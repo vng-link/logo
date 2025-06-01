@@ -4009,6 +4009,10 @@ button,
   margin-bottom: 60px;
 }
 
+.page__about {
+  margin-bottom: 60px;
+}
+
 .title {
   font-size: 24px;
   font-family: "Montserrat";
@@ -4675,6 +4679,9 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  border: 1px solid #dce7fd;
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .about__column {
@@ -4713,6 +4720,73 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   max-height: 370px;
+}
+
+.articles__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.articles__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.article__image {
+  height: 280px;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.article__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 280px;
+}
+
+.article__title {
+  font-weight: 700;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 15px;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.article__title:focus-visible {
+  opacity: 0.8;
+}
+
+.article__btn {
+  margin-top: 20px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 /* @mixin hover-focus {
@@ -4860,6 +4934,14 @@ button,
   }
 
   .objects__wrapper {
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .articles__wrapper {
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
@@ -5174,6 +5256,14 @@ button,
   .object__image {
     height: auto;
   }
+
+  .articles__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .article__image {
+    height: auto;
+  }
 }
 
 @media (max-width: 575px) {
@@ -5240,5 +5330,9 @@ button,
 
   .object__products-link:hover {
     color: #3f82ff;
+  }
+
+  .article__title:hover {
+    opacity: 0.8;
   }
 }

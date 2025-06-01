@@ -2,7 +2,7 @@ mixin object(data)
     .object
       a.object__image(href=data.href)
         +img("content/objects", data.image.src, data.image.format, data.image.width, data.image.height, data.image.alt)
-      a.object__title(href=data.href) Мытищинская скоросная хорда (Автомобильная дорога Виноградово – Болтино – Тарасовка)
+      a.object__title(href=data.href)!=data.title
       if (data.objects)
          div.object__products-title Продукция
          ul.object__products-list.list-reset
