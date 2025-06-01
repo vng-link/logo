@@ -12,6 +12,7 @@
   @include vp-1023 {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   &__content {
     display: flex;
@@ -91,9 +92,20 @@
   &__price {
     flex-grow: 1;
     line-height: 145%;
+    @include vp-1023 {
+      margin-bottom: 10px;
+    }
     span {
       font-weight: 700;
       font-size: 25px;
+    }
+  }
+  &__btn {
+    @include vp-1023 {
+      width: 100%;
+    }
+    @include vp-389 {
+      padding: 16px 20px;
     }
   }
 }
