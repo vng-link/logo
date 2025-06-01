@@ -4005,6 +4005,10 @@ button,
   margin-bottom: 60px;
 }
 
+.page__advantages {
+  margin-bottom: 60px;
+}
+
 .title {
   font-size: 24px;
   font-family: "Montserrat";
@@ -4611,6 +4615,53 @@ button,
   color: #3f82ff;
 }
 
+.advantages__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.advantage {
+  background-color: #f3f7ff;
+  height: 100%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.advantage__image {
+  margin-bottom: 15px;
+}
+
+.advantage__title {
+  font-size: 16px;
+  font-family: "Montserrat";
+  line-height: 140%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.advantage__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.advantage__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
@@ -4757,6 +4808,10 @@ button,
 
   .objects__wrapper {
     grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
   }
 }
 
@@ -4880,6 +4935,13 @@ button,
   .category-card__title::after {
     font-size: 16px;
   }
+
+  .advantages__wrapper {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -4962,6 +5024,19 @@ button,
 
   .product__btn {
     width: 100%;
+  }
+
+  .advantages__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .advantage__contacts {
+    display: block;
+  }
+
+  .advantage__phone {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 
