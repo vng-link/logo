@@ -4567,6 +4567,12 @@ button,
   line-height: 140%;
   color: #000000;
   margin-bottom: 15px;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.object__title:focus-visible {
+  opacity: 0.8;
 }
 
 .object__products-title {
@@ -5090,6 +5096,10 @@ button,
 
   .category-card:hover .category-card__title::after {
     background: url("../../img/sprite/arrow-active.svg") no-repeat center;
+  }
+
+  .object__title:hover {
+    opacity: 0.8;
   }
 
   .object__products-link:hover {
