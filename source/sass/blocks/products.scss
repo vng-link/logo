@@ -16,6 +16,16 @@
       padding: 0 10px;
       margin-bottom: 20px;
     }
+    @include vp-1023 {
+      flex-basis: 50%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+    @include vp-767 {
+      flex-basis: 100%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
   }
 }
 

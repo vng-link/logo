@@ -21,6 +21,9 @@
       flex-basis: unset;
       display: block;
     }
+    @include vp-767 {
+      display: flex;
+    }
   }
 
   &__body {
@@ -34,15 +37,13 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    @include vp-1023 {
+    height: 100px;
+    @media (min-width: 767+px) and (max-width: 1023+px) {
       height: 240px;
       display: block;
       margin-bottom: 20px;
     }
     img {
-      position: absolute;
-      left: 0;
-      top: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -55,6 +56,9 @@
     flex-shrink: 0;
     span + span {
       margin-left: 5px;
+    }
+    @include vp-767 {
+      padding-left: 120px;
     }
   }
 
@@ -80,6 +84,9 @@
     flex-direction: column;
     align-items: end;
     flex-shrink: 0;
+    @include vp-767 {
+      padding-left: 120px;
+    }
   }
   &__price {
     flex-grow: 1;
