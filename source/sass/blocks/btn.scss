@@ -6,8 +6,9 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  padding: 16px 30px;
-
+  padding: 0px 30px;
+  border: none;
+  height: 43px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -26,9 +27,9 @@
   outline: none;
 
   &--white {
-    border: 1px solid $color-dolphin;
-    background-color: $color-default-white;
-    color: $color-black-russian-2;
+    background: $color-default-white;
+    color: $color-prussian-blue;
+    border: 1px solid $color-alizarin;
   }
 
   @include hover-focus {

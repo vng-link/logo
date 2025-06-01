@@ -1,0 +1,238 @@
+mixin objects()
+  -
+    const objectItems = [
+      {
+        href: "#",
+        title: "Мытищинская скоросная хорда (Автомобильная дорога Виноградово – Болтино – Тарасовка)",
+        image: {
+          src: "mytishchinskaya-skorosnaya-horda",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        objects: [
+          {
+            href: "#",
+            text: "ПАГ 20 А800"
+          },
+          {
+            href: "#",
+            text: "ПО-2М"
+          },
+          {
+            href: "#",
+            text: "ПО-2"
+          },
+          {
+            href: "#",
+            text: "ПО-3М (с фартуком)"
+          },
+          {
+            href: "#",
+            text: "2П 18-15-30"
+          },
+         ]
+      },
+
+      {
+        href: "#",
+        title: "Мытищинская скоросная хорда (Автомобильная дорога Виноградово – Болтино – Тарасовка)",
+        image: {
+          src: "stroitelstvo-zhilyh-domov",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        objects: [
+          {
+            href: "#",
+            text: "С80.30-8"
+          },
+          {
+            href: "#",
+            text: "ПАГ 20 А800"
+          },
+          {
+            href: "#",
+            text: "ПО-2М"
+          },
+          {
+            href: "#",
+            text: "ПО-2"
+          },
+          {
+            href: "#",
+            text: "ПО-3М (с фартуком)"
+          },
+          {
+            href: "#",
+            text: "2П 18-15-30"
+          },
+         ]
+      },
+
+      {
+        href: "#",
+        title: "mcd",
+        image: {
+          src: "mcd",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        objects: [
+          {
+            href: "#",
+            text: "С80.30-8"
+          },
+          {
+            href: "#",
+            text: "ПАГ 20 А800"
+          },
+          {
+            href: "#",
+            text: "ПО-2М"
+          },
+          {
+            href: "#",
+            text: "ПО-2"
+          },
+          {
+            href: "#",
+            text: "ПО-3М (с фартуком)"
+          },
+          {
+            href: "#",
+            text: "2П 18-15-30"
+          },
+         ]
+      },
+
+      {
+        href: "#",
+        title: "Мытищинская скоросная хорда (Автомобильная дорога Виноградово – Болтино – Тарасовка)",
+        image: {
+          src: "mytishchinskaya-skorosnaya-horda2",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        objects: [
+          {
+            href: "#",
+            text: "С80.30-8"
+          },
+          {
+            href: "#",
+            text: "ПАГ 20 А800"
+          },
+          {
+            href: "#",
+            text: "ПО-2М"
+          },
+          {
+            href: "#",
+            text: "ПО-2"
+          },
+          {
+            href: "#",
+            text: "ПО-3М (с фартуком)"
+          },
+          {
+            href: "#",
+            text: "2П 18-15-30"
+          },
+         ]
+      },
+      {
+        href: "#",
+        title: "Мытищинская скоросная хорда (Автомобильная дорога Виноградово – Болтино – Тарасовка)",
+        image: {
+          src: "stroitelstvo-zhilyh-domov2",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        objects: [
+          {
+            href: "#",
+            text: "С80.30-8"
+          },
+          {
+            href: "#",
+            text: "ПАГ 20 А800"
+          },
+          {
+            href: "#",
+            text: "ПО-2М"
+          },
+          {
+            href: "#",
+            text: "ПО-2"
+          },
+          {
+            href: "#",
+            text: "ПО-3М (с фартуком)"
+          },
+          {
+            href: "#",
+            text: "2П 18-15-30"
+          },
+         ]
+      },
+      {
+        href: "#",
+        title: "Мытищинская скоросная хорда (Автомобильная дорога Виноградово – Болтино – Тарасовка)",
+        image: {
+          src: "mcd2",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        objects: [
+          {
+            href: "#",
+            text: "С80.30-8"
+          },
+          {
+            href: "#",
+            text: "ПАГ 20 А800"
+          },
+          {
+            href: "#",
+            text: "ПО-2М"
+          },
+          {
+            href: "#",
+            text: "ПО-2"
+          },
+          {
+            href: "#",
+            text: "ПО-3М (с фартуком)"
+          },
+          {
+            href: "#",
+            text: "2П 18-15-30"
+          },
+         ]
+      },
+    ]
+
+  section.page__objects.objects
+    .container
+      .objects__header
+        .objects__title.title Наши объекты
+        a.btn.btn--white(href="#", aria-label="Все объекты") Все объекты
+      .objects__wrapper
+        each item in objectItems
+          .objects__item
+              +object(item)
+
+
+

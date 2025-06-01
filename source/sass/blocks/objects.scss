@@ -1,0 +1,23 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.objects {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    @include vp-1439 {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include vp-767 {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,56 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.object {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__image {
+    height: 280px;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    @include vp-767 {
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: 280px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 140%;
+    color: $color-default-black;
+    margin-bottom: 15px;
+  }
+  &__products-title {
+    font-weight: 700;
+    line-height: 150%;
+    color: $color-default-black;
+    margin-bottom: 5px;
+  }
+  &__btn {
+    margin-top: 20px;
+    align-self: flex-start;
+  }
+  &__products-item {
+    border-bottom: 1px dashed #c0c0c0;
+  }
+  &__products-list {
+    flex-grow: 1;
+  }
+  &__products-link {
+    line-height: 150%;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color $trans-default;
+    width: 100%;
+    @include hover-focus {
+      color: $color-dodger-blue;
+    }
+  }
+}

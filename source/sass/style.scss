@@ -34,6 +34,7 @@
 @use "blocks/custom-radio";
 @use "blocks/custom-select";
 @use "blocks/custom-textarea";
+@use "blocks/blocks";
 @use "blocks/header-top";
 @use "blocks/header-bottom";
 @use "blocks/main-nav";
@@ -41,6 +42,8 @@
 @use "blocks/category-card";
 @use "blocks/products";
 @use "blocks/product";
+@use "blocks/objects";
+@use "blocks/object";
 
 // ---------------------------------
 
@@ -96,12 +99,3 @@
 // transition: $trans-default ❌ ---> transition: color $trans-default ✅
 
 
-.page {
-  padding-top: 159px;
-  &__intro {
-    margin-bottom: 60px;
-  }
-  &__categories {
-    margin-bottom: 60px;
-  }
-}

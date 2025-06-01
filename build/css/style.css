@@ -3260,7 +3260,9 @@ button,
   align-items: center;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  padding: 16px 30px;
+  padding: 0px 30px;
+  border: none;
+  height: 43px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -3281,9 +3283,9 @@ button,
 }
 
 .btn--white {
-  border: 1px solid #6f6d7b;
-  background-color: #ffffff;
-  color: #2a2b30;
+  background: #ffffff;
+  color: #003865;
+  border: 1px solid #f73b3e;
 }
 
 .btn:focus-visible {
@@ -3983,6 +3985,33 @@ button,
   line-height: 24px;
 }
 
+.page {
+  padding-top: 159px;
+}
+
+.page__intro {
+  margin-bottom: 60px;
+}
+
+.page__categories {
+  margin-bottom: 60px;
+}
+
+.page__products {
+  margin-bottom: 60px;
+}
+
+.page__objects {
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 24px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #000000;
+}
+
 .header-top {
   background-color: #003865;
   padding: 10px 0;
@@ -4368,6 +4397,14 @@ button,
   margin-bottom: 10px;
 }
 
+.products__item:last-child {
+  margin-bottom: 0;
+}
+
+.products__btn {
+  margin-top: 30px;
+}
+
 .product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4412,6 +4449,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  max-height: 100px;
 }
 
 .product__characteristics {
@@ -4475,6 +4513,98 @@ button,
   font-size: 25px;
 }
 
+.objects__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.objects__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.object__image {
+  height: 280px;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.object__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 280px;
+}
+
+.object__title {
+  font-weight: 700;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.object__products-title {
+  font-weight: 700;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.object__btn {
+  margin-top: 20px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.object__products-item {
+  border-bottom: 1px dashed #c0c0c0;
+}
+
+.object__products-list {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.object__products-link {
+  line-height: 150%;
+  padding: 5px 0;
+  display: inline-block;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  width: 100%;
+}
+
+.object__products-link:focus-visible {
+  color: #3f82ff;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
@@ -4515,18 +4645,6 @@ button,
     }
   }
 */
-
-.page {
-  padding-top: 159px;
-}
-
-.page__intro {
-  margin-bottom: 60px;
-}
-
-.page__categories {
-  margin-bottom: 60px;
-}
 
 @media (min-width: 1199px) {
   .main-nav__item--dropdown:has(.focus-visible) .main-nav__link {
@@ -4629,6 +4747,10 @@ button,
 
   .main-nav__link {
     padding: 5px 12px;
+  }
+
+  .objects__wrapper {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -4902,6 +5024,14 @@ button,
   .product__actions {
     padding-left: 120px;
   }
+
+  .objects__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .object__image {
+    height: auto;
+  }
 }
 
 @media (max-width: 575px) {
@@ -4916,11 +5046,15 @@ button,
   }
 }
 
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .product__image {
     height: 240px;
     display: block;
     margin-bottom: 20px;
+  }
+
+  .product__image img {
+    max-height: 240px;
   }
 }
 
@@ -4956,5 +5090,9 @@ button,
 
   .category-card:hover .category-card__title::after {
     background: url("../../img/sprite/arrow-active.svg") no-repeat center;
+  }
+
+  .object__products-link:hover {
+    color: #3f82ff;
   }
 }
