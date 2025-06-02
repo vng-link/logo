@@ -51,12 +51,6 @@
       margin-bottom: 40px;
     }
   }
-  &__footer {
-    margin-bottom: 60px;
-    @include vp-767 {
-      margin-bottom: 40px;
-    }
-  }
 }
 
 .title {

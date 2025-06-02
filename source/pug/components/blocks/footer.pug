@@ -1,5 +1,5 @@
 mixin footer()
-  footer.page__feedback.footer
+  footer.page__footer.footer
     .container
       .footer__grid
         .footer__column.footer__column--info
@@ -8,7 +8,7 @@ mixin footer()
            p.footer__kpp КПП 503201001
            p.footer__ogrn ОГРН 1185053042503
            a.footer__policy(href="#", aria-label="Политика обработки пресональных данных") Политика обработки пресональных данных
-           p.footer__recaptcha Этот сайт защищен от спама сервисом reCAPTCHA от компании Google Privacy Policy/Terms of Service
+           a.footer__recaptcha Этот сайт защищен от спама сервисом reCAPTCHA от компании Google Privacy Policy/Terms of Service
         .footer__column.footer__column--nav
           .footer__label Навигация
           ul.footer__nav-list.list-reset
@@ -40,8 +40,13 @@ mixin footer()
             a.footer__contacts-email(href="mailto:Flagman.gbi@mail.ru", aria-label="Написать на почту") Flagman.gbi@mail.ru
       .footer__bottom-row
         .footer__bottom-column
-
+          a.footer__logo(href="#")
+            +icon("logo-white", 93, 70)
+            span.footer__company ООО “Улица Бетонная”
+          .footer__copyright © ООО “Улица бетонная”
+            .footer__year 2025 Все права защищены
         .footer__bottom-column
+           a.footer__developer(href="mailto:Flagman.gbi@mail.ru", aria-label="Написать на почту") Сайт разработан веб-студией VanGogh-Link
 
 
 

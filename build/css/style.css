@@ -3266,11 +3266,12 @@ button,
 
 .footer__grid {
   display: grid;
-  grid-template-columns: 550px 280px 550px;
+  grid-template-columns: minmax(200px, 550px) minmax(200px, 280px) minmax(200px, 550px);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 10px;
+  padding-bottom: 60px;
 }
 
 .footer__label {
@@ -3289,6 +3290,7 @@ button,
   color: #ffffff;
   margin: 20px 0;
   display: inline-block;
+  text-decoration: underline;
 }
 
 .footer__nav-list-item {
@@ -3328,6 +3330,52 @@ button,
 
 .footer__contacts-location {
   max-width: 575px;
+}
+
+.footer__bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 40px;
+  gap: 30px;
+}
+
+.footer__bottom-column:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 37px;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__company {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer__recaptcha {
+  text-decoration: underline;
 }
 
 .btn {
@@ -4100,10 +4148,6 @@ button,
 }
 
 .page__feedback {
-  margin-bottom: 60px;
-}
-
-.page__footer {
   margin-bottom: 60px;
 }
 
@@ -5115,25 +5159,6 @@ button,
 }
 
 @media (max-width: 1439px) {
-  .footer__grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .footer__column--contacts {
-    grid-row: 2/3;
-    grid-column: 1/3;
-    padding-top: 40px;
-  }
-
-  .footer__column--nav {
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-
-  .footer__column--info {
-    grid-column: 2/3;
-  }
-
   .intro__image-bg--picture-top {
     width: 335px;
     height: 201px;
@@ -5168,6 +5193,61 @@ button,
 @media (max-width: 1199px) {
   .container {
     padding: 0 96px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__column--contacts {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    padding-top: 40px;
+  }
+
+  .footer__column--nav {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .footer__column--info {
+    grid-column: 2/3;
+  }
+
+  .footer__bottom-row {
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+
+  .footer__bottom-column:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer__bottom-column:last-child {
+    text-align: right;
+  }
+
+  .footer__logo {
+    margin-bottom: 10px;
+  }
+
+  .footer__logo svg {
+    width: 40px;
+    height: 30px;
+  }
+
+  .footer__company {
+    font-size: 16px;
   }
 
   .main-nav__toggle {
@@ -5430,8 +5510,16 @@ button,
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 20px;
+  .footer__bottom-row {
+    display: block;
+  }
+
+  .footer__bottom-column:last-child {
+    text-align: left;
+  }
+
+  .footer__copyright {
+    margin-bottom: 20px;
   }
 
   .modal__wrapper {
@@ -5481,10 +5569,6 @@ button,
   }
 
   .page__feedback {
-    margin-bottom: 40px;
-  }
-
-  .page__footer {
     margin-bottom: 40px;
   }
 
@@ -5558,6 +5642,12 @@ button,
   .feedback__button {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
   }
 }
 
