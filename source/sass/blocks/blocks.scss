@@ -5,24 +5,57 @@
   padding-top: 159px;
   &__intro {
     margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
   }
   &__categories {
     margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
   }
   &__products {
     margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
   }
   &__objects {
     margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
   }
   &__advantages {
     margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
   }
   &__about {
     margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
   }
   &__articles {
     margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
+  }
+  &__feedback {
+    margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
+  }
+  &__footer {
+    margin-bottom: 60px;
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
   }
 }
 

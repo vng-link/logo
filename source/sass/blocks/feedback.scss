@@ -66,15 +66,25 @@
     @include vp-1023 {
       margin-top: 20px;
     }
+    @include vp-767 {
+      display: block;
+    }
   }
   &__button {
     height: 51px;
+    @include vp-767 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
   &__agreement {
     max-width: 580px;
     font-size: 16px;
     color: $color-dark-gray;
     line-height: 140%;
+    @include vp-1023 {
+      font-size: 14px;
+    }
     a {
       color: $color-dark-gray;
       text-decoration: underline;
