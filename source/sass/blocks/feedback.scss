@@ -1,0 +1,93 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.feedback {
+  &__body {
+    background-color: #F3F7FF;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+  }
+  &__column {
+    flex-basis: 824px;
+    flex-shrink: 0;
+    @include vp-1199 {
+      flex-basis: unset;
+      flex-shrink: unset;
+    }
+  }
+  &__image {
+    height: 448px;
+    border-radius: 20px;
+    overflow: hidden;
+    @include vp-1199 {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: 448px;
+    }
+
+  }
+  &__form-body {
+    flex-grow: 1;
+  }
+  &__input {
+    flex-grow: 1;
+  }
+  &__textarea {
+    margin-top: 20px;
+    @include vp-1023 {
+      margin-top: 10px;
+    }
+  }
+
+  &__form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include vp-1023 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__form-footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    @include vp-1023 {
+      margin-top: 20px;
+    }
+  }
+  &__button {
+    height: 51px;
+  }
+  &__agreement {
+    max-width: 580px;
+    font-size: 16px;
+    color: $color-dark-gray;
+    line-height: 140%;
+    a {
+      color: $color-dark-gray;
+      text-decoration: underline;
+    }
+  }
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    color: #000;
+  }
+  &__text {
+    padding-bottom: 15px;
+  }
+}

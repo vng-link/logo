@@ -3679,49 +3679,49 @@ button,
 
 .custom-input input {
   width: 100%;
-  padding: 16px 20px 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  border: none;
-  border-radius: 12px;
   color: #000000;
   outline: none;
+  border: 1px solid #dce7fd;
+  border-radius: 100px;
+  padding: 10px 20px;
 }
 
 .custom-input input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-input input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-input input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-input input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-input input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-radio label {
@@ -3932,49 +3932,49 @@ button,
 
 .custom-textarea textarea {
   height: 100%;
-  padding: 16px 20px 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  border: none;
-  border-radius: 12px;
   color: #000000;
   outline: none;
+  border: 1px solid #dce7fd;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 .custom-textarea textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-textarea textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-textarea textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-textarea textarea::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-textarea textarea::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 
 .custom-textarea__label {
@@ -4010,6 +4010,10 @@ button,
 }
 
 .page__about {
+  margin-bottom: 60px;
+}
+
+.page__articles {
   margin-bottom: 60px;
 }
 
@@ -4789,6 +4793,108 @@ button,
   align-self: flex-start;
 }
 
+.feedback__body {
+  background-color: #F3F7FF;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.feedback__column {
+  -ms-flex-preferred-size: 824px;
+  flex-basis: 824px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.feedback__image {
+  height: 448px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.feedback__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 448px;
+}
+
+.feedback__form-body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.feedback__input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.feedback__textarea {
+  margin-top: 20px;
+}
+
+.feedback__form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feedback__form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feedback__button {
+  height: 51px;
+}
+
+.feedback__agreement {
+  max-width: 580px;
+  font-size: 16px;
+  color: #ababab;
+  line-height: 140%;
+}
+
+.feedback__agreement a {
+  color: #ababab;
+  text-decoration: underline;
+}
+
+.feedback__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+  color: #000;
+}
+
+.feedback__text {
+  padding-bottom: 15px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
@@ -5085,6 +5191,17 @@ button,
   .about__column:first-child {
     margin-bottom: 30px;
   }
+
+  .feedback__column {
+    -ms-flex-preferred-size: unset;
+    flex-basis: unset;
+    -ms-flex-negative: unset;
+    flex-shrink: unset;
+  }
+
+  .feedback__image {
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -5180,6 +5297,22 @@ button,
   .advantage__phone {
     display: block;
     margin-bottom: 10px;
+  }
+
+  .feedback__textarea {
+    margin-top: 10px;
+  }
+
+  .feedback__form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feedback__form-footer {
+    margin-top: 20px;
   }
 }
 
