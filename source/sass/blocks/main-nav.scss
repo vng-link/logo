@@ -18,7 +18,7 @@
     z-index: 11;
     border: 1px solid $color-dodger-blue;
     border-radius: 4px;
-    @include vp-1439 {
+    @include vp-1199 {
       display: block;
     }
 
@@ -52,7 +52,7 @@
   }
 
   &__menu {
-    @include vp-1439 {
+    @include vp-1199 {
       z-index: 10;
       position: fixed;
       overflow: auto;
@@ -64,8 +64,7 @@
       margin: 0;
       padding: 80px 196px;
       background-color: $color-default-white;
-      transition: transform $trans-default, visibility $trans-default,
-      opacity $trans-default;
+      transition: transform $trans-default, visibility $trans-default, opacity $trans-default;
       transform: translateX(100%);
     }
 
@@ -82,7 +81,7 @@
   &__list {
     display: flex;
 
-    @include vp-1439 {
+    @include vp-1199 {
       flex-direction: column;
     }
 
@@ -92,7 +91,7 @@
     position: relative;
     margin: 0 1px 0 0;
 
-    @include vp-1439 {
+    @include vp-1199 {
       border-bottom: 1px dashed $color-silver;
     }
 
@@ -105,7 +104,7 @@
           background: url("../../img/sprite/dropdown.svg") no-repeat center;
           transition: transform, background $trans-default;
           margin-left: 10px;
-          @include vp-1439 {
+          @include vp-1199 {
             content: "";
             width: 32px;
             height: 32px;
@@ -115,7 +114,7 @@
         }
       }
 
-      @media (min-width: 1439px) {
+      @media (min-width: 1199px) {
         @include focus-within {
           .main-nav__link {
             opacity: 0.8;
@@ -158,14 +157,14 @@
     &--dropdown.is-active {
       .main-nav__link {
         svg {
-          @include vp-1439 {
+          @include vp-1199 {
             transform: rotate(180deg);
           }
         }
       }
 
       .main-nav__sublist {
-        @include vp-1439 {
+        @include vp-1199 {
           display: block;
         }
       }
@@ -193,15 +192,15 @@
       padding: 5px 12px;
     }
 
-    @include vp-1439 {
+    @include vp-1199 {
       padding: 5px 12px;
     }
 
-    @include vp-1439 {
+    @include vp-1199 {
       justify-content: space-between;
       padding: 19px 0;
     }
-    @media (min-width: 1439px) {
+    @media (min-width: 1199px) {
       @include hover-focus {
         opacity: 0.8;
         border: 1px solid $color-dodger-blue;
@@ -236,7 +235,7 @@
     transition: transform $trans-default, opacity $trans-default, visibility $trans-default;
     opacity: 0;
     visibility: hidden;
-    @include vp-1439 {
+    @include vp-1199 {
       position: static;
       display: none;
       top: 0;
@@ -257,7 +256,7 @@
     &:last-child {
       border-bottom: unset;
     }
-    @include vp-1439 {
+    @include vp-1199 {
       border-bottom: none;
     }
   }
@@ -269,10 +268,10 @@
     color: $color-default-black;
     transition: opacity $trans-default;
     width: 100%;
-    @include vp-1439 {
+    @include vp-1199 {
       padding: 10px 20px;
     }
-    @media (min-width: 1439px) {
+    @media (min-width: 1199px) {
       @include hover-focus {
         opacity: 0.8;
         background: linear-gradient(180deg, $color-radical-red 0%, $color-venetian-red 100%);

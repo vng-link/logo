@@ -15,6 +15,9 @@
       z-index: 2;
       padding: 40px;
       max-width: 669px;
+      @include vp-1199 {
+        max-width: 464px;
+      }
     }
 
   &__title {
@@ -40,15 +43,15 @@
       top: 0;
       height: 100%;
       width: 100%;
-      @include vp-1439 {
-        left: -170px;
-      }
-      @include vp-1023 {
-        left: 0;
-      }
       img {
         height: 100%;
-        max-width: unset;
+        width: 100%;
+        object-fit: cover;
+        @include vp-1023 {
+          object-fit: unset;
+          width: unset;
+          max-width: unset;
+        }
       }
     }
 }

@@ -5,23 +5,20 @@
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
-
   @include vp-1919 {
-    padding: 0 140px;
+    max-width: 1200px;
   }
 
-  @include vp-1439 {
-    padding: 0 196px;
+  @include vp-1199 {
+    max-width: 808px
   }
 
-  @include vp-1023 {
-    padding: 0 96px;
+  @media (max-width: 768px) {
+    max-width: 616px
   }
 
-  @include vp-575 {
-    padding: 0 15px;
+  @media (max-width: 577px) {
+    max-width: 400px
   }
-
-
 
 }
