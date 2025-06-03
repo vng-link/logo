@@ -1,7 +1,7 @@
 export class HeaderAccordion {
   constructor() {
     this._menu = document.querySelector('[data-header-accordion]');
-    this._breakpointMedia = window.matchMedia('(max-width: 1199px)');
+    this._breakpointMedia = window.matchMedia('(max-width: 1439px)');
 
     this._linkClickHandler = this._linkClickHandler.bind(this);
     this._breakpointChecker = this._breakpointChecker.bind(this);

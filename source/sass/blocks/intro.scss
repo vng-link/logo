@@ -3,28 +3,69 @@
 
 
 .intro {
-  &__background {
-    position: relative;
-    background:
-      url("../../img/content/intro/background-left.svg") left no-repeat,
-      url("../../img/content/intro/background-right.svg") right no-repeat;
-    height: 372px;
-    border-radius: 20px;
-    overflow: hidden;
-    &:before {
-      content: url("../../img/content/intro/circle-top.svg");
-      position: absolute;
-      top: 0;
-      right: 290px;
-      z-index: 1;
+    &__background {
+      position: relative;
+      background: url("../../img/content/intro/background-right.svg") right no-repeat;
+      overflow: hidden;
+      border-radius: 20px;
+      &:before {
+        content: url("../../img/content/intro/circle-top.svg");
+        position: absolute;
+        top: 0;
+        right: 290px;
+        z-index: 1;
+        @include vp-1919 {
+          right: 100px;
+        }
+      }
+      &:after {
+        content: url("../../img/content/intro/circle-bottom.svg");
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+        @include vp-1919 {
+          content: unset;
+        }
+      }
     }
-    &:after {
-      content: url("../../img/content/intro/circle-bottom.svg");
-      position: absolute;
-      bottom: -3px;
-      right: 0;
+    &__content {
+      min-height: 372px;
+      position: relative;
+      z-index: 2;
+      padding: 40px;
+      max-width: 669px;
+    }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: $color-default-white;
+    margin-bottom: 20px;
+    @include vp-1919 {
+      font-size: 30px;
     }
   }
+
+  &__text {
+    color: $color-default-white;
+    margin-bottom: 20px;
+    line-height: 150%;
+  }
+
+    &__image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      img {
+        height: 100%;
+        max-width: unset;
+      }
+    }
+
+
   &__image-bg {
     position: absolute;
     &--draft-bottom {
@@ -36,6 +77,9 @@
       top:0;
       right: 0;
       mix-blend-mode: multiply;
+      @include vp-1919 {
+        right: -250px
+      }
     }
     &--picture-top {
       right: 337px;
@@ -43,9 +87,10 @@
       z-index: 2;
       width: 388px;
       height: 233px;
-      @include vp-1439 {
+      @include vp-1919 {
         width: 335px;
         height: 201px;
+        right: 187px;
       }
     }
     &--picture-bottom {
@@ -54,35 +99,12 @@
       z-index: 2;
       width: 490px;
       height: 286px;
-      @include vp-1439 {
+      @include vp-1919 {
         width: 452px;
         height: 279px;
+        right: -150px;
       }
     }
-  }
-
-  &__wrapper {
-    padding-top: 45px;
-    padding-bottom: 45px;
-    padding-left: 40px;
-  }
-
-  &__content {
-    max-width: 669px;
-  }
-
-  &__title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    color: $color-default-white;
-    margin-bottom: 20px;
-  }
-
-  &__text {
-    color: $color-default-white;
-    margin-bottom: 20px;
-    line-height: 150%;
   }
 
 }

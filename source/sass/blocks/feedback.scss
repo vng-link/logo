@@ -15,7 +15,7 @@
   &__column {
     flex-basis: 824px;
     flex-shrink: 0;
-    @include vp-1199 {
+    @include vp-1439 {
       flex-basis: unset;
       flex-shrink: unset;
     }
@@ -24,7 +24,7 @@
     height: 448px;
     border-radius: 20px;
     overflow: hidden;
-    @include vp-1199 {
+    @include vp-1439 {
       display: none;
     }
     img {
