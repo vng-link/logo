@@ -3,6 +3,9 @@
 
 .page {
   padding-top: 159px;
+  @include vp-767  {
+    padding-top: 164px;
+  }
   &__intro {
     margin-bottom: 60px;
     @include vp-767 {

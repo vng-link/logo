@@ -3408,6 +3408,15 @@ button,
   opacity: 0.8;
 }
 
+.footer__developer {
+  -webkit-transition: opacity, 0.3s ease;
+  transition: opacity, 0.3s ease;
+}
+
+.footer__developer:focus-visible {
+  opacity: 0.8;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3437,8 +3446,8 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: background, 0.3s ease;
+  transition: background, 0.3s ease;
   outline: none;
 }
 
@@ -3449,7 +3458,10 @@ button,
 }
 
 .btn:focus-visible {
-  opacity: 0.8;
+  -webkit-box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff4548), to(#d21013));
+  background: linear-gradient(0deg, #ff4548 0%, #d21013 100%);
 }
 
 [data-accordion=element].is-active > [data-accordion=content] {
@@ -5590,6 +5602,10 @@ button,
     line-height: 33px;
   }
 
+  .page {
+    padding-top: 164px;
+  }
+
   .page__intro {
     margin-bottom: 40px;
   }
@@ -5741,8 +5757,15 @@ button,
     opacity: 0.8;
   }
 
-  .btn:hover {
+  .footer__developer:hover {
     opacity: 0.8;
+  }
+
+  .btn:hover {
+    -webkit-box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff4548), to(#d21013));
+    background: linear-gradient(0deg, #ff4548 0%, #d21013 100%);
   }
 
   .custom-select__item:hover {
