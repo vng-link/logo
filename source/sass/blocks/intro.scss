@@ -8,25 +8,6 @@
       background: url("../../img/content/intro/background-right.svg") right no-repeat;
       overflow: hidden;
       border-radius: 20px;
-      &:before {
-        content: url("../../img/content/intro/circle-top.svg");
-        position: absolute;
-        top: 0;
-        right: 290px;
-        z-index: 1;
-        @include vp-1919 {
-          right: 100px;
-        }
-      }
-      &:after {
-        content: url("../../img/content/intro/circle-bottom.svg");
-        position: absolute;
-        bottom: -3px;
-        right: 0;
-        @include vp-1919 {
-          content: unset;
-        }
-      }
     }
     &__content {
       min-height: 372px;
@@ -59,54 +40,17 @@
       top: 0;
       height: 100%;
       width: 100%;
+      @include vp-1439 {
+        left: -170px;
+      }
+      @include vp-1023 {
+        left: 0;
+      }
       img {
         height: 100%;
         max-width: unset;
       }
     }
-
-
-  &__image-bg {
-    position: absolute;
-    &--draft-bottom {
-      left: 570px;
-      bottom: 0;
-      mix-blend-mode: multiply;
-    }
-    &--draft-top {
-      top:0;
-      right: 0;
-      mix-blend-mode: multiply;
-      @include vp-1919 {
-        right: -250px
-      }
-    }
-    &--picture-top {
-      right: 337px;
-      top: 16px;
-      z-index: 2;
-      width: 388px;
-      height: 233px;
-      @include vp-1919 {
-        width: 335px;
-        height: 201px;
-        right: 187px;
-      }
-    }
-    &--picture-bottom {
-      right: 0;
-      top: 86px;
-      z-index: 2;
-      width: 490px;
-      height: 286px;
-      @include vp-1919 {
-        width: 452px;
-        height: 279px;
-        right: -150px;
-      }
-    }
-  }
-
 }
 
 
