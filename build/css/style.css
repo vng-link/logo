@@ -5366,6 +5366,21 @@ button,
   }
 }
 
+@media (max-width: 1159px) {
+  .header-top__email {
+    display: none;
+  }
+
+  .header-top__actions {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 96px;
@@ -5381,19 +5396,6 @@ button,
 
   .modal__content {
     width: 100%;
-  }
-
-  .header-top__email {
-    display: none;
-  }
-
-  .header-top__actions {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .header-top__button {
