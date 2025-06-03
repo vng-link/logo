@@ -71,8 +71,13 @@
   &__policy {
     color: $color-default-white;
     margin: 20px 0;
-    display: inline-block;
-    text-decoration: 1px solid rgba(255, 255, 255, 0.12);
+    display: block;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+    transition: opacity, $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
   }
   &__nav-list-item {
     margin-bottom: 30px;
@@ -82,6 +87,12 @@
     @include vp-767  {
       display: block;
       margin-bottom: 20px;
+    }
+  }
+  &__nav-list-link {
+    transition: opacity, $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
     }
   }
   &__contacts-item {
@@ -167,6 +178,20 @@
 
   &__recaptcha {
     text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+    transition: opacity, $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__contacts-email {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+    transition: opacity, $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
   }
   &__copyright {
     @include vp-767  {
