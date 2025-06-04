@@ -4482,6 +4482,10 @@ button,
   width: 100%;
 }
 
+.main-nav__menu > .container {
+  display: contents;
+}
+
 .categories__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -5341,7 +5345,7 @@ button,
     left: 0;
     width: 100%;
     margin: 0;
-    padding: 80px 196px;
+    padding: 80px 0;
     background-color: #ffffff;
     -webkit-transition: visibility 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
     transition: visibility 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
@@ -5421,6 +5425,11 @@ button,
 
   .main-nav__sublink {
     padding: 10px 20px;
+  }
+
+  .main-nav__menu > .container {
+    display: block;
+    height: auto;
   }
 
   .categories__wrapper {
@@ -5548,7 +5557,7 @@ button,
   }
 
   .main-nav__menu {
-    padding: 80px 96px;
+    padding: 80px 0;
   }
 
   .products__wrapper {
@@ -5756,7 +5765,7 @@ button,
   }
 
   .main-nav__menu {
-    padding: 80px 20px;
+    padding: 80px 0;
   }
 
   .category-card__title {
