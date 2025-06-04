@@ -226,13 +226,6 @@ mixin objects()
 
   section.page__objects.objects
     .container
-      //.objects__advice.advice
-        .advice__background
-          .advice__content
-            .advice__text Быстрый расчёт заявки! Хотите так же? Обращайтесь!
-            .advice__button Получить консультацию
-          .advice__image
-            img(src="img/content/advice/advice.svg" width="" height="" alt="background")
       .objects__header
         .objects__title.title Наши объекты
         a.btn.btn--white(href="#", aria-label="Все объекты") Все объекты
@@ -240,6 +233,13 @@ mixin objects()
         each item in objectItems
           .objects__item
               +object(item)
-
+      .objects__advice.advice
+        .advice__background
+          .advice__content
+            .advice__text Быстрый расчёт заявки! Хотите так же? Обращайтесь!
+            a.advice__btn(href="#", aria-label="Получить консультацию")
+             span Получить консультацию
+          .advice__image
+            img(src="img/content/advice/bg.png" width="" height="" alt="background")
 
 
