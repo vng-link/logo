@@ -8,6 +8,9 @@
       overflow: hidden;
       border-radius: 20px;
       min-height: 375px;
+      @include vp-1023 {
+        background: linear-gradient(233deg, #3f82ff 0%, #003865 100%);
+      }
     }
     &__content {
       min-height: 372px;
@@ -52,6 +55,9 @@
       top: 0;
       height: 100%;
       width: 100%;
+      @include vp-1023 {
+        display: none;
+      }
       img {
         height: 100%;
         width: 100%;

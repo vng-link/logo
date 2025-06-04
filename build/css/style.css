@@ -5566,12 +5566,20 @@ button,
     font-size: 20px;
   }
 
+  .intro__background {
+    background: linear-gradient(233deg, #3f82ff 0%, #003865 100%);
+  }
+
   .intro__content {
     max-width: unset;
   }
 
   .intro__title {
     font-size: 28px;
+  }
+
+  .intro__image {
+    display: none;
   }
 
   .intro__image img {
