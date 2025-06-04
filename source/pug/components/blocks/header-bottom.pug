@@ -88,6 +88,7 @@ mixin header-bottom()
                       each subitem in item.dropdown
                         li.main-nav__subitem
                           a.main-nav__sublink(href=subitem.href)!=subitem.text
+            +btn({type: "button", text: "Получить консультацию"}).btn.main-nav__btn
           button(type="button" aria-label="Переключатель отображения меню", aria-pressed="false" data-toggle-menu).btn-reset.main-nav__toggle
             span
             span

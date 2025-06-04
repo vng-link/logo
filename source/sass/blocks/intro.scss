@@ -5,7 +5,6 @@
 .intro {
     &__background {
       position: relative;
-      background: url("../../img/content/intro/background-right.svg") right no-repeat;
       overflow: hidden;
       border-radius: 20px;
     }
@@ -20,6 +19,9 @@
       }
       @include vp-1023 {
         max-width: unset;
+      }
+      @include vp-767 {
+        padding: 30px;
       }
     }
 
@@ -58,6 +60,16 @@
           width: unset;
           max-width: unset;
         }
+      }
+    }
+
+    &__btn {
+      font-size: 16px;
+      @include vp-767 {
+        width: 100%;
+      }
+      @include vp-575 {
+        padding: 0 20px;
       }
     }
 }

@@ -30,6 +30,11 @@
     background: $color-default-white;
     color: $color-prussian-blue;
     border: 1px solid $color-alizarin;
+    @include hover-focus {
+      opacity: 0.8;
+      box-shadow: unset !important;
+      background: unset !important;
+    }
   }
 
   @include hover-focus {

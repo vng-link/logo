@@ -58,12 +58,16 @@
     }
   }
 
+
   &__label {
     font-weight: 700;
     font-size: 25px;
     line-height: 130%;
     color: $color-default-white;
     margin-bottom: 30px;
+    @include vp-1023  {
+      font-size: 20px;
+    }
     @include vp-767  {
       margin-bottom: 20px;
     }

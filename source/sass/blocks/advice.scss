@@ -1,0 +1,48 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+
+.advice {
+  &__background {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  &__content {
+    min-height: 106px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  &__text {
+    color: $color-default-white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      @include vp-1199 {
+        object-fit: unset;
+        width: unset;
+        max-width: unset;
+      }
+    }
+  }
+}
+
+
+
