@@ -5486,6 +5486,10 @@ button,
     font-size: 16px;
   }
 
+  .product__title {
+    font-size: 16px;
+  }
+
   .object__title {
     font-size: 16px;
   }
@@ -5658,8 +5662,17 @@ button,
     display: block;
   }
 
+  .product__actions {
+    -webkit-box-flex: unset;
+    -ms-flex-positive: unset;
+    flex-grow: unset;
+  }
+
   .product__price {
     margin-bottom: 10px;
+    -webkit-box-flex: unset;
+    -ms-flex-positive: unset;
+    flex-grow: unset;
   }
 
   .product__btn {
@@ -5850,14 +5863,17 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
   }
 
-  .product__characteristics {
-    padding-left: 120px;
+  .product__image {
+    -ms-flex-preferred-size: 120px;
+    flex-basis: 120px;
+    height: 120px;
   }
 
-  .product__actions {
-    padding-left: 120px;
+  .product__image img {
+    max-height: 120px;
   }
 
   .objects__wrapper {
