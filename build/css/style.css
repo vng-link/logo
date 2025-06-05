@@ -5941,7 +5941,11 @@ button,
   }
 
   .object__image {
-    height: auto;
+    height: 269px;
+  }
+
+  .object__image img {
+    max-height: 269px;
   }
 
   .articles__wrapper {
@@ -5994,13 +5998,21 @@ button,
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .product__image {
-    height: 240px;
+    height: 238px;
     display: block;
     margin-bottom: 20px;
   }
 
   .product__image img {
-    max-height: 240px;
+    max-height: 238px;
+  }
+
+  .object__image {
+    height: 207px;
+  }
+
+  .object__image img {
+    max-height: 207px;
   }
 }
 

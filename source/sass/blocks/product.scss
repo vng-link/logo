@@ -41,7 +41,7 @@
     overflow: hidden;
     height: 100px;
     @media (min-width: 768+px) and (max-width: 1023+px) {
-      height: 240px;
+      height: 238px;
       display: block;
       margin-bottom: 20px;
     }
@@ -51,7 +51,7 @@
       object-fit: cover;
       max-height: 100px;
       @media (min-width: 768+px) and (max-width: 1023+px) {
-        max-height: 240px;
+        max-height: 238px;
       }
     }
     @include vp-767 {

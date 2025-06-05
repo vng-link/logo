@@ -11,14 +11,23 @@
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
+    @media (min-width: 768+px) and (max-width: 1023+px) {
+      height: 207px;
+    }
     @include vp-767 {
-      height: auto;
+      height: 269px;
     }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       max-height: 280px;
+      @include vp-767 {
+        max-height: 269px;
+      }
+      @media (min-width: 768+px) and (max-width: 1023+px) {
+        max-height: 207px;
+      }
     }
   }
   &__title {
