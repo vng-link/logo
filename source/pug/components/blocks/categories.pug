@@ -60,6 +60,8 @@ mixin categories()
 
   section.page__categories.categories
     .container
+      if (hasTitle)
+        .categories__title.title Каталог
       .categories__wrapper
         each item in categoryItems
             .categories__item

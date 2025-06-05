@@ -10,10 +10,10 @@
       min-height: 375px;
       @include vp-1023 {
         background: linear-gradient(233deg, #3f82ff 0%, #003865 100%);
+        min-height: unset;
       }
     }
     &__content {
-      min-height: 372px;
       position: relative;
       z-index: 2;
       padding: 40px;

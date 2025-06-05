@@ -3539,7 +3539,6 @@ button,
 }
 
 .intro__content {
-  min-height: 372px;
   position: relative;
   z-index: 2;
   padding: 40px;
@@ -4496,6 +4495,10 @@ button,
   row-gap: 30px;
 }
 
+.categories__title {
+  margin-bottom: 30px;
+}
+
 .category-card {
   background: #f3f7ff;
   border-radius: 20px;
@@ -4577,6 +4580,10 @@ button,
 
 .products__btn {
   margin-top: 30px;
+}
+
+.products__title {
+  margin-bottom: 30px;
 }
 
 .product {
@@ -5572,6 +5579,7 @@ button,
 
   .intro__background {
     background: linear-gradient(233deg, #3f82ff 0%, #003865 100%);
+    min-height: unset;
   }
 
   .intro__content {

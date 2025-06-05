@@ -98,10 +98,10 @@ mixin products()
           alt: "image"
         },
         characteristics: {
-          length: "4000 мм.",
-          height: "150 мм.",
-          width: "2500 мм.",
-          weight: "1 600 кг.",
+          length: "2990 мм.",
+          height: "1490 мм.",
+          width: "160 мм.",
+          weight: "2 000 кг.",
         },
         article: {
           number: "240297",
@@ -111,10 +111,14 @@ mixin products()
 
   section.page__products.products
     .container
+      .products__title.title Часто заказывают
       .products__wrapper
         each item in productItems
           .products__item
             +product(item)
-      a.btn.products__btn.btn--white(href="#", aria-label="Перейти в каталог") Перейти в каталог
+      if (currentUrl == "index.html")
+        a.btn.products__btn.btn--white(href="#", aria-label="Перейти в каталог") Перейти в каталог
+      else
+        +btn({type: "button", text: "Показать еще"}).products__btn.btn--white
 
 
