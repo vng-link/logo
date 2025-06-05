@@ -5948,12 +5948,16 @@ button,
     max-height: 269px;
   }
 
-  .articles__wrapper {
-    grid-template-columns: 1fr;
+  .about__image {
+    height: 300px;
   }
 
-  .article__image {
-    height: auto;
+  .about__image img {
+    max-height: 300px;
+  }
+
+  .articles__wrapper {
+    grid-template-columns: 1fr;
   }
 
   .feedback__form-footer {
