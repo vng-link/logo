@@ -95,9 +95,10 @@
 
   &__list {
     display: flex;
-
+    margin-top: 10px;
     @include vp-1199 {
       flex-direction: column;
+      margin-top: 0;
     }
 
   }
@@ -235,10 +236,17 @@
     }
   }
 
+  &__sublist-handler {
+    padding-top: 10px;
+    @include vp-1199 {
+      padding-top: 0;
+    }
+  }
+
   &__sublist {
     z-index: 10;
     position: absolute;
-    top: calc(100% + 5px);
+    top: calc(100%);
     left: 0;
     width: max-content;
     margin: 0;

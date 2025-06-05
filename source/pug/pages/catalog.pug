@@ -1,20 +1,32 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "global"
-  - const openGraph = true
+  - const title = "Каталог"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
-  - const hasFooter = false
+  - const hasFooter = true
   - const footerMods = ""
   - const currentUrl = "catalog.html"
   - const hasTitle = true
+  -
+    const breadcrumbs = [
+      {
+        isLink: true,
+        href: "#",
+        title: "Главная"
+      },
+      {
+        isLink: false,
+        href: "#",
+        title: "Каталог"
+      }
+    ]
 
 block main
   main.page
+    +breadcrumbs(breadcrumbs)
     +categories()
     +products()
     +feedback()
-    +footer()
 block modals
