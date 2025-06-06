@@ -3209,9 +3209,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1470px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .header {
@@ -5482,7 +5482,7 @@ button,
 
 @media (max-width: 1919px) {
   .container {
-    max-width: 1200px;
+    max-width: 1190px;
   }
 
   .main-nav__link {
@@ -5507,7 +5507,7 @@ button,
 
 @media (max-width: 1199px) {
   .container {
-    max-width: 808px;
+    max-width: 798px;
   }
 
   .footer__grid {
@@ -5934,7 +5934,7 @@ button,
 
 @media (max-width: 808px) {
   .container {
-    max-width: 616px;
+    max-width: 606px;
   }
 }
 
@@ -6154,7 +6154,7 @@ button,
 
 @media (max-width: 616px) {
   .container {
-    max-width: 400px;
+    max-width: 390px;
   }
 }
 

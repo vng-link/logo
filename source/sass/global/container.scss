@@ -2,23 +2,23 @@
 
 .container {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1470px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
   @include vp-1919 {
-    max-width: 1200px;
+    max-width: 1190px;
   }
 
   @include vp-1199 {
-    max-width: 808px
+    max-width: 798px
   }
 
   @media (max-width: 808px) {
-    max-width: 616px
+    max-width: 606px
   }
 
   @media (max-width: 616px) {
-    max-width: 400px
+    max-width: 390px
   }
 
 }
