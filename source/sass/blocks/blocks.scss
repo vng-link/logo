@@ -2,7 +2,7 @@
 @use "../variables" as *;
 
 .page {
-  padding-top: 159px;
+  padding-top: 165px;
   @include vp-767  {
     padding-top: 164px;
   }

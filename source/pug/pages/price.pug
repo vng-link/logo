@@ -1,0 +1,31 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Каталог"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "price.html"
+  - const hasTitle = true
+  -
+    const breadcrumbs = [
+      {
+        isLink: true,
+        href: "#",
+        title: "Главная"
+      },
+      {
+        isLink: false,
+        href: "#",
+        title: "Цены"
+      }
+    ]
+
+block main
+  main.page
+    +breadcrumbs(breadcrumbs)
+    +price()
+    +feedback()
+block modals

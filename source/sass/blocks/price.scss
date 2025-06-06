@@ -1,0 +1,90 @@
+.price {
+  padding-bottom: 60px;
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.accordion {
+  &__item {
+    position: relative;
+    border-top: 1px solid #DEE4F0;
+    padding: 28px 0;
+    &:before {
+      content: "";
+      height: 1px;
+      background-color: #3f82ff;
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 0;
+      transition: all 0.3s;
+    }
+    &.is-active {
+      .plus span {
+        &:last-child {
+          transform: rotate(0);
+        }
+      }
+      &:before {
+        width: 100%;
+      }
+      .accordion__button {
+        padding-left: 38px;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    padding-left: 28px;
+    position: relative;
+    transition: all 0.3s;
+    &:after {
+      content: url("../../img/sprite/arrow-price.svg");
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+.plus {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  span {
+    transition: all 0.2s;
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #3F82FF;
+    width: 100%;
+    top: calc(50% - 1px);
+    left: 0;
+    &:nth-child(2) {
+      width: 8px;
+      height: 8px;
+      border-radius: 100px;
+      left: 50%;
+      transform: translate(-4px, -3px);
+    }
+    &:last-child {
+      transform: rotate(-90deg);
+    }
+  }
+}
