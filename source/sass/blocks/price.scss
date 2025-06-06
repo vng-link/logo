@@ -56,13 +56,13 @@
 
 
 .accordion-price {
-  &__content {
+  &__content-wrapper {
     padding: 30px 0 0 48px;
   }
   &__element {
     position: relative;
     border-top: 1px solid #DEE4F0;
-    padding: 28px 0;
+    padding: 20px 0;
     &:before {
       content: "";
       height: 1px;
