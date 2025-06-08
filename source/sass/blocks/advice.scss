@@ -46,7 +46,7 @@
       top: -85px;
       left: 540px;
     }
-    @include vp-1023 {
+    @media (max-width: 807px) {
         z-index: -1;
     }
     img {
@@ -78,7 +78,7 @@
       color: $color-default-white;
       line-height: 22px;
     }
-    @include vp-767 {
+    @media (max-width: 615px) {
       width: 100%;
     }
     @include vp-575 {

@@ -15,7 +15,7 @@
     color: $color-default-white;
     text-decoration: underline;
     transition: opacity $trans-default;
-    @include vp-1023 {
+    @media (max-width: 807px) {
       display: none;
     }
     @include hover-focus {
@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    @include vp-1023 {
+    @media (max-width: 807px) {
       flex-grow: 1;
       justify-content: space-between;
     }
@@ -51,10 +51,10 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
     transition: opacity $trans-default;
     flex-shrink: 0;
-    @include vp-1023 {
+    @media (max-width: 807px) {
       margin-right: 0;
     }
-    @include vp-767 {
+    @media (max-width: 615px) {
       padding: 0;
       width: 40px;
       height: 40px;
@@ -63,7 +63,7 @@
       background-position: center;
     }
     span {
-      @include vp-767 {
+      @media (max-width: 615px) {
         display: none;
       }
     }

@@ -11,7 +11,7 @@
       column-gap: 20px;
       row-gap: 20px;
     }
-    @include vp-1023 {
+    @media (max-width: 807px) {
       grid-template-columns: 1fr;
     }
   }

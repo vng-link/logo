@@ -11,10 +11,10 @@
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
-    @media (min-width: 768+px) and (max-width: 1023+px) {
+    @media (min-width: 616+px) and (max-width: 807+px) {
       height: 207px;
     }
-    @include vp-767 {
+    @media (max-width: 615px) {
       height: 269px;
     }
     img {
@@ -22,10 +22,10 @@
       height: 100%;
       object-fit: cover;
       max-height: 280px;
-      @include vp-767 {
+      @media (max-width: 615px) {
         max-height: 269px;
       }
-      @media (min-width: 768+px) and (max-width: 1023+px) {
+      @media (min-width: 616+px) and (max-width: 807+px) {
         max-height: 207px;
       }
     }

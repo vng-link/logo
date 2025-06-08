@@ -46,7 +46,7 @@
       object-fit: cover;
       max-height: 370px;
     }
-    @include vp-767 {
+    @media (max-width: 615px) {
       height: 300px;
       img {
         max-height: 300px;

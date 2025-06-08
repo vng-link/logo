@@ -3,7 +3,7 @@
 
 .products {
   &__wrapper {
-    @include vp-1023 {
+    @media (max-width: 807px) {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -20px;
@@ -14,17 +14,12 @@
     &:last-child {
       margin-bottom: 0;
     }
-    @include vp-1023 {
+    @media (max-width: 807px) {
       flex-basis: 50%;
       padding: 0 10px;
       margin-bottom: 20px;
     }
-    @include vp-1023 {
-      flex-basis: 50%;
-      padding: 0 10px;
-      margin-bottom: 20px;
-    }
-    @include vp-767 {
+    @media (max-width: 615px) {
       flex-basis: 100%;
       padding: 0 10px;
       margin-bottom: 20px;
