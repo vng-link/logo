@@ -129,6 +129,10 @@
 </g></symbol><symbol id="dropdown" viewBox="0 0 16 16"><g fill="none">
 <path d="M8 0.5C12.1421 0.5 15.5 3.85786 15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5Z" stroke="#F73B3E"/>
 <path d="M5 7L8 10L11 7" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</g></symbol><symbol id="gallery-plus" viewBox="0 0 60 60"><g fill="none">
+<circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.59"/>
+<path d="M29.4961 15V44" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M44 29.495L15 29.495" stroke="white" stroke-width="2" stroke-linecap="round"/>
 </g></symbol><symbol id="logo-white" viewBox="0 0 93 70"><g fill="none">
 <path d="M40.3905 0.693069H54.9854V70H40.3905V0.693069Z" fill="white"/>
 <path d="M63.4708 42.9703H67.2044V70H63.4708V42.9703Z" fill="white"/>

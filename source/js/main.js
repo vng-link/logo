@@ -7,6 +7,7 @@ import {initPhoneMask} from './modules/init-phone-mask';
 import {initPhoneValidation} from './modules/init-phone-validation';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initHeaderAccordion} from "./modules/header-accordion/init-header-accordion";
+import {initFancybox} from "./modules/fancybox/init-fancybox";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initAccordion();
   initTabs();
   initHeaderAccordion();
+  initFancybox();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

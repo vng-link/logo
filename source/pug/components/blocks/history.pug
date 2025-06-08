@@ -26,7 +26,33 @@ mixin history()
         li Формовочный цех площадью 15 000 м²
         li Полный цикл производства – от проектирования до логистики
       h2 Галерея производства
-      .gallery
+      .history__gallery.gallery
         .gallery__wrapper
           .gallery__item
-            a()
+            a.gallery__image(href="img/content/gallery/1.png" data-fancybox="gallery")
+              +img("content/gallery", "1", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/2.png" data-fancybox="gallery")
+              +img("content/gallery", "2", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/3.png" data-fancybox="gallery")
+              +img("content/gallery", "3", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/4.png" data-fancybox="gallery")
+              +img("content/gallery", "4", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/5.png" data-fancybox="gallery")
+              +img("content/gallery", "5", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/6.png" data-fancybox="gallery")
+              +img("content/gallery", "6", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/7.png" data-fancybox="gallery")
+              +img("content/gallery", "7", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/8.png" data-fancybox="gallery")
+              +img("content/gallery", "8", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/9.png" data-fancybox="gallery")
+              +img("content/gallery", "9", 'png', 460, 262, "alt")
+        <a class="btn btn--white gallery__btn" href="#">Показать еще</a>
