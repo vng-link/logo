@@ -5515,6 +5515,83 @@ h3 {
   margin-top: 30px;
 }
 
+.contacts {
+  padding-bottom: 80px;
+}
+
+.contacts h1 {
+  margin: 0 0 60px;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.contacts__column {
+  border-left: 1px solid #eef1f7;
+  padding-left: 30px;
+  position: relative;
+}
+
+.contacts__column:after {
+  content: "";
+  width: 1px;
+  height: 28px;
+  background-color: #3f82ff;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+.contacts__label {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.contacts__phone-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contacts__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.contacts__email {
+  color: #3f82ff;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.contacts__email:focus-visible {
+  opacity: 0.8;
+}
+
+.contacts__phone {
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.contacts__phone:focus-visible {
+  opacity: 0.8;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
@@ -6455,5 +6532,13 @@ h3 {
 
   .gallery__item:hover .gallery__image::after {
     opacity: 1;
+  }
+
+  .contacts__email:hover {
+    opacity: 0.8;
+  }
+
+  .contacts__phone:hover {
+    opacity: 0.8;
   }
 }

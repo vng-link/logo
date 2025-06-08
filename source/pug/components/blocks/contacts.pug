@@ -1,0 +1,30 @@
+mixin contacts()
+  -
+
+  section.page__contacts.contacts
+    .container
+      if (hasTitle)
+      h1.contacts__title Контакты
+      .contacts__wrapper
+        .contacts__column
+          .contacts__label Адрес
+          .contacts__text 143050, Московская область, Одинцовский р-н, г. Одинцово, ул. Восточная, д. 10, стр 1, Эт 6, ком 608
+        .contacts__column
+         .contacts__label Время работы
+         .contacts__text Пн–Пт с 08:00 до 20:00 по Московскому времени
+        .contacts__column
+         .contacts__label Телефон
+         .contacts__phone-wrapper
+           a.contacts__phone(href="tel:89166426203", aria-label="Позвонить по телефону") 8 (916) 642-62-03
+           .contacts__socials
+               a.contacts__whatsapp(href="#", aria-label="Перейти в whatsapp")
+                 +icon("whatsapp-blue", 30, 30)
+               a.contacts__telegram(href="#", aria-label="Перейти в telegram")
+                 +icon("telegram-blue", 30, 30)
+        .contacts__column
+         .contacts__label Почта
+         a.contacts__email(href="mailto:Flagman.gbi@mail.ru", aria-label="Написать на почту") Flagman.gbi@mail.ru
+
+
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A505671c165a3dcf36fbd2dc7c812ad32bc241e7579467513476102b712f2957a&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+

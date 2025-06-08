@@ -1,13 +1,13 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "История завода"
+  - const title = "Контакты"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
   - const hasFooter = true
   - const footerMods = ""
-  - const currentUrl = "history.html"
+  - const currentUrl = "contacts.html"
   - const hasTitle = true
   -
     const breadcrumbs = [
@@ -19,13 +19,13 @@ block variables
       {
         isLink: false,
         href: "#",
-        title: "История завода"
+        title: "Контакты"
       }
     ]
 
 block main
   main.page
     +breadcrumbs(breadcrumbs)
-    +history()
+    +contacts()
     +feedback()
 block modals
