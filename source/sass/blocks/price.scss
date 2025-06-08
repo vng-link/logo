@@ -23,7 +23,7 @@
       padding: 10px 0;
       border-bottom: 1px dashed #a2a2a2;
       gap: 10px;
-      @include vp-767 {
+    @media (max-width: 615px) {
         flex-direction: column;
         align-items: flex-start;
       }

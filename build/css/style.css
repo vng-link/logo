@@ -5988,16 +5988,6 @@ button,
   .page__feedback {
     margin-bottom: 40px;
   }
-
-  .price__sub-category-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
 }
 
 @media (max-width: 615px) {
@@ -6138,6 +6128,16 @@ button,
 
   .breadcrumbs {
     display: none;
+  }
+
+  .price__sub-category-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }
 
