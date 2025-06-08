@@ -57,3 +57,17 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+
+const videoFile = $('#video-story').get(0);
+const videoBtn = $('.history__btn-play');
+const videoOverlay = $('.history__overlay')
+
+
+videoBtn.click(function () {
+  if(videoFile.paused) {
+    videoFile.play()
+    videoBtn.css({display:"none"})
+    videoOverlay.css({display:"none"})
+  }
+});

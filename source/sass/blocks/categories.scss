@@ -2,6 +2,9 @@
 @use "../variables" as *;
 
 .categories {
+  h1 {
+    margin: 0 0 60px;
+  }
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,7 +19,6 @@
   &__item {
   }
   &__title {
-    margin-bottom: 50px;
   }
 }
 
