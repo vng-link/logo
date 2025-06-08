@@ -4522,10 +4522,24 @@ button,
   background: url("../../img/sprite/arrow-active.svg") no-repeat center;
 }
 
+.category-card:focus-visible .category-card__image {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.category-card:focus-visible .category-card__image img {
+  left: -30px;
+}
+
 .category-card__image {
   padding-bottom: 26.0869%;
   position: relative;
   display: block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .category-card__image img {
@@ -4536,6 +4550,8 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
 }
 
 .category-card__body {
@@ -6239,6 +6255,16 @@ button,
 
   .category-card:hover .category-card__title::after {
     background: url("../../img/sprite/arrow-active.svg") no-repeat center;
+  }
+
+  .category-card:hover .category-card__image {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .category-card:hover .category-card__image img {
+    left: -30px;
   }
 
   .object__title:hover {
