@@ -24,12 +24,6 @@
       margin-bottom: 40px;
     }
   }
-  &__objects {
-    margin-bottom: 60px;
-    @include vp-767 {
-      margin-bottom: 40px;
-    }
-  }
   &__advantages {
     margin-bottom: 60px;
     @include vp-767 {

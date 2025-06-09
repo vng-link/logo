@@ -2,7 +2,6 @@
 @use "../variables" as *;
 
 .objects {
-
   h1 {
     margin: 0 0 60px;
     @include vp-1199 {
@@ -44,8 +43,19 @@
   }
   &__advice {
     margin-top: 30px;
+    margin-bottom: 60px;
+    @media (max-width: 615px) {
+      margin-bottom: 50px;
+    }
   }
   &__pagination {
-    margin-top: 75px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @include vp-1199 {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 615px) {
+      margin-bottom: 30px;
+    }
   }
 }
