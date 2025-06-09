@@ -4168,12 +4168,28 @@ button,
   margin-bottom: 60px;
 }
 
-.title {
-  font-size: 36px;
-  font-family: "Montserrat";
+h1 {
+  font-family: Montserrat;
   font-weight: 700;
-  color: #000000;
-  line-height: 110%;
+  font-size: 40px;
+  margin: 0 0 30px 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Montserrat;
+  margin: 0 0 30px 0;
+  line-height: 120%;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000;
+  margin: 0 0 20px 0;
 }
 
 .header-top {
@@ -4716,6 +4732,10 @@ button,
 }
 
 .objects h1 {
+  margin: 0 0 60px;
+}
+
+.objects__header h1 {
   font-size: 36px;
   margin: 0 0 0 0;
 }
@@ -5436,30 +5456,6 @@ button,
   clear: both;
 }
 
-h1 {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 40px;
-  margin: 0 0 30px 0;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: Montserrat;
-  margin: 0 0 30px 0;
-  line-height: 120%;
-}
-
-h3 {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 150%;
-  color: #000;
-  margin: 0 0 20px 0;
-}
-
 .gallery {
   padding-bottom: 80px;
 }
@@ -5824,8 +5820,8 @@ h3 {
     font-size: 30px;
   }
 
-  .title {
-    font-size: 26px;
+  h1 {
+    font-size: 30px;
   }
 
   .main-nav__btn {
@@ -5961,6 +5957,10 @@ h3 {
   }
 
   .objects h1 {
+    margin: 0 0 30px;
+  }
+
+  .objects__header h1 {
     font-size: 26px;
   }
 
@@ -6042,6 +6042,14 @@ h3 {
     max-width: 315px;
   }
 
+  .price h1 {
+    margin: 0 0 30px;
+  }
+
+  .history h1 {
+    margin: 0 0 30px;
+  }
+
   .history__video {
     width: unset;
     float: unset;
@@ -6051,6 +6059,10 @@ h3 {
 
   .gallery__image {
     height: 139px;
+  }
+
+  .contacts h1 {
+    margin: 0 0 30px;
   }
 
   .contacts__wrapper {
@@ -6127,6 +6139,10 @@ h3 {
     content: none;
   }
 
+  .products h1 {
+    font-size: 24px;
+  }
+
   .products__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6177,8 +6193,16 @@ h3 {
     width: 100%;
   }
 
+  .objects__header h1 {
+    font-size: 24px;
+  }
+
   .advantages__wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .articles h1 {
+    font-size: 24px;
   }
 
   .feedback__textarea {

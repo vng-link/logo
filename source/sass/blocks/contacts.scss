@@ -5,6 +5,9 @@
   padding-bottom: 80px;
   h1 {
     margin: 0 0 60px;
+    @include vp-1199 {
+      margin: 0 0 30px;
+    }
   }
   &__wrapper {
     display: grid;

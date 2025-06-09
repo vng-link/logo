@@ -1,0 +1,31 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Контакты"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "objects.html"
+  - const singleTitle = false
+  -
+    const breadcrumbs = [
+      {
+        isLink: true,
+        href: "#",
+        title: "Главная"
+      },
+      {
+        isLink: false,
+        href: "#",
+        title: "Объекты"
+      }
+    ]
+
+block main
+  main.page
+    +breadcrumbs(breadcrumbs)
+    +objects()
+    +feedback()
+block modals

@@ -226,9 +226,12 @@ mixin objects()
 
   section.page__objects.objects
     .container
-      .objects__header
-        h1.objects__title Наши объекты
-        a.btn.btn--white(href="#", aria-label="Все объекты") Все объекты
+      if (singleTitle)
+        .objects__header
+          h1.objects__title Наши объекты
+          a.btn.btn--white(href="#", aria-label="Все объекты") Все объекты
+      else
+        h1.objects__title Объекты
       .objects__wrapper
         each item in objectItems
           .objects__item
