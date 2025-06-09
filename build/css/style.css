@@ -5847,15 +5847,6 @@ h3 {
   }
 }
 
-@media (max-width: 1919px) {
-  .advice__image {
-    left: 500px;
-    top: -138px;
-    width: 505px;
-    height: 311px;
-  }
-}
-
 @media (max-width: 1479px) {
   .container {
     max-width: 1200px;
@@ -5875,6 +5866,13 @@ h3 {
 
   .articles-all__wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .advice__image {
+    left: 500px;
+    top: -138px;
+    width: 505px;
+    height: 311px;
   }
 
   .gallery {
@@ -6457,42 +6455,6 @@ h3 {
     font-size: 22px;
     line-height: 33px;
   }
-
-  .page {
-    padding-top: 164px;
-  }
-
-  .page__intro {
-    margin-bottom: 40px;
-  }
-
-  .page__categories {
-    margin-bottom: 40px;
-  }
-
-  .page__products {
-    margin-bottom: 40px;
-  }
-
-  .page__objects {
-    margin-bottom: 40px;
-  }
-
-  .page__advantages {
-    margin-bottom: 40px;
-  }
-
-  .page__about {
-    margin-bottom: 40px;
-  }
-
-  .page__articles {
-    margin-bottom: 40px;
-  }
-
-  .page__feedback {
-    margin-bottom: 40px;
-  }
 }
 
 @media (max-width: 615px) {
@@ -6548,6 +6510,42 @@ h3 {
 
   .intro__btn {
     width: 100%;
+  }
+
+  .page {
+    padding-top: 164px;
+  }
+
+  .page__intro {
+    margin-bottom: 40px;
+  }
+
+  .page__categories {
+    margin-bottom: 40px;
+  }
+
+  .page__products {
+    margin-bottom: 40px;
+  }
+
+  .page__objects {
+    margin-bottom: 40px;
+  }
+
+  .page__advantages {
+    margin-bottom: 40px;
+  }
+
+  .page__about {
+    margin-bottom: 40px;
+  }
+
+  .page__articles {
+    margin-bottom: 40px;
+  }
+
+  .page__feedback {
+    margin-bottom: 40px;
   }
 
   .header-top__button {
@@ -6645,6 +6643,7 @@ h3 {
 
   .advice__btn {
     width: 100%;
+    padding: 13px 15px;
   }
 
   .breadcrumbs {
@@ -6709,10 +6708,6 @@ h3 {
 @media (max-width: 575px) {
   .intro__btn {
     padding: 0 20px;
-  }
-
-  .advice__btn {
-    padding: 13px 15px;
   }
 }
 

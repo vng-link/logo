@@ -36,7 +36,7 @@
     top: -187px;
     width: 666px;
     height: 311px;
-    @include vp-1919 {
+    @media (max-width: 1479px) {
       left: 500px;
       top: -138px;
       width: 505px;
@@ -80,8 +80,6 @@
     }
     @media (max-width: 615px) {
       width: 100%;
-    }
-    @include vp-575 {
       padding: 13px 15px;
     }
   }
