@@ -41,15 +41,37 @@ mixin articles()
 
   section.page__articles.articles
     .container
-      .articles__header
-        h1.articles__title Статьи
-        a.btn.btn--white(href="#", aria-label="Все статьи") Все статьи
+      if (singleTitle)
+          h1.articles__title Статьи
+      else
+          .articles__header
+            h1.articles__title Все статьи
+            a.btn.btn--white(href="#", aria-label="Все объекты") Все статьи
       .articles__wrapper
         each item in articleItems
             .articles__item
               +article(item)
-
-
+      if (hasPagination)
+              .articles__pagination.pagination
+                .pagination__button.pagination__button--start
+                .pagination__button.pagination__button--prev
+                ul.pagination__list.list-reset
+                  li.pagination__item.is-active
+                    a.pagination__link 1
+                  li.pagination__item
+                    a.pagination__link 2
+                  li.pagination__item
+                    a.pagination__link 3
+                  li.pagination__item
+                    a.pagination__link 4
+                  li.pagination__item
+                    a.pagination__link 5
+                  li.pagination__item
+                    a.pagination__link ...
+                  li.pagination__item
+                    a.pagination__link 46
+                .pagination__button.pagination__button--next
+                .pagination__button.pagination__button--end
 
 
 
