@@ -5526,6 +5526,10 @@ h3 {
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
   margin-bottom: 50px;
 }
 
@@ -6048,6 +6052,10 @@ h3 {
   .gallery__image {
     height: 139px;
   }
+
+  .contacts__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -6210,6 +6218,14 @@ h3 {
 
   .gallery__image {
     height: 107px;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__label {
+    font-size: 16px;
   }
 }
 

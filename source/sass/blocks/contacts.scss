@@ -9,7 +9,15 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
     margin-bottom: 50px;
+    @include vp-1199 {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 807px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__column {
     border-left: 1px solid #eef1f7;
@@ -32,6 +40,9 @@
     line-height: 140%;
     color: #000;
     margin-bottom: 20px;
+    @media (max-width: 807px) {
+      font-size: 16px;
+    }
   }
   &__phone-wrapper {
     display: flex;
