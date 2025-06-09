@@ -1,15 +1,13 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "Контакты"
+  - const title = "Статьи"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
   - const hasFooter = true
   - const footerMods = ""
   - const currentUrl = "objects.html"
-  - const singleTitle = true
-  - const hasPagination = true
   -
     const breadcrumbs = [
       {
@@ -27,6 +25,6 @@ block variables
 block main
   main.page
     +breadcrumbs(breadcrumbs)
-    +articles()
+    +articles-all()
     +feedback()
 block modals

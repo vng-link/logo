@@ -1,35 +1,45 @@
 @use "../mixins" as *;
 @use "../variables" as *;
 
-.articles {
+.articles-all {
+
     h1 {
-      font-size: 36px;
-      margin: 0 0 0 0;
+      margin: 0 0 60px;
       @include vp-1199 {
-        font-size: 26px;
-      }
-      @media (max-width: 807px) {
-        font-size: 24px;
+        margin: 0 0 30px;
       }
     }
+
     &__wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       row-gap: 30px;
       column-gap: 30px;
+
+      @media (max-width: 1479px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
       @include vp-1199 {
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
         row-gap: 20px;
       }
+
       @media (max-width: 615px) {
         grid-template-columns: 1fr;
       }
     }
-    &__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+
+  &__pagination {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @include vp-1199 {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 615px) {
       margin-bottom: 30px;
     }
+  }
+
 }
