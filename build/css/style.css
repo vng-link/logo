@@ -5747,8 +5747,8 @@ h3 {
     row-gap: 20px;
   }
 
-  .history__video {
-    width: 520px;
+  .gallery__image {
+    height: 211px;
   }
 }
 
@@ -6041,11 +6041,12 @@ h3 {
   .history__video {
     width: unset;
     float: unset;
+    height: 332px;
     margin: 0 0 30px 0;
   }
 
-  .gallery__wrapper {
-    grid-template-columns: 1fr 1fr;
+  .gallery__image {
+    height: 139px;
   }
 }
 
@@ -6194,6 +6195,21 @@ h3 {
 
   .advice__image {
     z-index: -1;
+  }
+
+  .history__video {
+    height: 254px;
+  }
+
+  .gallery__wrapper {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .gallery__image {
+    height: 107px;
   }
 }
 
@@ -6403,8 +6419,12 @@ h3 {
     align-items: flex-start;
   }
 
+  .history__video {
+    height: 156px;
+  }
+
   .gallery__wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

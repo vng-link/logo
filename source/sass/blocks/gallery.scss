@@ -8,11 +8,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
-    @include vp-1199 {
-      grid-template-columns: 1fr 1fr;
+    @media (max-width: 807px) {
+      column-gap: 20px;
+      row-gap: 20px;
     }
     @media (max-width: 615px) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
   &__item {
@@ -28,6 +29,15 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    @media (max-width: 1479px) {
+      height: 211px;
+    }
+    @include vp-1199 {
+      height: 139px;
+    }
+    @media (max-width: 807px) {
+      height: 107px;
+    }
     img {
       position: absolute;
       left: 0;
