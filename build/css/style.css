@@ -4728,10 +4728,6 @@ h3 {
 }
 
 .objects h1 {
-  margin: 0 0 60px;
-}
-
-.objects__header h1 {
   font-size: 36px;
   margin: 0 0 0 0;
 }
@@ -4764,6 +4760,24 @@ h3 {
 }
 
 .objects__pagination {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.objects-all h1 {
+  margin: 0 0 60px;
+}
+
+.objects-all__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.objects-all__pagination {
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -6079,14 +6093,26 @@ h3 {
   }
 
   .objects h1 {
-    margin: 0 0 30px;
-  }
-
-  .objects__header h1 {
     font-size: 26px;
   }
 
   .objects__pagination {
+    margin-bottom: 40px;
+  }
+
+  .objects-all h1 {
+    margin: 0 0 30px;
+  }
+
+  .objects-all__wrapper {
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .objects-all__pagination {
     margin-bottom: 40px;
   }
 
@@ -6347,7 +6373,7 @@ h3 {
     width: 100%;
   }
 
-  .objects__header h1 {
+  .objects h1 {
     font-size: 24px;
   }
 
@@ -6575,6 +6601,14 @@ h3 {
   }
 
   .objects__pagination {
+    margin-bottom: 30px;
+  }
+
+  .objects-all__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .objects-all__pagination {
     margin-bottom: 30px;
   }
 
