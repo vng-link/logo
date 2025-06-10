@@ -16,10 +16,6 @@
       row-gap: 30px;
       column-gap: 30px;
 
-      @media (max-width: 1479px) {
-        grid-template-columns: 1fr 1fr;
-      }
-
       @include vp-1199 {
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;

@@ -4,6 +4,7 @@
 .article {
   display: flex;
   flex-direction: column;
+  height: 100%;
   &__image {
     height: 280px;
     display: block;
@@ -27,6 +28,9 @@
     @include hover-focus {
       opacity: 0.8;
     }
+  }
+  &__text {
+    flex-grow: 1;
   }
   &__btn {
     margin-top: 20px;

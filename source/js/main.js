@@ -61,15 +61,14 @@ window.addEventListener('DOMContentLoaded', () => {
 // используйте .closest(el)
 
 
-const videoFile = $('#video-story').get(0);
-const videoBtn = $('.history__btn-play');
-const videoOverlay = $('.history__overlay')
+const videoFile = document.querySelector('#video-story');
+const videoBtn = document.querySelector('.history__btn-play');
+const videoOverlay = document.querySelector('.history__overlay');
 
-
-videoBtn.click(function () {
+videoBtn.addEventListener('click', function() {
   if(videoFile.paused) {
     videoFile.play()
-    videoBtn.css({display:"none"})
-    videoOverlay.css({display:"none"})
+    videoBtn.style.display = 'none';
+    videoOverlay.style.display = 'none';
   }
 });
