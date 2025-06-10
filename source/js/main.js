@@ -8,6 +8,7 @@ import {initPhoneValidation} from './modules/init-phone-validation';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initHeaderAccordion} from "./modules/header-accordion/init-header-accordion";
 import {initFancybox} from "./modules/fancybox/init-fancybox";
+import {initObjectSlider} from './modules/sliders/init-object-slider.js';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initCustomSelect();
     initPhoneMask();
     initPhoneValidation();
+    initObjectSlider();
   });
 });
 
@@ -65,10 +67,13 @@ const videoFile = document.querySelector('#video-story');
 const videoBtn = document.querySelector('.history__btn-play');
 const videoOverlay = document.querySelector('.history__overlay');
 
-videoBtn.addEventListener('click', function() {
-  if(videoFile.paused) {
-    videoFile.play()
-    videoBtn.style.display = 'none';
-    videoOverlay.style.display = 'none';
-  }
-});
+if (videoBtn) {
+  videoBtn.addEventListener('click', function() {
+    if(videoFile.paused) {
+      videoFile.play()
+      videoBtn.style.display = 'none';
+      videoOverlay.style.display = 'none';
+    }
+  });
+
+}

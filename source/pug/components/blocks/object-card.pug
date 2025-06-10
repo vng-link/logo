@@ -1,0 +1,34 @@
+mixin object-card()
+  section.object-card
+    .container
+      h1.object-card__title Жилой комплекс «Лесные Поляны» в Московской области
+      .object-card__wrapper
+        .object-card__sliders
+          .object-card__slider
+            .swiper.object-card__slider-body(data-slider="object-slider")
+              .swiper-wrapper
+                .object-card__slider-item.swiper-slide
+                  .object-card__slider-image
+                    +img("content/sliders", "1", "png", "", "", "")
+                .object-card__slider-item.swiper-slide
+                  .object-card__slider-image
+                    +img("content/sliders", "2", "png", "", "", "")
+                .object-card__slider-item.swiper-slide
+                  .object-card__slider-image
+                    +img("content/sliders", "3", "png", "", "", "")
+          .object-card__sub-slider
+            .object-card__button.object-card__button--top
+            .swiper.object-card__sub-slider-body(data-slider="object-sub-slider")
+              .swiper-wrapper
+                 .object-card__sub-slider-item.swiper-slide
+                   .object-card__sub-slider-image
+                       +img("content/sliders", "1", "png", "", "", "")
+                 .object-card__sub-slider-item.swiper-slide
+                   .object-card__sub-slider-image
+                       +img("content/sliders", "2", "png", "", "", "")
+                 .object-card__sub-slider-item.swiper-slide
+                   .object-card__sub-slider-image
+                       +img("content/sliders", "3", "png", "", "", "")
+            .object-card__button.object-card__button--bottom
+        .object-card__description Описание
+

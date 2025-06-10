@@ -16,6 +16,11 @@ block variables
         title: "Главная"
       },
       {
+        isLink: true,
+        href: "#",
+        title: "Объекты"
+      },
+      {
         isLink: false,
         href: "#",
         title: "Жилой комплекс «Лесные Поляны» в Московской области"
@@ -25,6 +30,6 @@ block variables
 block main
   main.page
     +breadcrumbs(breadcrumbs)
-    +object()
+    +object-card()
     +feedback()
 block modals
