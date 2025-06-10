@@ -139,6 +139,9 @@
       @media (max-width: 615px) {
         margin-bottom: unset;
         margin-right: 10px;
+        &::after {
+          transform: rotate(-90deg);
+        }
       }
     }
     &--bottom {
@@ -148,6 +151,9 @@
       @media (max-width: 615px) {
         margin-bottom: unset;
         margin-left: 10px;
+        &::after {
+          transform: rotate(-90deg);
+        }
       }
     }
   }
