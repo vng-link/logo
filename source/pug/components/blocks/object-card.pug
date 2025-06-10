@@ -17,7 +17,7 @@ mixin object-card()
                   .object-card__slider-image
                     +img("content/sliders", "3", "png", "", "", "")
           .object-card__sub-slider
-            .object-card__button.object-card__button--top
+            .object-card__button.object-card__button--top(data-slider="object-slider-button-prev")
             .swiper.object-card__sub-slider-body(data-slider="object-sub-slider")
               .swiper-wrapper
                  .object-card__sub-slider-item.swiper-slide
@@ -29,6 +29,6 @@ mixin object-card()
                  .object-card__sub-slider-item.swiper-slide
                    .object-card__sub-slider-image
                        +img("content/sliders", "3", "png", "", "", "")
-            .object-card__button.object-card__button--bottom
+            .object-card__button.object-card__button--bottom(data-slider="object-slider-button-next")
         .object-card__description Описание
 
