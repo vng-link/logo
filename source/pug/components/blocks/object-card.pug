@@ -2,6 +2,7 @@ mixin object-card()
   section.object-card
     .container
       h1.object-card__title Жилой комплекс «Лесные Поляны» в Московской области
+      h2 Общая информация
       .object-card__wrapper
         .object-card__sliders
           .object-card__slider
@@ -30,5 +31,38 @@ mixin object-card()
                    .object-card__sub-slider-image
                        +img("content/sliders", "3", "png", "", "", "")
             .object-card__button.object-card__button--bottom(data-slider="object-slider-button-next")
-        .object-card__description Описание
-
+        .object-card__description
+          ul.object-card__description-list.list-reset
+            li.object-card__description-item
+              span.object-card__description-label Название:
+              span.object-card__description-value ЖК «Лесные Поляны»
+            li.object-card__description-item
+              span.object-card__description-label Местоположение:
+              span.object-card__description-value Химки, Московская область
+            li.object-card__description-item
+              span.object-card__description-label Застройщик:
+              span.object-card__description-value ООО «СтройИнвестПроект»
+            li.object-card__description-item
+              span.object-card__description-label Год строительства:
+              span.object-card__description-value 2023–2025
+            li.object-card__description-item
+              span.object-card__description-label Этажность:
+              span.object-card__description-value 12-этажные монолитно-каркасные дома с подземным паркингом
+            li.object-card__description-item
+              span.object-card__description-label Особенности проекта:
+              span.object-card__description-value Энергоэффективные технологии, благоустроенная территория, развитая инфраструктура.
+      h3 Применение железобетонных изделий нашего завода
+      h4 1. Сваи железобетонные (серия 1.011.1-10)
+      ul
+        li Использованы для усиления фундамента из-за слабых грунтов (торфянистых прослоек).
+        li Глубина погружения: 8–12 м.
+        li Обеспечили устойчивость зданий и предотвратили неравномерную усадку.
+      h4 2. Плиты дорожные (ПДН, ПАГ)
+      ul
+        li Уложены при обустройстве внутриквартальных проездов и подъездов к домам.
+        li Выдержали высокие нагрузки от спецтехники во время строительства.
+        li Обеспечили долговечность покрытия (расчетный срок службы – 30 лет).
+      h4 3. Плиты перекрытия пустотелые (ПК 60-15-8, ПБ 72-12-8)
+      ul
+        li Применены в межэтажных перекрытиях, что ускорило монтаж и снизило нагрузку на несущие конструкции.
+        li Хорошая звуко- и теплоизоляция благодаря пустотной структуре.

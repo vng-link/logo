@@ -4176,20 +4176,47 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   font-family: Montserrat;
   margin: 0 0 30px 0;
-  line-height: 120%;
+  line-height: 110%;
 }
 
 h3 {
   font-family: Montserrat;
   font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  margin: 0 0 20px 0;
+}
+
+h4 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+  margin: 0 0 20px 0;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-weight: 700;
   font-size: 20px;
+  line-height: 140%;
+  color: #000;
+}
+
+h6 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 150%;
   color: #000;
-  margin: 0 0 20px 0;
+}
+
+ul {
+  line-height: 150%;
 }
 
 .header-top {
@@ -5737,6 +5764,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .object-card__sliders {
@@ -5769,12 +5798,6 @@ h3 {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.object-card__description {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .object-card__slider-body {
@@ -5853,6 +5876,16 @@ h3 {
 
 .object-card__button--bottom:after {
   content: url("../../img/content/sliders/button-bottom.svg");
+}
+
+.object-card__description-item {
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+
+.object-card__description-label {
+  font-weight: 700;
+  margin-right: 10px;
 }
 
 .swiper-slide-thumb-active .object-card__sub-slider-image::after {
@@ -6083,6 +6116,26 @@ h3 {
 
   h1 {
     font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
   }
 
   .main-nav__btn {
@@ -6588,6 +6641,7 @@ h3 {
   .object-card__sliders {
     -ms-flex-preferred-size: 576px;
     flex-basis: 576px;
+    margin-bottom: 30px;
   }
 
   .object-card__slider {
@@ -6722,6 +6776,30 @@ h3 {
 
   .page__feedback {
     margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
   }
 
   .header-top__button {
