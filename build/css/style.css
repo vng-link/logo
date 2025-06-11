@@ -6117,6 +6117,64 @@ ul {
   clear: both;
 }
 
+.not-found {
+  padding-bottom: 60px;
+}
+
+.not-found__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.not-found__text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 250px;
+  line-height: 120%;
+  text-align: center;
+  color: #003865;
+  position: relative;
+}
+
+.not-found__text:after {
+  content: url("../../img/content/not-found/not-found-icon.svg");
+  width: 68px;
+  height: 176px;
+  position: absolute;
+  left: 183px;
+  top: -2px;
+}
+
+.not-found__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  color: #272a33;
+  margin-bottom: 10px;
+}
+
+.not-found__description {
+  margin-bottom: 20px;
+}
+
+.not-found__image {
+  position: absolute;
+  left: 137px;
+  top: 78px;
+  width: 289px;
+  height: 156px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
