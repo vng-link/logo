@@ -6001,6 +6001,122 @@ ul {
   opacity: 1;
 }
 
+.article-card {
+  padding-bottom: 80px;
+  /*
+  ul + h2 {
+    margin: 50px 0 30px 0;
+  }
+  */
+}
+
+.article-card h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  margin: 50px 0 30px 0;
+}
+
+.article-card__title {
+  margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.article-card h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000;
+  margin: 0 0 20px 0;
+}
+
+.article-card h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.article-card ul {
+  margin: 0 0 30px 0;
+  line-height: 150%;
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.article-card ul li {
+  margin-bottom: 10px;
+}
+
+.article-card ul li:last-child {
+  margin-bottom: 0;
+}
+
+.article-card ul ul {
+  padding-top: 10px;
+}
+
+.article-card ul ul {
+  margin: 0 0 0 0;
+  padding-left: 20px;
+}
+
+.article-card ol {
+  margin: 0 0 30px 0;
+  padding-left: 20px;
+}
+
+.article-card ol li {
+  margin-bottom: 10px;
+}
+
+.article-card ol li:last-child {
+  margin-bottom: 0;
+}
+
+.article-card ol li::marker {
+  color: black;
+}
+
+.article-card p {
+  line-height: 150%;
+  margin: 0 0 30px;
+}
+
+.article-card__image {
+  width: 510px;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.article-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.article-card__image--right {
+  float: right;
+  margin-left: 30px;
+}
+
+.article-card__image--left {
+  float: left;
+  margin-right: 30px;
+}
+
+.clear-fix {
+  clear: both;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
@@ -6155,6 +6271,10 @@ ul {
   }
 
   .object-card {
+    padding-bottom: 60px;
+  }
+
+  .article-card {
     padding-bottom: 60px;
   }
 }
@@ -6552,6 +6672,25 @@ ul {
   .object-card__wrapper {
     display: block;
   }
+
+  .article-card {
+    padding-bottom: 40px;
+  }
+
+  .article-card h2 {
+    margin: 0 0 30px 0;
+    font-size: 26px;
+  }
+
+  .article-card__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
+  }
+
+  .article-card__image {
+    width: 412px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -6774,6 +6913,21 @@ ul {
 
   .object-card__sub-slider-image {
     height: 51px;
+  }
+
+  .article-card__image {
+    width: 100%;
+    height: 310px;
+  }
+
+  .article-card__image--right {
+    float: unset;
+    margin-left: unset;
+  }
+
+  .article-card__image--left {
+    float: unset;
+    margin-left: unset;
   }
 }
 
@@ -7137,6 +7291,22 @@ ul {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
+  }
+
+  .article-card {
+    padding-bottom: 30px;
+  }
+
+  .article-card h2 {
+    font-size: 24px;
+  }
+
+  .article-card__title {
+    font-size: 28px;
+  }
+
+  .article-card__image {
+    height: 219px;
   }
 }
 
