@@ -4572,8 +4572,11 @@ ul {
   display: contents;
 }
 
-.categories h1 {
-  margin: 0 0 60px;
+.categories__title {
+  margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .categories__wrapper {
@@ -4827,8 +4830,11 @@ ul {
   margin-top: 30px;
 }
 
-.objects-all h1 {
-  margin: 0 0 60px;
+.objects-all__title {
+  margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .objects-all__wrapper {
@@ -5053,8 +5059,11 @@ ul {
   margin-bottom: 30px;
 }
 
-.articles-all h1 {
-  margin: 0 0 60px;
+.articles-all__title {
+  margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .articles-all__wrapper {
@@ -5342,8 +5351,11 @@ ul {
   padding-bottom: 60px;
 }
 
-.price h1 {
-  margin: 0 0 60px;
+.price__title {
+  margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .price__sub-category-title {
@@ -5507,8 +5519,36 @@ ul {
   margin: 0 0 30px 0;
 }
 
-.history h1 {
+.history h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000;
+  margin: 0 0 20px 0;
+}
+
+.history h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.history__title {
   margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.history__sub-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0 0 30px 0;
 }
 
 .history ol {
@@ -5619,8 +5659,11 @@ ul {
   padding-bottom: 80px;
 }
 
-.contacts h1 {
-  margin: 0 0 60px;
+.contacts__title {
+  margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .contacts__wrapper {
@@ -5792,6 +5835,24 @@ ul {
 
 .object-card {
   padding-bottom: 80px;
+}
+
+.object-card h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000;
+  margin: 0 0 20px 0;
+}
+
+.object-card h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin: 0 0 10px 0;
 }
 
 .object-card__title {
@@ -6092,6 +6153,10 @@ ul {
   .gallery__image {
     height: 211px;
   }
+
+  .object-card {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -6270,8 +6335,9 @@ ul {
     height: auto;
   }
 
-  .categories h1 {
-    margin: 0 0 30px;
+  .categories__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
   }
 
   .categories__wrapper {
@@ -6310,8 +6376,9 @@ ul {
     row-gap: 20px;
   }
 
-  .objects-all h1 {
-    margin: 0 0 30px;
+  .objects-all__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
   }
 
   .objects-all__wrapper {
@@ -6370,8 +6437,9 @@ ul {
     row-gap: 20px;
   }
 
-  .articles-all h1 {
-    margin: 0 0 30px;
+  .articles-all__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
   }
 
   .articles-all__wrapper {
@@ -6424,12 +6492,19 @@ ul {
     padding-bottom: 40px;
   }
 
-  .price h1 {
-    margin: 0 0 30px;
+  .price__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
   }
 
-  .history h1 {
-    margin: 0 0 30px;
+  .history__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
+  }
+
+  .history__sub-title {
+    margin: 0 0 30px 0;
+    font-size: 26px;
   }
 
   .history__video {
@@ -6451,12 +6526,17 @@ ul {
     padding-bottom: 40px;
   }
 
-  .contacts h1 {
-    margin: 0 0 30px;
+  .contacts__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
   }
 
   .contacts__wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .object-card {
+    padding-bottom: 40px;
   }
 
   .object-card__title {
@@ -6828,6 +6908,10 @@ ul {
     margin-top: 20px;
   }
 
+  .categories__title {
+    font-size: 28px;
+  }
+
   .products__item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -6854,6 +6938,10 @@ ul {
 
   .objects__wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .objects-all__title {
+    font-size: 28px;
   }
 
   .objects-all__wrapper {
@@ -6884,6 +6972,10 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .articles-all__title {
+    font-size: 28px;
+  }
+
   .articles-all__wrapper {
     grid-template-columns: 1fr;
   }
@@ -6910,6 +7002,10 @@ ul {
     padding-bottom: 30px;
   }
 
+  .price__title {
+    font-size: 28px;
+  }
+
   .price__sub-category-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6918,6 +7014,14 @@ ul {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .history__title {
+    font-size: 28px;
+  }
+
+  .history__sub-title {
+    font-size: 24px;
   }
 
   .history__video {
@@ -6934,6 +7038,10 @@ ul {
 
   .contacts {
     padding-bottom: 30px;
+  }
+
+  .contacts__title {
+    font-size: 28px;
   }
 
   .pagination {
@@ -6958,6 +7066,10 @@ ul {
 
   .pagination__item:nth-child(5) {
     display: none;
+  }
+
+  .object-card {
+    padding-bottom: 30px;
   }
 
   .object-card__title {

@@ -3,6 +3,33 @@
 
 .object-card {
   padding-bottom: 80px;
+  @media (max-width: 1479px) {
+    padding-bottom: 60px;
+  }
+  @include vp-1199 {
+    padding-bottom: 40px;
+  }
+  @media (max-width: 615px) {
+    padding-bottom: 30px;
+  }
+
+  h3 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000;
+    margin: 0 0 20px 0;
+  }
+
+  h4 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    margin: 0 0 10px 0;
+  }
 
   &__title {
     margin: 0 0 60px 0;
