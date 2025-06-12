@@ -4208,6 +4208,10 @@ button,
   margin-bottom: 80px;
 }
 
+ul {
+  line-height: 150%;
+}
+
 .header-top {
   background-color: #003865;
   padding: 10px 0;
@@ -5749,13 +5753,6 @@ button,
   margin: 0 0 10px 0;
 }
 
-.object-card__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
-}
-
 .object-card__sub-title {
   font-family: "Montserrat";
   font-weight: 700;
@@ -5908,13 +5905,6 @@ button,
   font-weight: 700;
   font-size: 30px;
   margin: 50px 0 30px 0;
-}
-
-.article-card__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
 }
 
 .article-card h3 {
@@ -6591,11 +6581,6 @@ button,
     grid-template-columns: 1fr 1fr;
   }
 
-  .object-card__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
-  }
-
   .object-card__sub-title {
     margin: 0 0 30px 0;
     font-size: 26px;
@@ -6608,11 +6593,6 @@ button,
   .article-card h2 {
     margin: 0 0 30px 0;
     font-size: 26px;
-  }
-
-  .article-card__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
   }
 
   .article-card__image {
@@ -7157,10 +7137,6 @@ button,
     display: none;
   }
 
-  .object-card__title {
-    font-size: 28px;
-  }
-
   .object-card__sub-title {
     font-size: 24px;
   }
@@ -7226,10 +7202,6 @@ button,
 
   .article-card h2 {
     font-size: 24px;
-  }
-
-  .article-card__title {
-    font-size: 28px;
   }
 
   .article-card__image {
