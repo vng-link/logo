@@ -5060,23 +5060,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.articles-all__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
-}
-
-.articles-all__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-}
-
-.articles-all__pagination {
+.articles__pagination {
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -6589,20 +6573,7 @@ ul {
     row-gap: 20px;
   }
 
-  .articles-all__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
-  }
-
-  .articles-all__wrapper {
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-    row-gap: 20px;
-  }
-
-  .articles-all__pagination {
+  .articles__pagination {
     margin-bottom: 40px;
   }
 
@@ -7144,15 +7115,7 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .articles-all__title {
-    font-size: 28px;
-  }
-
-  .articles-all__wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .articles-all__pagination {
+  .articles__pagination {
     margin-bottom: 30px;
   }
 

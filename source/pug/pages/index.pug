@@ -11,6 +11,48 @@ block variables
   - const currentUrl = "index.html"
   - const objectsHasHeader = true
   - const objectsHasPagination = false
+  - const articlesHasHeader = true
+  - const articlesHasPagination= false
+
+  -
+    const articleItems = [
+      {
+        href: "#",
+        title: "Технология производства железобетона: от смеси до готового изделия",
+        text: "Описание процесса изготовления ЖБИ: состав бетона, армирование, формовка, сушка и контроль качества.",
+        image: {
+          src: "article-1",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Долговечность железобетона: как продлить срок службы конструкций",
+        text: "Факторы, влияющие на износ ЖБИ (влажность, перепады температур, нагрузки), и способы защиты.",
+        image: {
+          src: "article-2",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Частые ошибки при монтаже ЖБИ и как их избежать",
+        text: "Разбор типичных проблем при установке железобетонных изделий и советы по правильному монтажу.",
+        image: {
+          src: "article-3",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+    ]
 
 block main
   main.page
@@ -21,7 +63,7 @@ block main
     +advice()
     +advantages()
     +about()
-    +articles()
+    +articles(articleItems)
     +feedback()
     +footer()
 block modals
