@@ -2,14 +2,6 @@
 @use "../variables" as *;
 
 .price {
-  padding-bottom: 60px;
-  @include vp-1199 {
-    padding-bottom: 40px;
-  }
-  @media (max-width: 615px) {
-    padding-bottom: 30px;
-  }
-
   &__sub-category-title {
     font-family: "Montserrat";
     font-weight: 700;

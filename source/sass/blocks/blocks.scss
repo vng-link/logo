@@ -37,7 +37,7 @@
     }
   }
   &__objects {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
@@ -96,4 +96,28 @@
       margin-bottom: 50px;
     }
   }
+
+  &__price {
+    margin-bottom: 60px;
+    @include vp-1199 {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 615px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__history {
+      margin-bottom: 80px;
+      @media (max-width: 1479px) {
+        margin-bottom: 60px;
+      }
+      @include vp-1199 {
+        margin-bottom: 40px;
+      }
+      @media (max-width: 615px) {
+        margin-bottom: 30px;
+      }
+    }
+
 }
