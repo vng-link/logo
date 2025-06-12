@@ -109,7 +109,7 @@ mixin products()
       }
     ]
 
-  section.page__products.products
+  section(class=productsHasModifier ? 'page__products page__products--another products' : 'page__products products' )
     .container
       h2.products__title Часто заказывают
       .products__wrapper
