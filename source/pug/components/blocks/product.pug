@@ -1,10 +1,10 @@
 mixin product(data)
-  .product
+  article.product
     .product__content
       a.product__image(href=data.href)
         +img("content/products", data.image.src, data.image.format, data.image.width, data.image.height, data.image.alt)
       .product__body
-        a.product__title(href=data.href)!=data.title
+        h3.product__title(href=data.href)!=data.title
         .product__article
           span.product__article-label Артикул:
           span.product__article-value!=data.article.number
@@ -27,3 +27,4 @@ mixin product(data)
         span!=data.price
         =" ₽/шт."
       +btn({type: "button", text: "Оформить заявку"}).btn.product__btn
+    a.product__link(href=data.href)

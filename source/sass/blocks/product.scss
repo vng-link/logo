@@ -9,6 +9,7 @@
   color: #000;
   gap: 20px;
   height: 100%;
+  position: relative;
   @media (max-width: 807px) {
     display: flex;
     flex-direction: column;
@@ -77,8 +78,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
-    margin-bottom: 10px;
-    display: block;
+    margin: 0 0 10px 0;
     @include vp-1199 {
       font-size: 16px;
     }
@@ -121,5 +121,11 @@
       padding: 16px 20px;
     }
   }
+  &__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
-
