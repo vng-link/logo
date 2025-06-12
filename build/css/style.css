@@ -6996,7 +6996,7 @@ ul {
   }
 
   .intro__content {
-    padding: 30px;
+    padding: 20px;
   }
 
   .intro__btn {
@@ -7008,39 +7008,39 @@ ul {
   }
 
   .page__intro {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__categories {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__products {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__objects {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__advice {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__advantages {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__about {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__articles {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .page__feedback {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .header-top__button {
@@ -7089,6 +7089,7 @@ ul {
 
   .objects__wrapper {
     grid-template-columns: 1fr;
+    row-gap: 40px;
   }
 
   .objects__pagination {
@@ -7112,6 +7113,7 @@ ul {
   }
 
   .articles__wrapper {
+    row-gap: 40px;
     grid-template-columns: 1fr;
   }
 

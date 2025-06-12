@@ -14,6 +14,7 @@
     }
     @media (max-width: 615px) {
       grid-template-columns: 1fr;
+      row-gap: 40px;
     }
   }
   &__header {
