@@ -2,16 +2,6 @@
 @use "../variables" as *;
 
 .objects {
-  h1 {
-    font-size: 36px;
-    margin: 0 0 0 0;
-    @include vp-1199 {
-      font-size: 26px;
-    }
-    @media (max-width: 807px) {
-      font-size: 24px;
-    }
-  }
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -31,6 +21,16 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 36px;
+    margin: 0 0 0 0;
+    @include vp-1199 {
+      font-size: 26px;
+    }
+    @media (max-width: 807px) {
+      font-size: 24px;
+    }
   }
   &__advice {
     margin-top: 30px;

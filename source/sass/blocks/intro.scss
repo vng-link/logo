@@ -34,7 +34,7 @@
     font-weight: 700;
     font-size: 40px;
     color: $color-default-white;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     @include vp-1199 {
       font-size: 30px;
     }

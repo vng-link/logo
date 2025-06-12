@@ -3550,7 +3550,7 @@ button,
   font-weight: 700;
   font-size: 40px;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 .intro__text {
@@ -4672,8 +4672,9 @@ ul {
   flex-shrink: 0;
 }
 
-.products h1 {
+.products__title {
   font-size: 36px;
+  margin: 0 0 30px 0;
 }
 
 .products__item {
@@ -4796,11 +4797,6 @@ ul {
   font-size: 25px;
 }
 
-.objects h1 {
-  font-size: 36px;
-  margin: 0 0 0 0;
-}
-
 .objects__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -4821,6 +4817,11 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+
+.objects__title {
+  font-size: 36px;
+  margin: 0 0 0 0;
 }
 
 .objects__advice {
@@ -4957,8 +4958,8 @@ ul {
 }
 
 .about__title {
-  margin-bottom: 20px;
   font-size: 36px;
+  margin: 0 0 30px 0;
 }
 
 .about__text {
@@ -5210,6 +5211,7 @@ ul {
   font-size: 25px;
   line-height: 130%;
   color: #000;
+  margin: 0 0 20px 0;
 }
 
 .feedback__text {
@@ -6496,16 +6498,12 @@ ul {
     font-size: 16px;
   }
 
-  .products h1 {
+  .products__title {
     font-size: 26px;
   }
 
   .product__title {
     font-size: 16px;
-  }
-
-  .objects h1 {
-    font-size: 26px;
   }
 
   .objects__wrapper {
@@ -6514,6 +6512,10 @@ ul {
     -moz-column-gap: 20px;
     column-gap: 20px;
     row-gap: 20px;
+  }
+
+  .objects__title {
+    font-size: 26px;
   }
 
   .objects__pagination {
@@ -6542,6 +6544,10 @@ ul {
   .advantage__phone {
     display: block;
     margin-bottom: 10px;
+  }
+
+  .about__title {
+    font-size: 26px;
   }
 
   .about__wrapper {
@@ -6759,7 +6765,7 @@ ul {
     content: none;
   }
 
-  .products h1 {
+  .products__title {
     font-size: 24px;
   }
 
@@ -6813,12 +6819,16 @@ ul {
     width: 100%;
   }
 
-  .objects h1 {
+  .objects__title {
     font-size: 24px;
   }
 
   .advantages__wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .about__title {
+    font-size: 24px;
   }
 
   .articles h1 {
