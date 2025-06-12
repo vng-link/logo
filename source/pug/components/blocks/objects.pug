@@ -224,7 +224,7 @@ mixin objects()
       },
     ]
 
-  section.page__objects.objects
+  section(class=objectsHasModifier ? 'page__objects page__objects--another objects' : 'page__objects objects' )
     .container
       if (objectsHasHeader)
         .objects__header

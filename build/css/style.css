@@ -4152,6 +4152,10 @@ button,
   margin-bottom: 60px;
 }
 
+.page__objects--another {
+  margin-bottom: 80px;
+}
+
 .page__advice {
   margin-bottom: 60px;
 }
@@ -4166,6 +4170,10 @@ button,
 
 .page__articles {
   margin-bottom: 60px;
+}
+
+.page__articles--another {
+  margin-bottom: 80px;
 }
 
 .page__feedback {
@@ -4849,7 +4857,6 @@ ul {
 
 .objects__pagination {
   margin-top: 50px;
-  margin-bottom: 80px;
 }
 
 .object {
@@ -5062,7 +5069,6 @@ ul {
 
 .articles__pagination {
   margin-top: 50px;
-  margin-bottom: 80px;
 }
 
 .article {
@@ -6281,6 +6287,14 @@ ul {
     max-width: 1200px;
   }
 
+  .page__objects--another {
+    margin-bottom: 60px;
+  }
+
+  .page__articles--another {
+    margin-bottom: 60px;
+  }
+
   .main-nav__link {
     padding: 5px 12px;
   }
@@ -6375,6 +6389,14 @@ ul {
 
   .intro__title {
     font-size: 30px;
+  }
+
+  .page__objects--another {
+    margin-bottom: 40px;
+  }
+
+  .page__articles--another {
+    margin-bottom: 40px;
   }
 
   .main-nav__btn {
@@ -6521,10 +6543,6 @@ ul {
     font-size: 26px;
   }
 
-  .objects__pagination {
-    margin-bottom: 40px;
-  }
-
   .object__title {
     font-size: 16px;
   }
@@ -6571,10 +6589,6 @@ ul {
     -moz-column-gap: 20px;
     column-gap: 20px;
     row-gap: 20px;
-  }
-
-  .articles__pagination {
-    margin-bottom: 40px;
   }
 
   .feedback__column {
@@ -7023,6 +7037,10 @@ ul {
     margin-bottom: 50px;
   }
 
+  .page__objects--another {
+    margin-bottom: 30px;
+  }
+
   .page__advice {
     margin-bottom: 50px;
   }
@@ -7037,6 +7055,10 @@ ul {
 
   .page__articles {
     margin-bottom: 50px;
+  }
+
+  .page__articles--another {
+    margin-bottom: 30px;
   }
 
   .page__feedback {
@@ -7093,7 +7115,7 @@ ul {
   }
 
   .objects__pagination {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .object__image {
@@ -7118,7 +7140,7 @@ ul {
   }
 
   .articles__pagination {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .feedback__form-footer {

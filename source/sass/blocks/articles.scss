@@ -35,12 +35,8 @@
     }
     &__pagination {
       margin-top: 50px;
-      margin-bottom: 80px;
-      @include vp-1199 {
-        margin-bottom: 40px;
-      }
       @media (max-width: 615px) {
-        margin-bottom: 30px;
+        margin-top: 30px;
       }
     }
 }
