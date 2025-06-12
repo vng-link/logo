@@ -4144,6 +4144,10 @@ button,
   margin-bottom: 60px;
 }
 
+.page__categories--another {
+  margin-bottom: 60px;
+}
+
 .page__products {
   margin-bottom: 60px;
 }
@@ -7027,6 +7031,10 @@ ul {
 
   .page__categories {
     margin-bottom: 50px;
+  }
+
+  .page__categories--another {
+    margin-bottom: 30px;
   }
 
   .page__products {

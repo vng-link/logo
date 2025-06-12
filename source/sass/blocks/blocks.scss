@@ -17,6 +17,12 @@
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
+    &--another {
+      margin-bottom: 60px;
+      @media (max-width: 615px) {
+        margin-bottom: 30px;
+      }
+    }
   }
   &__products {
     margin-bottom: 60px;

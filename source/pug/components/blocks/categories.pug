@@ -69,7 +69,7 @@ mixin categories()
       }
     ]
 
-  section.page__categories.categories
+  section(class=categoriesHasModifier ? 'page__categories page__categories--another categories' : 'page__categories categories' )
     .container
       .categories__wrapper
         each item in categoryItems
