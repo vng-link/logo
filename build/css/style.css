@@ -4935,7 +4935,7 @@ ul {
   font-family: "Montserrat";
   line-height: 140%;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .advantage__contacts {
@@ -5014,7 +5014,7 @@ ul {
   max-height: 370px;
 }
 
-.articles h1 {
+.articles__title {
   font-size: 36px;
   margin: 0 0 0 0;
 }
@@ -6558,7 +6558,7 @@ ul {
     margin-bottom: 30px;
   }
 
-  .articles h1 {
+  .articles__title {
     font-size: 26px;
   }
 
@@ -6831,7 +6831,7 @@ ul {
     font-size: 24px;
   }
 
-  .articles h1 {
+  .articles__title {
     font-size: 24px;
   }
 

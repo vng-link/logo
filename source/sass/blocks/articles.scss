@@ -2,7 +2,7 @@
 @use "../variables" as *;
 
 .articles {
-    h1 {
+    &__title {
       font-size: 36px;
       margin: 0 0 0 0;
       @include vp-1199 {
