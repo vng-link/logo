@@ -2,19 +2,6 @@
 @use "../variables" as *;
 
 .categories {
-  &__title {
-    margin: 0 0 60px 0;
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 40px;
-    @include vp-1199 {
-      margin: 0 0 30px 0;
-      font-size: 30px;
-    }
-    @media (max-width: 615px) {
-      font-size: 28px;
-    }
-  }
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

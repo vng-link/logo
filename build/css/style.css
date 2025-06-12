@@ -4152,6 +4152,10 @@ button,
   margin-bottom: 60px;
 }
 
+.page__advice {
+  margin-bottom: 60px;
+}
+
 .page__advantages {
   margin-bottom: 60px;
 }
@@ -4572,13 +4576,6 @@ ul {
   display: contents;
 }
 
-.categories__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
-}
-
 .categories__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -4830,23 +4827,7 @@ ul {
   margin-top: 30px;
 }
 
-.objects-all__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
-}
-
-.objects-all__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-}
-
-.objects-all__pagination {
+.objects__pagination {
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -5351,13 +5332,6 @@ ul {
   padding-bottom: 60px;
 }
 
-.price__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
-}
-
 .price__sub-category-title {
   font-family: "Montserrat";
   font-weight: 700;
@@ -5537,13 +5511,6 @@ ul {
   margin: 0 0 10px 0;
 }
 
-.history__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
-}
-
 .history__sub-title {
   font-family: "Montserrat";
   font-weight: 700;
@@ -5657,13 +5624,6 @@ ul {
 
 .contacts {
   padding-bottom: 80px;
-}
-
-.contacts__title {
-  margin: 0 0 60px 0;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 40px;
 }
 
 .contacts__wrapper {
@@ -6175,6 +6135,13 @@ ul {
   height: 156px;
 }
 
+.page-top__title {
+  margin: 0 0 60px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
@@ -6513,11 +6480,6 @@ ul {
     height: auto;
   }
 
-  .categories__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
-  }
-
   .categories__wrapper {
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 20px;
@@ -6554,20 +6516,7 @@ ul {
     row-gap: 20px;
   }
 
-  .objects-all__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
-  }
-
-  .objects-all__wrapper {
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-    row-gap: 20px;
-  }
-
-  .objects-all__pagination {
+  .objects__pagination {
     margin-bottom: 40px;
   }
 
@@ -6670,16 +6619,6 @@ ul {
     padding-bottom: 40px;
   }
 
-  .price__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
-  }
-
-  .history__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
-  }
-
   .history__sub-title {
     margin: 0 0 30px 0;
     font-size: 26px;
@@ -6702,11 +6641,6 @@ ul {
 
   .contacts {
     padding-bottom: 40px;
-  }
-
-  .contacts__title {
-    margin: 0 0 30px 0;
-    font-size: 30px;
   }
 
   .contacts__wrapper {
@@ -6748,6 +6682,11 @@ ul {
   .article-card__image {
     width: 412px;
     height: 250px;
+  }
+
+  .page-top__title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
   }
 }
 
@@ -7084,6 +7023,10 @@ ul {
     margin-bottom: 40px;
   }
 
+  .page__advice {
+    margin-bottom: 40px;
+  }
+
   .page__advantages {
     margin-bottom: 40px;
   }
@@ -7120,10 +7063,6 @@ ul {
     margin-top: 20px;
   }
 
-  .categories__title {
-    font-size: 28px;
-  }
-
   .products__item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -7152,15 +7091,7 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .objects-all__title {
-    font-size: 28px;
-  }
-
-  .objects-all__wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .objects-all__pagination {
+  .objects__pagination {
     margin-bottom: 30px;
   }
 
@@ -7214,10 +7145,6 @@ ul {
     padding-bottom: 30px;
   }
 
-  .price__title {
-    font-size: 28px;
-  }
-
   .price__sub-category-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7226,10 +7153,6 @@ ul {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-  }
-
-  .history__title {
-    font-size: 28px;
   }
 
   .history__sub-title {
@@ -7250,10 +7173,6 @@ ul {
 
   .contacts {
     padding-bottom: 30px;
-  }
-
-  .contacts__title {
-    font-size: 28px;
   }
 
   .pagination {
@@ -7365,6 +7284,10 @@ ul {
 
   .article-card__image {
     height: 219px;
+  }
+
+  .page-top__title {
+    font-size: 28px;
   }
 }
 

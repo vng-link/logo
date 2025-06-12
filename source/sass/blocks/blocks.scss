@@ -30,6 +30,12 @@
       margin-bottom: 40px;
     }
   }
+  &__advice {
+    margin-bottom: 60px;
+    @media (max-width: 615px) {
+      margin-bottom: 40px;
+    }
+  }
   &__advantages {
     margin-bottom: 60px;
     @media (max-width: 615px) {

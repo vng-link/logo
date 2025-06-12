@@ -43,7 +43,6 @@
 @use "blocks/products";
 @use "blocks/product";
 @use "blocks/objects";
-@use "blocks/objects-all";
 @use "blocks/object";
 @use "blocks/advantages";
 @use "blocks/advantage";
@@ -62,7 +61,7 @@
 @use "blocks/object-card";
 @use "blocks/article-card";
 @use "blocks/not-found";
-
+@use "blocks/page-top";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
