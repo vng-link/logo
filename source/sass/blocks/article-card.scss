@@ -2,18 +2,6 @@
 @use "../variables" as *;
 
 .article-card {
-
-  padding-bottom: 80px;
-  @media (max-width: 1479px) {
-    padding-bottom: 60px;
-  }
-  @include vp-1199 {
-    padding-bottom: 40px;
-  }
-  @media (max-width: 615px) {
-    padding-bottom: 30px;
-  }
-
   h2 {
     font-family: "Montserrat";
     font-weight: 700;

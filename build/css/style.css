@@ -4196,6 +4196,18 @@ button,
   margin-bottom: 80px;
 }
 
+.page__contacts {
+  margin-bottom: 80px;
+}
+
+.page__object-card {
+  margin-bottom: 80px;
+}
+
+.page__article-card {
+  margin-bottom: 80px;
+}
+
 .header-top {
   background-color: #003865;
   padding: 10px 0;
@@ -5552,10 +5564,6 @@ button,
   margin-top: 30px;
 }
 
-.contacts {
-  padding-bottom: 80px;
-}
-
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -5723,10 +5731,6 @@ button,
   color: #003865;
 }
 
-.object-card {
-  padding-bottom: 80px;
-}
-
 .object-card h3 {
   font-family: "Montserrat";
   font-weight: 700;
@@ -5892,7 +5896,6 @@ button,
 }
 
 .article-card {
-  padding-bottom: 80px;
   /*
   ul + h2 {
     margin: 50px 0 30px 0;
@@ -6218,6 +6221,18 @@ button,
     margin-bottom: 60px;
   }
 
+  .page__contacts {
+    margin-bottom: 60px;
+  }
+
+  .page__object-card {
+    margin-bottom: 60px;
+  }
+
+  .page__article-card {
+    margin-bottom: 60px;
+  }
+
   .main-nav__link {
     padding: 5px 12px;
   }
@@ -6231,14 +6246,6 @@ button,
 
   .gallery__image {
     height: 211px;
-  }
-
-  .object-card {
-    padding-bottom: 60px;
-  }
-
-  .article-card {
-    padding-bottom: 60px;
   }
 }
 
@@ -6323,6 +6330,18 @@ button,
   }
 
   .page__history {
+    margin-bottom: 40px;
+  }
+
+  .page__contacts {
+    margin-bottom: 40px;
+  }
+
+  .page__object-card {
+    margin-bottom: 40px;
+  }
+
+  .page__article-card {
     margin-bottom: 40px;
   }
 
@@ -6568,16 +6587,8 @@ button,
     height: 139px;
   }
 
-  .contacts {
-    padding-bottom: 40px;
-  }
-
   .contacts__wrapper {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .object-card {
-    padding-bottom: 40px;
   }
 
   .object-card__title {
@@ -6592,10 +6603,6 @@ button,
 
   .object-card__wrapper {
     display: block;
-  }
-
-  .article-card {
-    padding-bottom: 40px;
   }
 
   .article-card h2 {
@@ -7000,6 +7007,18 @@ button,
     margin-bottom: 30px;
   }
 
+  .page__contacts {
+    margin-bottom: 30px;
+  }
+
+  .page__object-card {
+    margin-bottom: 30px;
+  }
+
+  .page__article-card {
+    margin-bottom: 30px;
+  }
+
   .header-top__button {
     padding: 0;
     width: 40px;
@@ -7114,10 +7133,6 @@ button,
     grid-template-columns: 1fr 1fr;
   }
 
-  .contacts {
-    padding-bottom: 30px;
-  }
-
   .pagination {
     gap: 2px;
   }
@@ -7140,10 +7155,6 @@ button,
 
   .pagination__item:nth-child(5) {
     display: none;
-  }
-
-  .object-card {
-    padding-bottom: 30px;
   }
 
   .object-card__title {
@@ -7211,10 +7222,6 @@ button,
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-  }
-
-  .article-card {
-    padding-bottom: 30px;
   }
 
   .article-card h2 {
