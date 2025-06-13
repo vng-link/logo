@@ -5976,6 +5976,7 @@ button,
   line-height: 150%;
   list-style: disc;
   padding-left: 30px;
+  overflow: hidden;
 }
 
 .article-card ul li {
@@ -6022,7 +6023,11 @@ button,
 
 .article-card p {
   line-height: 150%;
-  margin: 0 0 30px;
+  margin: 0 0 30px 0;
+}
+
+.article-card ul + p {
+  margin: -20px 0 30px 0;
 }
 
 .article-card__image {
