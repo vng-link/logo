@@ -1,7 +1,8 @@
 mixin products(productsItems)
   section(class=productsHasModifier ? 'page__products page__products--another products' : 'page__products products' )
     .container
-      h2.products__title Часто заказывают
+      if !(currentUrl == "sub-catalog-products.html")
+        h2.products__title Часто заказывают
       .products__wrapper
         each item in productItems
           .products__item
