@@ -14,7 +14,7 @@
     @media (min-width: 616+px) and (max-width: 807+px) {
       height: 207px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: 269px;
     }
     img {
@@ -22,7 +22,7 @@
       height: 100%;
       object-fit: cover;
       max-height: 280px;
-      @media (max-width: 615px) {
+      @include vp-615 {
         max-height: 269px;
       }
       @media (min-width: 616+px) and (max-width: 807+px) {

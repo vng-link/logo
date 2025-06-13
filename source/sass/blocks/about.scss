@@ -8,7 +8,7 @@
     @include vp-1199 {
       font-size: 26px;
     }
-    @media (max-width: 807px) {
+    @include vp-807 {
       font-size: 24px;
     }
   }
@@ -53,7 +53,7 @@
       object-fit: cover;
       max-height: 370px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: 300px;
       img {
         max-height: 300px;

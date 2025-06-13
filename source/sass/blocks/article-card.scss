@@ -11,7 +11,7 @@
       margin: 0 0 30px 0;
       font-size: 26px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       font-size: 24px;
     }
   }
@@ -92,11 +92,11 @@
       width: 412px;
       height: 250px;
     }
-    @media (max-width: 807px) {
+    @include vp-807 {
       width: 100%;
       height: 310px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: 219px;
     }
     img {
@@ -107,7 +107,7 @@
     &--right {
       float: right;
       margin-left: 30px;
-      @media (max-width: 807px) {
+      @include vp-807 {
         float: unset;
         margin-left: unset;
       }
@@ -115,7 +115,7 @@
     &--left {
       float: left;
       margin-right: 30px;
-      @media (max-width: 807px) {
+      @include vp-807 {
         float: unset;
         margin-left: unset;
       }

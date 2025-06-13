@@ -8,7 +8,7 @@
       @include vp-1199 {
         font-size: 26px;
       }
-      @media (max-width: 807px) {
+      @include vp-807 {
         font-size: 24px;
       }
     }
@@ -22,7 +22,7 @@
         column-gap: 20px;
         row-gap: 20px;
       }
-      @media (max-width: 615px) {
+      @include vp-615 {
         row-gap: 40px;
         grid-template-columns: 1fr;
       }
@@ -35,7 +35,7 @@
     }
     &__pagination {
       margin-top: 50px;
-      @media (max-width: 615px) {
+      @include vp-615 {
         margin-top: 30px;
       }
     }
