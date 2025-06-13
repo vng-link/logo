@@ -15,10 +15,10 @@
     text-align: center;
     color: #003865;
     position: relative;
-    @media (max-width: 807px) {
+    @include vp-807 {
       font-size: 194px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       font-size: 148px;
     }
     &:after {
@@ -28,13 +28,13 @@
       position: absolute;
       left: 183px;
       top: -2px;
-      @media (max-width: 807px) {
+      @include vp-807 {
         content: url("../../img/content/not-found/not-found-icon-middle.svg");
         width: 53px;
         height: 136px;
         left: 143px;
       }
-      @media (max-width: 615px) {
+      @include vp-615 {
         content: url("../../img/content/not-found/not-found-icon-small.svg");
         width: 40px;
         height: 103px;
@@ -53,7 +53,7 @@
     @include vp-1199 {
       font-size: 26px;
     }
-    @media (max-width: 807px) {
+    @include vp-807 {
       font-size: 24px;
     }
   }
@@ -68,13 +68,13 @@
     top: 78px;
     width: 289px;
     height: 156px;
-    @media (max-width: 807px) {
+    @include vp-807 {
       width: 223px;
       height: 120px;
       left: 109px;
       top: 62px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       width: 168px;
       height: 90px;
       left: 83px;
