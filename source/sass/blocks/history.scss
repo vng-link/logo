@@ -6,6 +6,39 @@
   p {
     line-height: 150%;
     margin: 0 0 30px 0;
+    &:last-of-type {
+      margin: 0 0 60px 0;
+    }
+  }
+
+  p + ol {
+    margin: -20px 0 20px 0;
+  }
+
+  ol {
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+    line-height: 150%;
+    li {
+      margin: 0 0 10px 0;
+      &:last-child {
+        margin: 0 0 0 0;
+      }
+    }
+  }
+
+  h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    line-height: 120%;
+    @include vp-1199 {
+      font-size: 26px;
+    }
+    @include vp-807 {
+      font-size: 24px;
+    }
   }
 
   h3 {
@@ -26,26 +59,6 @@
     margin: 0 0 10px 0;
   }
 
-
-  &__sub-title {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0 0 30px 0;
-    @include vp-1199 {
-      margin: 0 0 30px 0;
-      font-size: 26px;
-    }
-    @include vp-615 {
-      font-size: 24px;
-    }
-  }
-
-  ol {
-    margin: 0 0 20px 0;
-    padding-left: 20px;
-    line-height: 150%;
-  }
 
   &__video {
     width: 608px;
