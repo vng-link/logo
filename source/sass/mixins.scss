@@ -98,6 +98,30 @@
   }
 }
 
+//custom mixins
+
+@mixin vp-807 {
+  @media (max-width: 807px) {
+    @content;
+  }
+}
+
+@mixin vp-615 {
+  @media (max-width: 615px) {
+    @content;
+  }
+}
+
+@include vp-807 {
+
+}
+
+@include vp-615 {
+
+}
+
+//
+
 // Mobile first
 
 // @mixin vp-375 {

@@ -14,9 +14,7 @@
       width: 100%;
       margin-top: 40px;
     }
-    @media (max-width: 615px) {
-      display: block;
-      width: 100%;
+    @include vp-615 {
       margin-top: 20px;
     }
   }
@@ -298,7 +296,7 @@
   display: contents;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .main-nav__menu>.container {
     display: block;
     height: auto;
