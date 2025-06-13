@@ -10,7 +10,7 @@
   gap: 20px;
   height: 100%;
   position: relative;
-  @media (max-width: 807px) {
+  @include vp-807 {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -19,11 +19,11 @@
     display: flex;
     gap: 20px;
     flex-basis: 54%;
-    @media (max-width: 807px) {
+    @include vp-807 {
       flex-basis: unset;
       display: block;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       display: flex;
       margin-bottom: 10px;
     }
@@ -55,7 +55,7 @@
         max-height: 238px;
       }
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       flex-basis: 120px;
       height: 120px;
       img {
@@ -97,14 +97,14 @@
     flex-direction: column;
     align-items: end;
     flex-shrink: 0;
-    @media (max-width: 807px) {
+    @include vp-807 {
       flex-grow: unset;
     }
   }
   &__price {
     flex-grow: 1;
     line-height: 145%;
-    @media (max-width: 807px) {
+    @include vp-807 {
       margin-bottom: 10px;
       flex-grow: unset;
     }
@@ -114,7 +114,7 @@
     }
   }
   &__btn {
-    @media (max-width: 807px) {
+    @include vp-807 {
       width: 100%;
     }
     @include vp-389 {

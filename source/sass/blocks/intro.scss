@@ -8,7 +8,7 @@
       overflow: hidden;
       border-radius: 20px;
       min-height: 375px;
-      @media (max-width: 807px) {
+      @include vp-807 {
         background: linear-gradient(233deg, #3f82ff 0%, #003865 100%);
         min-height: unset;
       }
@@ -21,10 +21,10 @@
       @include vp-1199 {
         max-width: 540px;
       }
-      @media (max-width: 807px) {
+      @include vp-807 {
         max-width: unset;
       }
-      @media (max-width: 615px) {
+      @include vp-615 {
         padding: 20px;
       }
     }
@@ -38,7 +38,7 @@
     @include vp-1199 {
       font-size: 30px;
     }
-    @media (max-width: 807px) {
+    @include vp-807 {
       font-size: 28px;
     }
   }
@@ -55,14 +55,14 @@
       top: 0;
       height: 100%;
       width: 100%;
-      @media (max-width: 807px) {
+      @include vp-807 {
         display: none;
       }
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        @media (max-width: 807px) {
+        @include vp-807 {
           object-fit: unset;
           width: unset;
           max-width: unset;
@@ -72,7 +72,7 @@
 
     &__btn {
       font-size: 16px;
-      @media (max-width: 615px) {
+      @include vp-615 {
         width: 100%;
       }
       @include vp-575 {

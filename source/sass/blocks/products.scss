@@ -8,12 +8,12 @@
     @include vp-1199 {
       font-size: 26px;
     }
-    @media (max-width: 807px) {
+    @include vp-807 {
       font-size: 24px;
     }
   }
   &__wrapper {
-    @media (max-width: 807px) {
+    @include vp-807 {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -20px;
@@ -33,12 +33,12 @@
     &:last-child {
       margin-bottom: 0;
     }
-    @media (max-width: 807px) {
+    @include vp-807 {
       flex-basis: 50%;
       padding: 0 10px;
       margin-bottom: 20px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       flex-basis: 100%;
       padding: 0 10px;
       margin-bottom: 20px;
