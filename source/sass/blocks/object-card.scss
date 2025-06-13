@@ -154,6 +154,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @include hover-focus {
+      background: linear-gradient(180deg, #ff4548 0%, #d21013 100%);
+    }
     @include vp-615 {
       height: unset ;
       width: 43px;
@@ -170,6 +173,11 @@
           transform: rotate(-90deg);
         }
       }
+      @include hover-focus {
+        &:after {
+          content: url("../../img/content/sliders/button-top-hover.svg");
+        }
+      }
     }
     &--bottom {
       &:after {
@@ -180,6 +188,11 @@
         margin-left: 10px;
         &::after {
           transform: rotate(-90deg);
+        }
+      }
+      @include hover-focus {
+        &:after {
+          content: url("../../img/content/sliders/button-bottom-hover.svg");
         }
       }
     }

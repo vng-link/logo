@@ -5871,6 +5871,11 @@ ul {
   cursor: pointer;
 }
 
+.object-card__button:focus-visible {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff4548), to(#d21013));
+  background: linear-gradient(180deg, #ff4548 0%, #d21013 100%);
+}
+
 .object-card__button--top {
   margin-bottom: 10px;
 }
@@ -5879,8 +5884,16 @@ ul {
   content: url("../../img/content/sliders/button-top.svg");
 }
 
+.object-card__button--top:focus-visible:after {
+  content: url("../../img/content/sliders/button-top-hover.svg");
+}
+
 .object-card__button--bottom:after {
   content: url("../../img/content/sliders/button-bottom.svg");
+}
+
+.object-card__button--bottom:focus-visible:after {
+  content: url("../../img/content/sliders/button-bottom-hover.svg");
 }
 
 .object-card__description-item {
@@ -7409,5 +7422,18 @@ ul {
 
   .pagination__item:hover .pagination__link {
     color: #ffffff;
+  }
+
+  .object-card__button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4548), to(#d21013));
+    background: linear-gradient(180deg, #ff4548 0%, #d21013 100%);
+  }
+
+  .object-card__button--top:hover:after {
+    content: url("../../img/content/sliders/button-top-hover.svg");
+  }
+
+  .object-card__button--bottom:hover:after {
+    content: url("../../img/content/sliders/button-bottom-hover.svg");
   }
 }
