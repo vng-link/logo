@@ -4213,10 +4213,6 @@ button,
   margin-bottom: 60px;
 }
 
-ul {
-  line-height: 150%;
-}
-
 .header-top {
   background-color: #003865;
   padding: 10px 0;
@@ -5757,12 +5753,42 @@ ul {
   color: #003865;
 }
 
+.object-card ul {
+  line-height: 150%;
+  margin: 0 0 20px 0;
+}
+
+.object-card ul + h3 {
+  margin: 30px 0 20px 0;
+}
+
+.object-card h3 + ul li {
+  margin-bottom: 10px;
+}
+
+.object-card p {
+  line-height: 150%;
+  margin: 0 0 20px 0;
+}
+
+.object-card h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0 0 30px 0;
+  line-height: 120%;
+}
+
+.object-card p a:hover {
+  opacity: 0.8;
+}
+
 .object-card h3 {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
-  color: #000;
+  color: #000000;
   margin: 0 0 20px 0;
 }
 
@@ -5771,15 +5797,8 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  color: #000;
+  color: #000000;
   margin: 0 0 10px 0;
-}
-
-.object-card__sub-title {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 30px;
-  margin: 0 0 30px 0;
 }
 
 .object-card__wrapper {
@@ -6613,8 +6632,7 @@ ul {
     grid-template-columns: 1fr 1fr;
   }
 
-  .object-card__sub-title {
-    margin: 0 0 30px 0;
+  .object-card h2 {
     font-size: 26px;
   }
 
@@ -6846,6 +6864,10 @@ ul {
 
   .pagination__list {
     gap: 5px;
+  }
+
+  .object-card h2 {
+    font-size: 24px;
   }
 
   .object-card__sliders {
@@ -7195,10 +7217,6 @@ ul {
 
   .pagination__item:nth-child(5) {
     display: none;
-  }
-
-  .object-card__sub-title {
-    font-size: 24px;
   }
 
   .object-card__sliders {

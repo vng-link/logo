@@ -2,12 +2,51 @@
 @use "../variables" as *;
 
 .object-card {
+
+  ul {
+    line-height: 150%;
+    margin: 0 0 20px 0;
+  }
+
+  ul + h3 {
+    margin: 30px 0 20px 0;
+  }
+
+  h3 + ul li {
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 150%;
+    margin: 0 0 20px 0;
+  }
+
+  h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    line-height: 120%;
+    @include vp-1199 {
+      font-size: 26px;
+    }
+    @include vp-807 {
+      font-size: 24px;
+    }
+  }
+
+  p a {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
   h3 {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    color: #000;
+    color: $color-default-black;
     margin: 0 0 20px 0;
   }
 
@@ -16,23 +55,10 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-    color: #000;
+    color: $color-default-black;
     margin: 0 0 10px 0;
   }
 
-  &__sub-title {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0 0 30px 0;
-    @include vp-1199 {
-      margin: 0 0 30px 0;
-      font-size: 26px;
-    }
-    @include vp-615 {
-      font-size: 24px;
-    }
-  }
   &__wrapper {
     display: flex;
     gap: 30px;
