@@ -1,5 +1,7 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
 .not-found {
-  padding-bottom: 60px;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -13,6 +15,12 @@
     text-align: center;
     color: #003865;
     position: relative;
+    @media (max-width: 807px) {
+      font-size: 194px;
+    }
+    @media (max-width: 615px) {
+      font-size: 148px;
+    }
     &:after {
       content: url("../../img/content/not-found/not-found-icon.svg");
       width: 68px;
@@ -20,6 +28,18 @@
       position: absolute;
       left: 183px;
       top: -2px;
+      @media (max-width: 807px) {
+        content: url("../../img/content/not-found/not-found-icon-middle.svg");
+        width: 53px;
+        height: 136px;
+        left: 143px;
+      }
+      @media (max-width: 615px) {
+        content: url("../../img/content/not-found/not-found-icon-small.svg");
+        width: 40px;
+        height: 103px;
+        left: 108px;
+      }
     }
   }
   &__title {
@@ -30,9 +50,17 @@
     text-align: center;
     color: #272a33;
     margin-bottom: 10px;
+    @include vp-1199 {
+      font-size: 26px;
+    }
+    @media (max-width: 807px) {
+      font-size: 24px;
+    }
   }
   &__description {
     margin-bottom: 20px;
+    line-height: 150%;
+    text-align: center;
   }
   &__image {
     position: absolute;
@@ -40,5 +68,17 @@
     top: 78px;
     width: 289px;
     height: 156px;
+    @media (max-width: 807px) {
+      width: 223px;
+      height: 120px;
+      left: 109px;
+      top: 62px;
+    }
+    @media (max-width: 615px) {
+      width: 168px;
+      height: 90px;
+      left: 83px;
+      top: 49px;
+    }
   }
 }
