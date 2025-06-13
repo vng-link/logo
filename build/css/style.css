@@ -5946,19 +5946,11 @@ button,
   opacity: 1;
 }
 
-.article-card {
-  /*
-  ul + h2 {
-    margin: 50px 0 30px 0;
-  }
-  */
-}
-
 .article-card h2 {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 30px;
-  margin: 50px 0 30px 0;
+  margin: 0 0 30px 0;
 }
 
 .article-card h3 {
@@ -5996,6 +5988,14 @@ button,
 
 .article-card ul ul {
   padding-top: 10px;
+}
+
+.article-card ul + h2 {
+  margin: 50px 0 30px 0;
+}
+
+.article-card ol + h2 {
+  margin: 50px 0 30px 0;
 }
 
 .article-card ul ul {

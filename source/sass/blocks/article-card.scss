@@ -6,7 +6,7 @@
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 30px;
-    margin: 50px 0 30px 0;
+    margin: 0 0 30px 0;
     @include vp-1199 {
       margin: 0 0 30px 0;
       font-size: 26px;
@@ -51,12 +51,14 @@
     }
   }
 
-  /*
+
   ul + h2 {
     margin: 50px 0 30px 0;
   }
-  */
 
+  ol + h2 {
+    margin: 50px 0 30px 0;
+  }
 
   ul ul {
     margin: 0 0 0 0 ;
