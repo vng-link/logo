@@ -31,7 +31,7 @@
     color: $color-prussian-blue;
     border: 1px solid $color-alizarin;
     @include hover-focus {
-      opacity: 0.8;
+      color: $color-alizarin;
       box-shadow: unset !important;
       background: unset !important;
     }

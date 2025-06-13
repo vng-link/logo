@@ -3458,7 +3458,7 @@ button,
 }
 
 .btn--white:focus-visible {
-  opacity: 0.8;
+  color: #f73b3e;
   -webkit-box-shadow: unset !important;
   box-shadow: unset !important;
   background: unset !important;
@@ -7329,7 +7329,7 @@ ul {
   }
 
   .btn--white:hover {
-    opacity: 0.8;
+    color: #f73b3e;
     -webkit-box-shadow: unset !important;
     box-shadow: unset !important;
     background: unset !important;

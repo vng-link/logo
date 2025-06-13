@@ -5,10 +5,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    @media (max-width: 807px) {
+  @include vp-807 {
       gap: 5px;
     }
-    @media (max-width: 615px) {
+  @include vp-615 {
       gap: 2px;
     }
     @include vp-389 {
@@ -25,7 +25,7 @@
       flex-shrink: 0;
       &--start {
         background-image: url("../../img/sprite/pagination-arrow-start.svg");
-        @media (max-width: 615px) {
+        @include vp-615 {
           display: none;
         }
       }
@@ -34,7 +34,7 @@
       }
       &--end {
         background-image: url("../../img/sprite/pagination-arrow-end.svg");
-        @media (max-width: 615px) {
+        @include vp-615 {
           display: none;
         }
       }
@@ -46,10 +46,10 @@
   &__list {
     display: flex;
     gap: 10px;
-    @media (max-width: 807px) {
+    @include vp-807 {
       gap: 5px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       gap: 2px;
     }
     @include vp-389 {
@@ -67,7 +67,7 @@
     border: 1px solid $color-alizarin;
     cursor: pointer;
     transition: background $trans-default;
-    @media (max-width: 615px) {
+    @include vp-615 {
       &:nth-child(4) {
         display: none;
       }
