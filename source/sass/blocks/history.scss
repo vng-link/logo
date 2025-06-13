@@ -36,7 +36,7 @@
       margin: 0 0 30px 0;
       font-size: 26px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       font-size: 24px;
     }
   }
@@ -61,10 +61,10 @@
       height: 332px;
       margin: 0 0 30px 0;
     }
-    @media (max-width: 807px) {
+    @include vp-807 {
         height: 254px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: 156px;
     }
       video {

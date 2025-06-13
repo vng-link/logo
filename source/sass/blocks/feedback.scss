@@ -43,7 +43,7 @@
   }
   &__textarea {
     margin-top: 20px;
-    @media (max-width: 807px) {
+    @include vp-807 {
       margin-top: 10px;
     }
   }
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    @media (max-width: 807px) {
+    @include vp-807 {
       flex-direction: column;
       gap: 10px;
     }
@@ -63,16 +63,16 @@
     align-items: center;
     gap: 30px;
     margin-top: 30px;
-    @media (max-width: 807px) {
+    @include vp-807 {
       margin-top: 20px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       display: block;
     }
   }
   &__button {
     height: 51px;
-    @media (max-width: 615px) {
+    @include vp-615 {
       width: 100%;
       margin-bottom: 20px;
     }
@@ -82,7 +82,7 @@
     font-size: 16px;
     color: $color-dark-gray;
     line-height: 140%;
-    @media (max-width: 807px) {
+    @include vp-807 {
       font-size: 14px;
     }
     a {

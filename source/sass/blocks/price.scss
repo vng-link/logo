@@ -17,7 +17,7 @@
       padding: 10px 0;
       border-bottom: 1px dashed #a2a2a2;
       gap: 10px;
-    @media (max-width: 615px) {
+    @include vp-615 {
         flex-direction: column;
         align-items: flex-start;
       }

@@ -5783,8 +5783,8 @@ ul {
 }
 
 .object-card__slider {
-  -ms-flex-preferred-size: 604px;
-  flex-basis: 604px;
+  -ms-flex-preferred-size: 622px;
+  flex-basis: 622px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   min-width: 0;
@@ -6591,6 +6591,10 @@ ul {
 
   .object-card__wrapper {
     display: block;
+  }
+
+  .object-card__sliders {
+    margin-bottom: 30px;
   }
 
   .article-card h2 {

@@ -29,7 +29,7 @@
       margin: 0 0 30px 0;
       font-size: 26px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       font-size: 24px;
     }
   }
@@ -45,24 +45,27 @@
     flex-basis: 744px;
     display: flex;
     gap: 10px;
-    @media (max-width: 807px) {
+    @include vp-1199 {
+      margin-bottom: 30px;
+    }
+    @include vp-807 {
       flex-basis: 576px;
       margin-bottom: 30px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       flex-direction: column;
     }
   }
   &__slider {
-    flex-basis: 604px;
+    flex-basis: 622px;
     flex-shrink: 0;
     min-width: 0;
     border-radius: 20px;
     cursor: pointer;
-    @media (max-width: 807px) {
+    @include vp-807 {
       flex-basis: 474px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
         flex-basis: unset;
     }
   }
@@ -70,10 +73,10 @@
     border-radius: 20px;
     overflow: hidden;
     height: 357px;
-    @media (max-width: 807px) {
+    @include vp-807 {
       height: 280px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: 213px;
     }
     img {
@@ -95,10 +98,10 @@
     flex-basis: 130px;
     min-width: 0;
     flex-shrink: 0;
-    @media (max-width: 807px) {
+    @include vp-807 {
       flex-basis: 92px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       flex-basis: unset;
       display: flex;
     }
@@ -106,10 +109,10 @@
 
   &__sub-slider-item {
     height: 77px !important;
-    @media (max-width: 807px) {
+    @include vp-807 {
       height: 51px !important;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: 75px !important;
     }
   }
@@ -118,10 +121,10 @@
     overflow: hidden;
     position: relative;
     height: 77px;
-    @media (max-width: 807px) {
+    @include vp-807 {
       height: 51px;
     }
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: 75px;
     }
     img {
@@ -151,7 +154,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    @media (max-width: 615px) {
+    @include vp-615 {
       height: unset ;
       width: 43px;
     }
@@ -160,7 +163,7 @@
         content: url("../../img/content/sliders/button-top.svg");
       }
       margin-bottom: 10px;
-      @media (max-width: 615px) {
+      @include vp-615 {
         margin-bottom: unset;
         margin-right: 10px;
         &::after {
@@ -172,7 +175,7 @@
       &:after {
         content: url("../../img/content/sliders/button-bottom.svg");
       }
-      @media (max-width: 615px) {
+      @include vp-615 {
         margin-bottom: unset;
         margin-left: 10px;
         &::after {
