@@ -311,7 +311,7 @@
               <div class="intro__content">
                 <h1 class="intro__title">Железобетонные изделия от завода-изготовителя</h1>
                 <div class="intro__text">Производство и продажа железобетонных изделий (ЖБИ) от завода-изготовителя. Собственное производство, контроль качества на всех этапах, соответствие ГОСТ. Работаем с оптовыми и розничными покупателями. Гарантируем прочность, долговечность и конкурентные цены на всю продукцию!</div>
-                <button class="btn btn intro__btn" type="button">Получить консультацию
+                <button class="btn btn intro__btn" type="button" data-open-modal="modal-consultation-form">Получить консультацию
                 </button>
               </div>
               <div class="intro__image"><img src="img/content/intro/banner.webp" width="" height="" alt="background"></div>
@@ -779,6 +779,54 @@
             <section class="modal-form">
               <h2 class="modal-form__title">Заказать обратный звонок</h2>
               <p class="modal-form__desc">Оставьте заявку – мы перезвоним, проконсультируем по цене, доставке и ответим на вопросы.</p>
+              <form action="#">
+                <div class="modal-form__form-wrapper">
+                  <div class="modal-form__inputs">
+                    <div class="custom-input">
+                      <label>
+                        <input type="text" name="name" placeholder="Ваше имя*">
+                      </label>
+                    </div>
+                    <div class="custom-input">
+                      <label>
+                        <input type="tel" name="phone" placeholder="Телефон*">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="modal-form__textarea">
+                    <div class="custom-textarea">
+                      <label>
+                        <textarea name="name" value="value" placeholder="Сообщение"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-form__bottom">
+                  <button class="btn btn modal-form__button" type="submit">Отправить
+                  </button>
+                  <div class="modal-form__info">
+                    <p><span>Нажимая кнопку Вы даете согласие на обработку персональных данных и соглашаетесь&nbsp;</span><a href="#">с политикой конфиденциальности</a></p>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </section>
+          <button class="btn-reset modal__close-button" type="button" arial-label="Закрыть попап" data-close-modal>
+            <svg width="40" height="40" aria-hidden="true">
+              <use xlink:href="#modal-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal="modal-consultation-form">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <section class="consultation">
+            <section class="modal-form">
+              <h2 class="modal-form__title">Получить консультацию</h2>
+              <p class="modal-form__desc">Если у вас появились вопросы о наших продуктах, пожалуйста, заполните форму ниже, и мы свяжемся с вами в течении 24 часов. Будьте уверены, что мы никому не передадим вашу информацию.</p>
               <form action="#">
                 <div class="modal-form__form-wrapper">
                   <div class="modal-form__inputs">
