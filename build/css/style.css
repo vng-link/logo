@@ -6352,6 +6352,7 @@ button,
 
   .footer__grid {
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
   }
 
   .footer__column--contacts {
@@ -6367,6 +6368,14 @@ button,
 
   .footer__column--info {
     grid-column: 2/3;
+  }
+
+  .footer__nav-list-item {
+    margin-bottom: 20px;
+  }
+
+  .footer__contacts-item {
+    margin-bottom: 10px;
   }
 
   .footer__bottom-row {
