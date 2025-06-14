@@ -193,6 +193,9 @@
 <rect x="0.5" y="0.612305" width="39" height="39" rx="19.5" stroke="#272A33"/>
 <path d="M15 15.1123L25 25.1123" stroke="#272A33" stroke-width="2" stroke-linecap="round"/>
 <path d="M25 15.1123L15 25.1123" stroke="#272A33" stroke-width="2" stroke-linecap="round"/>
+</g></symbol><symbol id="modal-success" viewBox="0 0 60 60"><g fill="none">
+<rect x="1" y="1" width="58" height="58" rx="29" stroke="#089D00" stroke-width="2"/>
+<path d="M19 29.3333L26.7846 37L41 23" stroke="#089D00" stroke-width="2" stroke-linecap="round"/>
 </g></symbol><symbol id="pagination-arrow-end" viewBox="0 0 16 16"><g fill="none">
 <path d="M7 1L14 8L7 15" stroke="#003865" stroke-width="2" stroke-linecap="round"/>
 <path d="M1 1L8 8L1 15" stroke="#003865" stroke-width="2" stroke-linecap="round"/>
@@ -771,99 +774,27 @@
         </footer>
       </main>
     </div>
+    <!--+modal()(data-modal="modal-callback-form")
+    +callback()
+    
+    -->
+    <!--+modal()(data-modal="modal-consultation-form")
+    +consultation()
+    
+    -->
     <div class="modal" data-modal="modal-callback-form">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <section class="callback">
-            <section class="modal-form">
-              <h2 class="modal-form__title">Заказать обратный звонок</h2>
-              <p class="modal-form__desc">Оставьте заявку – мы перезвоним, проконсультируем по цене, доставке и ответим на вопросы.</p>
-              <form action="#">
-                <div class="modal-form__form-wrapper">
-                  <div class="modal-form__inputs">
-                    <div class="custom-input">
-                      <label>
-                        <input type="text" name="name" placeholder="Ваше имя*">
-                      </label>
-                    </div>
-                    <div class="custom-input">
-                      <label>
-                        <input type="tel" name="phone" placeholder="Телефон*">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="modal-form__textarea">
-                    <div class="custom-textarea">
-                      <label>
-                        <textarea name="name" value="value" placeholder="Сообщение"></textarea>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-form__bottom">
-                  <button class="btn btn modal-form__button" type="submit">Отправить
-                  </button>
-                  <div class="modal-form__info">
-                    <p><span>Нажимая кнопку Вы даете согласие на обработку персональных данных и соглашаетесь&nbsp;</span><a href="#">с политикой конфиденциальности</a></p>
-                  </div>
-                </div>
-              </form>
-            </section>
-          </section>
-          <button class="btn-reset modal__close-button" type="button" arial-label="Закрыть попап" data-close-modal>
-            <svg width="40" height="40" aria-hidden="true">
-              <use xlink:href="#modal-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="modal" data-modal="modal-consultation-form">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <section class="consultation">
-            <section class="modal-form">
-              <h2 class="modal-form__title">Получить консультацию</h2>
-              <p class="modal-form__desc">Если у вас появились вопросы о наших продуктах, пожалуйста, заполните форму ниже, и мы свяжемся с вами в течении 24 часов. Будьте уверены, что мы никому не передадим вашу информацию.</p>
-              <form action="#">
-                <div class="modal-form__form-wrapper">
-                  <div class="modal-form__inputs">
-                    <div class="custom-input">
-                      <label>
-                        <input type="text" name="name" placeholder="Ваше имя*">
-                      </label>
-                    </div>
-                    <div class="custom-input">
-                      <label>
-                        <input type="mail" name="mail" placeholder="Почта*">
-                      </label>
-                    </div>
-                    <div class="custom-input">
-                      <label>
-                        <input type="tel" name="phone" placeholder="Телефон*">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="modal-form__textarea">
-                    <div class="custom-textarea">
-                      <label>
-                        <textarea name="name" value="value" placeholder="Сообщение"></textarea>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-form__bottom">
-                  <button class="btn btn modal-form__button" type="submit">Отправить
-                  </button>
-                  <div class="modal-form__info">
-                    <p><span>Нажимая кнопку Вы даете согласие на обработку персональных данных и соглашаетесь&nbsp;</span><a href="#">с политикой конфиденциальности</a></p>
-                  </div>
-                </div>
-              </form>
-            </section>
-          </section>
+          <div class="form-success">
+            <div class="form-success__title">
+              <svg width="60" height="60" aria-hidden="true">
+                <use xlink:href="#modal-success"></use>
+              </svg>
+              <h2>Заявка успешно отправлена</h2>
+            </div>
+            <p class="form-success__text">Ожидайте звонка. Вас бесплатно проконсультирует наш специалист.</p>
+          </div>
           <button class="btn-reset modal__close-button" type="button" arial-label="Закрыть попап" data-close-modal>
             <svg width="40" height="40" aria-hidden="true">
               <use xlink:href="#modal-close"></use>

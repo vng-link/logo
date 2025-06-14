@@ -171,6 +171,9 @@
 <rect x="0.5" y="0.612305" width="39" height="39" rx="19.5" stroke="#272A33"/>
 <path d="M15 15.1123L25 25.1123" stroke="#272A33" stroke-width="2" stroke-linecap="round"/>
 <path d="M25 15.1123L15 25.1123" stroke="#272A33" stroke-width="2" stroke-linecap="round"/>
+</g></symbol><symbol id="modal-success" viewBox="0 0 60 60"><g fill="none">
+<rect x="1" y="1" width="58" height="58" rx="29" stroke="#089D00" stroke-width="2"/>
+<path d="M19 29.3333L26.7846 37L41 23" stroke="#089D00" stroke-width="2" stroke-linecap="round"/>
 </g></symbol><symbol id="pagination-arrow-end" viewBox="0 0 16 16"><g fill="none">
 <path d="M7 1L14 8L7 15" stroke="#003865" stroke-width="2" stroke-linecap="round"/>
 <path d="M1 1L8 8L1 15" stroke="#003865" stroke-width="2" stroke-linecap="round"/>

@@ -4,6 +4,12 @@ include ../components
 
 block variables
 
+-
+    const formSuccess = {
+      title: "Заявка успешно отправлена",
+      text: "Ожидайте звонка. Вас бесплатно проконсультирует наш специалист."
+    }
+
 html(lang="ru")
   head
     title=title
@@ -51,12 +57,14 @@ html(lang="ru")
 
     block modals
 
-    +modal()(data-modal="modal-callback-form")
+    //+modal()(data-modal="modal-callback-form")
       +callback()
 
-    +modal()(data-modal="modal-consultation-form")
+    //+modal()(data-modal="modal-consultation-form")
       +consultation()
 
+    +modal()(data-modal="modal-callback-form")
+      +form-success(formSuccess)
 
 
     script(src="js/main.min.js")
