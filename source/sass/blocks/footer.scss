@@ -145,7 +145,7 @@
     &:first-child {
       display: flex;
       align-items: center;
-      gap: 37px;
+      gap: 162px;
       @include vp-1199  {
         flex-direction: column;
         flex-shrink: 0;
@@ -200,12 +200,24 @@
     }
   }
   &__copyright {
+    display: flex;
+    gap: 5px;
+    @media (max-width: 1479px) {
+      display: block;
+    }
     @include vp-615 {
       margin-bottom: 20px;
     }
   }
   &__developer {
     transition: opacity, $trans-default;
+    @include vp-807  {
+      display: block;
+      max-width: 280px;
+    }
+    @include vp-615  {
+      max-width: unset;
+    }
     @include hover-focus {
       opacity: 0.8;
     }

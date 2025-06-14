@@ -39,13 +39,13 @@
     }
   }
   &__phone {
-    @include vp-1199 {
-      display: block;
-      margin-bottom: 10px;
-    }
     transition: opacity, $trans-default;
     @include hover-focus {
       opacity: 0.8;
+    }
+    @include vp-1199 {
+      display: block;
+      margin-bottom: 10px;
     }
   }
 }

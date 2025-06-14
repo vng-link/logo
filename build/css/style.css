@@ -3375,7 +3375,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 37px;
+  gap: 162px;
 }
 
 .footer__logo {
@@ -3417,6 +3417,13 @@ button,
 
 .footer__contacts-email:focus-visible {
   opacity: 0.8;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
 }
 
 .footer__developer {
@@ -6294,6 +6301,10 @@ button,
     max-width: 1200px;
   }
 
+  .footer__copyright {
+    display: block;
+  }
+
   .page__objects--another {
     margin-bottom: 60px;
   }
@@ -6722,6 +6733,11 @@ button,
     font-size: 20px;
   }
 
+  .footer__developer {
+    display: block;
+    max-width: 280px;
+  }
+
   .intro__background {
     background: linear-gradient(233deg, #3f82ff 0%, #003865 100%);
     min-height: unset;
@@ -7040,6 +7056,10 @@ button,
 
   .footer__copyright {
     margin-bottom: 20px;
+  }
+
+  .footer__developer {
+    max-width: unset;
   }
 
   .intro__content {
