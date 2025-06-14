@@ -6288,7 +6288,7 @@ button,
 
 .cookies {
   padding: 25px 0;
-  background: #ffffff;
+  background: #f3f7ff;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -6312,10 +6312,12 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .cookies__text {
-  max-width: 815px;
+  max-width: 841px;
 }
 
 .cookies__text p {
@@ -6324,6 +6326,10 @@ button,
   font-size: 16px;
   line-height: 137%;
   color: #000000;
+}
+
+.cookies__btn {
+  background: #f3f7ff;
 }
 
 /* @mixin hover-focus {

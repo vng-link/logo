@@ -3,7 +3,7 @@
 
 .cookies {
   padding: 25px 0;
-  background: $color-default-white;
+  background: #f3f7ff;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -23,11 +23,12 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 
   }
 
   &__text {
-    max-width: 815px;
+    max-width: 841px;
     p {
       margin: 0;
       font-weight: 400;
@@ -36,4 +37,9 @@
       color: $color-default-black;
     }
   }
+
+  &__btn {
+    background: #f3f7ff;
+  }
+
 }
