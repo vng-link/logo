@@ -9,6 +9,7 @@ import {initTabs} from './modules/tabs/init-tabs';
 import {initHeaderAccordion} from "./modules/header-accordion/init-header-accordion";
 import {initFancybox} from "./modules/fancybox/init-fancybox";
 import {initObjectSlider} from './modules/sliders/init-object-slider.js';
+import {cookiesBannerHandler} from "./modules/cookies-banner-handler";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initHeaderAccordion();
   initFancybox();
+  cookiesBannerHandler();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
