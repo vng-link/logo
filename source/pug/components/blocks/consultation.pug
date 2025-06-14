@@ -3,6 +3,7 @@ mixin consultation()
     const formData = {
       title: "Получить консультацию",
       desc: 'Если у вас появились вопросы о наших продуктах, пожалуйста, заполните форму ниже, и мы свяжемся с вами в течении 24 часов. Будьте уверены, что мы никому не передадим вашу информацию.',
+      isMailInput: true
     }
   section.consultation
     +modal-form(formData)

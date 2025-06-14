@@ -7,6 +7,8 @@ mixin modal-form(form)
       .modal-form__form-wrapper
         .modal-form__inputs
           +custom-input({type: "text", name: "name", placeholder: "Ваше имя*"})
+          if form.isMailInput
+            +custom-input({type: "mail", name: "mail", placeholder: "Почта*"})
           +custom-input({type: "tel", name: "phone", placeholder: "Телефон*"})
         .modal-form__textarea
           +custom-textarea({name: 'name', value: 'value', placeholder: "Сообщение"})
