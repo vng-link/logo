@@ -4151,7 +4151,7 @@ button,
 }
 
 .page {
-  padding-top: 171px;
+  padding-top: 165px;
 }
 
 .page__intro {
@@ -4228,6 +4228,10 @@ button,
 
 .page__not-found {
   margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.page__text-page {
   margin-bottom: 60px;
 }
 
@@ -6167,6 +6171,28 @@ button,
   font-size: 40px;
 }
 
+.text-page h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #181d24;
+  margin: 0 0 20px 0;
+}
+
+.text-page p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3e4958;
+  margin: 0 0 0 0;
+}
+
+.text-page p + h2 {
+  margin: 50px 0 20px 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover {
@@ -6443,6 +6469,10 @@ button,
   }
 
   .page__article-card {
+    margin-bottom: 40px;
+  }
+
+  .page__text-page {
     margin-bottom: 40px;
   }
 
@@ -7152,6 +7182,10 @@ button,
   }
 
   .page__article-card {
+    margin-bottom: 30px;
+  }
+
+  .page__text-page {
     margin-bottom: 30px;
   }
 
