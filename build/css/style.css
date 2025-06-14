@@ -3340,6 +3340,15 @@ button,
   gap: 10px;
 }
 
+.footer__contacts-socials svg {
+  -webkit-transition: opacity, 0.3s ease;
+  transition: opacity, 0.3s ease;
+}
+
+.footer__contacts-socials svg:focus-visible {
+  opacity: 0.8;
+}
+
 .footer__contacts-location {
   max-width: 575px;
 }
@@ -3387,6 +3396,15 @@ button,
 }
 
 .footer__recaptcha:focus-visible {
+  opacity: 0.8;
+}
+
+.footer__contacts-phone {
+  -webkit-transition: opacity, 0.3s ease;
+  transition: opacity, 0.3s ease;
+}
+
+.footer__contacts-phone:focus-visible {
   opacity: 0.8;
 }
 
@@ -4255,6 +4273,15 @@ button,
   align-items: center;
 }
 
+.header-top__contacts svg {
+  -webkit-transition: opacity, 0.3s ease;
+  transition: opacity, 0.3s ease;
+}
+
+.header-top__contacts svg:focus-visible {
+  opacity: 0.8;
+}
+
 .header-top__button {
   color: #ffffff;
   text-transform: uppercase;
@@ -4918,6 +4945,24 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+
+.advantage__socials svg {
+  -webkit-transition: opacity, 0.3s ease;
+  transition: opacity, 0.3s ease;
+}
+
+.advantage__socials svg:focus-visible {
+  opacity: 0.8;
+}
+
+.advantage__phone {
+  -webkit-transition: opacity, 0.3s ease;
+  transition: opacity, 0.3s ease;
+}
+
+.advantage__phone:focus-visible {
+  opacity: 0.8;
 }
 
 .about__title {
@@ -7357,7 +7402,15 @@ button,
     opacity: 0.8;
   }
 
+  .footer__contacts-socials svg:hover {
+    opacity: 0.8;
+  }
+
   .footer__recaptcha:hover {
+    opacity: 0.8;
+  }
+
+  .footer__contacts-phone:hover {
     opacity: 0.8;
   }
 
@@ -7388,6 +7441,10 @@ button,
   }
 
   .header-top__email:hover {
+    opacity: 0.8;
+  }
+
+  .header-top__contacts svg:hover {
     opacity: 0.8;
   }
 
@@ -7423,6 +7480,14 @@ button,
 
   .object__products-link:hover {
     color: #3f82ff;
+  }
+
+  .advantage__socials svg:hover {
+    opacity: 0.8;
+  }
+
+  .advantage__phone:hover {
+    opacity: 0.8;
   }
 
   .article__title:hover {

@@ -34,8 +34,10 @@ mixin footer()
             +icon("contacts-phone", 50, 50)
             a.footer__contacts-phone(href="tel:89166426203", aria-label="Позвонить по телефону") 8 (916) 642-62-03
             .footer__contacts-socials
-              +icon("whatsapp", 30, 30)
-              +icon("telegram", 30, 30)
+              a(href="#", aria-label="Перейти в whatsapp")
+                +icon("whatsapp", 30, 31)
+              a(href="#", aria-label="Перейти в telegram")
+                +icon("telegram", 30, 30)
           .footer__contacts-item
             +icon("contacts-email", 50, 50)
             a.footer__contacts-email(href="mailto:Flagman.gbi@mail.ru", aria-label="Написать на почту") Flagman.gbi@mail.ru

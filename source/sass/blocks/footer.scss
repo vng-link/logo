@@ -114,6 +114,12 @@
   &__contacts-socials {
     display: flex;
     gap: 10px;
+    svg {
+      transition: opacity, $trans-default;
+      @include hover-focus {
+        opacity: 0.8;
+      }
+    }
   }
 
   &__contacts-location {
@@ -172,6 +178,13 @@
   &__recaptcha {
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.4);
+    transition: opacity, $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__contacts-phone {
     transition: opacity, $trans-default;
     @include hover-focus {
       opacity: 0.8;
