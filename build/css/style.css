@@ -6226,6 +6226,7 @@ button,
   line-height: 140%;
   color: #000000;
   margin: 0 0 10px 0;
+  padding-right: 10px;
 }
 
 .modal-form__desc {
