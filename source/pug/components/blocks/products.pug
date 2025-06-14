@@ -5,7 +5,7 @@ mixin products(productsItems)
         h2.products__title Часто заказывают
       .products__wrapper
         each item in productItems
-          .products__item
+          .products__item(data-open-modal="modal-order-form")
             +product(item)
       if (currentUrl == "index.html")
         a.btn.products__btn.btn--white(href="#", aria-label="Перейти в каталог") Перейти в каталог

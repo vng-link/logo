@@ -373,7 +373,7 @@
           <div class="container">
             <h2 class="products__title">Часто заказывают</h2>
             <div class="products__wrapper">
-              <div class="products__item">
+              <div class="products__item" data-open-modal="modal-order-form">
                 <article class="product">
                   <div class="product__content"><a class="product__image" href="#"><img src="img/content/products/svaya-zabivnaya-betonnaya.png" width="100" height="100" alt="image"></a>
                     <div class="product__body">
@@ -395,7 +395,7 @@
                   </div><a class="product__link" href="#"></a>
                 </article>
               </div>
-              <div class="products__item">
+              <div class="products__item" data-open-modal="modal-order-form">
                 <article class="product">
                   <div class="product__content"><a class="product__image" href="#"><img src="img/content/products/betonnye-zabory.png" width="100" height="100" alt="image"></a>
                     <div class="product__body">
@@ -417,7 +417,7 @@
                   </div><a class="product__link" href="#"></a>
                 </article>
               </div>
-              <div class="products__item">
+              <div class="products__item" data-open-modal="modal-order-form">
                 <article class="product">
                   <div class="product__content"><a class="product__image" href="#"><img src="img/content/products/plity-2P.png" width="100" height="100" alt="image"></a>
                     <div class="product__body">
@@ -439,7 +439,7 @@
                   </div><a class="product__link" href="#"></a>
                 </article>
               </div>
-              <div class="products__item">
+              <div class="products__item" data-open-modal="modal-order-form">
                 <article class="product">
                   <div class="product__content"><a class="product__image" href="#"><img src="img/content/products/plity-2P-2.png" width="100" height="100" alt="image"></a>
                     <div class="product__body">
@@ -461,7 +461,7 @@
                   </div><a class="product__link" href="#"></a>
                 </article>
               </div>
-              <div class="products__item">
+              <div class="products__item" data-open-modal="modal-order-form">
                 <article class="product">
                   <div class="product__content"><a class="product__image" href="#"><img src="img/content/products/plity-2P.png" width="100" height="100" alt="image"></a>
                     <div class="product__body">
@@ -830,6 +830,59 @@
             <section class="modal-form">
               <h2 class="modal-form__title">Получить консультацию</h2>
               <p class="modal-form__desc">Если у вас появились вопросы о наших продуктах, пожалуйста, заполните форму ниже, и мы свяжемся с вами в течении 24 часов. Будьте уверены, что мы никому не передадим вашу информацию.</p>
+              <form action="#">
+                <div class="modal-form__form-wrapper">
+                  <div class="modal-form__inputs">
+                    <div class="custom-input">
+                      <label>
+                        <input type="text" name="name" placeholder="Ваше имя*">
+                      </label>
+                    </div>
+                    <div class="custom-input">
+                      <label>
+                        <input type="mail" name="mail" placeholder="Почта*">
+                      </label>
+                    </div>
+                    <div class="custom-input">
+                      <label>
+                        <input type="tel" name="phone" placeholder="Телефон*">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="modal-form__textarea">
+                    <div class="custom-textarea">
+                      <label>
+                        <textarea name="name" value="value" placeholder="Сообщение"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-form__bottom">
+                  <button class="btn btn modal-form__button" type="submit">Отправить
+                  </button>
+                  <div class="modal-form__info">
+                    <p><span>Нажимая кнопку Вы даете согласие на обработку персональных данных и соглашаетесь&nbsp;</span><a href="#">с политикой конфиденциальности</a></p>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </section>
+          <button class="btn-reset modal__close-button" type="button" arial-label="Закрыть попап" data-close-modal>
+            <svg width="40" height="40" aria-hidden="true">
+              <use xlink:href="#modal-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal="modal-order-form">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <section class="order">
+            <section class="modal-form">
+              <h2 class="modal-form__title">Оформить заявку</h2>
+              <p class="modal-form__desc">Оставьте заявку – мы перезвоним, проконсультируем по цене, доставке и ответим на вопросы.</p>
               <form action="#">
                 <div class="modal-form__form-wrapper">
                   <div class="modal-form__inputs">
