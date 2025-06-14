@@ -3889,6 +3889,19 @@ button,
   color: #000000;
 }
 
+.custom-input input:focus {
+  -webkit-box-shadow: 0 -4px 0 0 #cfe5ff;
+  box-shadow: 0 -4px 0 0 #cfe5ff;
+}
+
+.custom-input input:hover {
+  border: 1px solid #a7cfff;
+}
+
+.custom-input input:active {
+  border: 1px solid #a7cfff;
+}
+
 .custom-radio label {
   position: relative;
   display: -webkit-inline-box;
@@ -4140,6 +4153,19 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+}
+
+.custom-textarea textarea:focus {
+  -webkit-box-shadow: 0 -4px 0 0 #cfe5ff;
+  box-shadow: 0 -4px 0 0 #cfe5ff;
+}
+
+.custom-textarea textarea:hover {
+  border: 1px solid #a7cfff;
+}
+
+.custom-textarea textarea:active {
+  border: 1px solid #a7cfff;
 }
 
 .custom-textarea__label {

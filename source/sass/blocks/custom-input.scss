@@ -42,5 +42,18 @@
 
       color: $color-default-black;
     }
+
+    &:focus {
+      box-shadow: 0 -4px 0 0 #cfe5ff;
+    }
+
+    &:hover {
+      border: 1px solid #a7cfff;
+    }
+
+    &:active {
+      border: 1px solid #a7cfff;
+    }
+
   }
 }
