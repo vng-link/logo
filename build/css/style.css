@@ -3671,7 +3671,7 @@ button,
 .modal__content {
   position: relative;
   width: 360px;
-  padding: 30px;
+  padding: 40px 30px 30px 30px;
   border-radius: 10px;
   background: #f3f7ff;
 }
@@ -6226,7 +6226,6 @@ button,
   line-height: 140%;
   color: #000000;
   margin: 0 0 10px 0;
-  max-width: 224px;
 }
 
 .modal-form__desc {
@@ -6831,10 +6830,6 @@ button,
 }
 
 @media (max-width: 1023px) {
-  .modal__wrapper {
-    padding: 60px 44px;
-  }
-
   .modal__content {
     width: 100%;
   }
@@ -6876,6 +6871,10 @@ button,
     object-fit: unset;
     width: unset;
     max-width: unset;
+  }
+
+  .modal__wrapper {
+    padding: 60px 44px;
   }
 
   .header-top__email {
@@ -7108,10 +7107,6 @@ button,
 }
 
 @media (max-width: 767px) {
-  .modal__wrapper {
-    padding: 80px 35px;
-  }
-
   .modal__content {
     padding: 30px 20px;
   }
@@ -7184,6 +7179,10 @@ button,
 
   .intro__btn {
     width: 100%;
+  }
+
+  .modal__wrapper {
+    padding: 80px 35px;
   }
 
   .page {
