@@ -1,0 +1,18 @@
+mixin modal-form(form)
+  section.modal-form
+    h2.modal-form__title #{form.title}
+    if form.desc
+      p.modal-form__desc #{form.desc}
+    form(action="#")
+      .modal-form__form-wrapper
+        .modal-form__inputs
+          +custom-input({type: "text", name: "name", placeholder: "Ваше имя*"})
+          +custom-input({type: "tel", name: "phone", placeholder: "Телефон*"})
+        .modal-form__textarea
+          +custom-textarea({name: 'name', value: 'value', placeholder: "Сообщение"})
+      .modal-form__bottom
+        +btn({text: "Отправить", type: "submit"}).btn.modal-form__button
+        .modal-form__info
+          p
+            span Нажимая кнопку Вы даете согласие на обработку персональных данных и соглашаетесь
+            a(href="#") с политикой конфиденциальности
