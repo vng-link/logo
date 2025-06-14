@@ -3379,13 +3379,6 @@ button,
   gap: 30px;
 }
 
-.footer__company {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
-}
-
 .footer__recaptcha {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.4);
@@ -6348,12 +6341,8 @@ button,
   }
 
   .footer__logo svg {
-    width: 40px;
+    width: 106px;
     height: 30px;
-  }
-
-  .footer__company {
-    font-size: 16px;
   }
 
   .intro__content {

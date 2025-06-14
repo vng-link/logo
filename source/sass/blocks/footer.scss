@@ -164,22 +164,11 @@
     @include vp-1199  {
       margin-bottom: 10px;
       svg {
-        width: 40px;
+        width: 106px;
         height: 30px;
       }
     }
   }
-
-  &__company {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 20px;
-    color: $color-default-white;
-    @include vp-1199  {
-      font-size: 16px;
-    }
-  }
-
   &__recaptcha {
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.4);
