@@ -65,11 +65,11 @@
   &__content {
     position: relative;
 
-    width: 475px;
-    padding: 40px;
+    width: 360px;
+    padding: 30px;
 
     border-radius: 10px;
-    background-color: #ffffff;
+    background: #f3f7ff;
 
     @include vp-1023 {
       width: 100%;

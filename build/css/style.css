@@ -3670,10 +3670,10 @@ button,
 
 .modal__content {
   position: relative;
-  width: 475px;
-  padding: 40px;
+  width: 360px;
+  padding: 30px;
   border-radius: 10px;
-  background-color: #ffffff;
+  background: #f3f7ff;
 }
 
 .modal__close-button {
@@ -6191,6 +6191,57 @@ button,
 
 .text-page p + h2 {
   margin: 50px 0 20px 0;
+}
+
+.modal-form__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  margin: 0 0 10px 0;
+  max-width: 224px;
+}
+
+.modal-form__desc {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.modal-form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 10px 0;
+}
+
+.modal-form__textarea {
+  margin-bottom: 20px;
+}
+
+.modal-form__button {
+  width: 100%;
+}
+
+.modal-form__info {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: #848484;
+}
+
+.modal-form__info a {
+  color: #848484;
+  text-decoration: underline;
 }
 
 /* @mixin hover-focus {
