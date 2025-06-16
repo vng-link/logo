@@ -10,7 +10,7 @@
   height: 100%;
   @include hover-focus {
     .category-card__title::after {
-      background: url("../../img/sprite/arrow-active.svg") no-repeat center;
+      background: url("../img/sprite/arrow-active.svg") no-repeat center;
     }
     .category-card__image {
       transform: scale(1.2);
@@ -61,7 +61,7 @@
     }
     &::after {
       content: "";
-      background: url("../../img/sprite/arrow.svg") no-repeat center;
+      background: url("../img/sprite/arrow.svg") no-repeat center;
       width: 30px;
       height: 30px;
       transition: transform, background $trans-default;

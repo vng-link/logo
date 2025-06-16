@@ -22,20 +22,20 @@
       font-size: 148px;
     }
     &:after {
-      content: url("../../img/content/not-found/not-found-icon.svg");
+      content: url("../img/content/not-found/not-found-icon.svg");
       width: 68px;
       height: 176px;
       position: absolute;
       left: 183px;
       top: -2px;
       @include vp-807 {
-        content: url("../../img/content/not-found/not-found-icon-middle.svg");
+        content: url("../img/content/not-found/not-found-icon-middle.svg");
         width: 53px;
         height: 136px;
         left: 143px;
       }
       @include vp-615 {
-        content: url("../../img/content/not-found/not-found-icon-small.svg");
+        content: url("../img/content/not-found/not-found-icon-small.svg");
         width: 40px;
         height: 103px;
         left: 108px;

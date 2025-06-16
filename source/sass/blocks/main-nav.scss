@@ -108,14 +108,14 @@
           content: "";
           width: 16px;
           height: 16px;
-          background: url("../../img/sprite/dropdown.svg") no-repeat center;
+          background: url("../img/sprite/dropdown.svg") no-repeat center;
           transition: transform, background $trans-default;
           margin-left: 10px;
           @include vp-1199 {
             content: "";
             width: 32px;
             height: 32px;
-            background: url("../../img/sprite/dropdown-mobile.svg") no-repeat center;
+            background: url("../img/sprite/dropdown-mobile.svg") no-repeat center;
             transition: transform $trans-default;
           }
         }
@@ -127,7 +127,7 @@
             opacity: 0.8;
             border: 1px solid $color-dodger-blue;
             &::after {
-              background: url("../../img/sprite/dropdown-active.svg") no-repeat center;
+              background: url("../img/sprite/dropdown-active.svg") no-repeat center;
             }
             svg {
               transform: rotate(180deg);
@@ -145,7 +145,7 @@
             opacity: 0.8;
             border: 1px solid $color-dodger-blue;
             &::after {
-              background: url("../../img/sprite/dropdown-active.svg") no-repeat center;
+              background: url("../img/sprite/dropdown-active.svg") no-repeat center;
             }
 
             svg {

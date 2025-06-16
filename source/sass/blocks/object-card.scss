@@ -189,7 +189,7 @@
     }
     &--top {
       &:after {
-        content: url("../../img/content/sliders/button-top.svg");
+        content: url("../img/content/sliders/button-top.svg");
       }
       margin-bottom: 10px;
       @include vp-615 {
@@ -201,13 +201,13 @@
       }
       @include hover-focus {
         &:after {
-          content: url("../../img/content/sliders/button-top-hover.svg");
+          content: url("../img/content/sliders/button-top-hover.svg");
         }
       }
     }
     &--bottom {
       &:after {
-        content: url("../../img/content/sliders/button-bottom.svg");
+        content: url("../img/content/sliders/button-bottom.svg");
       }
       @include vp-615 {
         margin-bottom: unset;
@@ -218,7 +218,7 @@
       }
       @include hover-focus {
         &:after {
-          content: url("../../img/content/sliders/button-bottom-hover.svg");
+          content: url("../img/content/sliders/button-bottom-hover.svg");
         }
       }
     }

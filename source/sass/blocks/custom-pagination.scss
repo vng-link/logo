@@ -24,22 +24,22 @@
       background-repeat: no-repeat;
       flex-shrink: 0;
       &--start {
-        background-image: url("../../img/sprite/pagination-arrow-start.svg");
+        background-image: url("../img/sprite/pagination-arrow-start.svg");
         @include vp-615 {
           display: none;
         }
       }
       &--prev {
-        background-image: url("../../img/sprite/pagination-arrow-prev.svg");
+        background-image: url("../img/sprite/pagination-arrow-prev.svg");
       }
       &--end {
-        background-image: url("../../img/sprite/pagination-arrow-end.svg");
+        background-image: url("../img/sprite/pagination-arrow-end.svg");
         @include vp-615 {
           display: none;
         }
       }
       &--next {
-        background-image: url("../../img/sprite/pagination-arrow-next.svg");
+        background-image: url("../img/sprite/pagination-arrow-next.svg");
       }
     }
 
