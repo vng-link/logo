@@ -3575,6 +3575,7 @@ button,
   color: #ffffff;
   margin-bottom: 20px;
   line-height: 150%;
+  text-align: justify;
 }
 
 .intro__image {
@@ -6734,7 +6735,7 @@ button,
   }
 
   .categories__wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
@@ -6966,7 +6967,6 @@ button,
   }
 
   .category-card__title {
-    word-break: break-all;
     font-size: 14px;
   }
 
@@ -7352,6 +7352,10 @@ button,
 
   .main-nav__btn {
     margin-top: 20px;
+  }
+
+  .category-card__body {
+    padding: 10px;
   }
 
   .products__item {
