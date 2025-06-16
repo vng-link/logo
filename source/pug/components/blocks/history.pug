@@ -1,0 +1,57 @@
+mixin history()
+  -
+
+  section.page__history.history
+    .container
+      h2 История Тучковского домостроительного комбината: от карьера к современному производству ЖБИ
+      .history__video
+        <video src="./img/customer-story.mp4" id="video-story" controls>Ваш браузер не поддерживает тег <code>video</code>.</video>
+        <img src="./img/sprite/btn-play.svg" alt="" class="history__btn-play">
+        <img src="./img/content/history/history.png" alt="" class="history__overlay">
+      p Домостроительный комбинат на въезде в посёлок Тучково был построен в 1984 году на месте выработанного песчано-гравийного карьера. Выбор места оказался стратегически верным: к этому времени Тучково уже сформировалось как крупный промышленный центр по производству железобетона, чему способствовала богатая ресурсная база (месторождения песка и щебня) и развитая транспортная инфраструктура.
+      h3 1984-1990-е: Эпоха усадебного домостроения
+      p Комбинат специализировался на производстве домокомплектов для индивидуального строительства – так называемых «усадебных» домов. Проектная мощность предприятия составляла до 2000 готовых комплектов в год, что позволяло обеспечивать жильём быстрорастущие подмосковные поселения.
+      h3 1990-е: Переход к многоэтажному строительству
+      p В процессе приватизации предприятие было преобразовано в ЗАО «ТМПСО «Рузский Дом». Новая эпоха ознаменовалась переходом на производство панелей для многоквартирных домов. В этот период комбинат реализовал десятки проектов по всему Подмосковью, внеся значительный вклад в решение жилищного вопроса региона.
+      h3 2019-2020: Реорганизация и новый этап
+      p После банкротства в 2019 году и передачи активов банку-кредитору, в 2020 году производство приобрел современный строительно-промышленный холдинг, имеющий многолетний опыт в производстве железобетонных изделий.
+      h3 Современное производство
+      p Сегодня обновлённый завод представляет собой:
+      ol
+        li Производственную мощность 300 000 м³ ЖБИ в год
+        li Два современных бетоносмесительных узла (круглосуточная работа)
+        li Арматурный цех площадью 5 000 м²
+        li Формовочный цех площадью 15 000 м²
+        li Полный цикл производства – от проектирования до логистики
+      p Благодаря модернизации и сохранению лучших традиций советской школы домостроения, предприятие продолжает оставаться важным звеном строительной отрасли Московского региона, теперь специализируясь на производстве широкого ассортимента железобетонных изделий для различных нужд строительства.
+      h2.history__sub-title Галерея производства
+      .history__gallery.gallery
+        .gallery__wrapper
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/1.png" data-fancybox="gallery")
+              +img("content/gallery", "1", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/2.png" data-fancybox="gallery")
+              +img("content/gallery", "2", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/3.png" data-fancybox="gallery")
+              +img("content/gallery", "3", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/4.png" data-fancybox="gallery")
+              +img("content/gallery", "4", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/5.png" data-fancybox="gallery")
+              +img("content/gallery", "5", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/6.png" data-fancybox="gallery")
+              +img("content/gallery", "6", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/7.png" data-fancybox="gallery")
+              +img("content/gallery", "7", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/8.png" data-fancybox="gallery")
+              +img("content/gallery", "8", 'png', 460, 262, "alt")
+          .gallery__item
+            a.gallery__image(href="img/content/gallery/9.png" data-fancybox="gallery")
+              +img("content/gallery", "9", 'png', 460, 262, "alt")
+        <a class="btn btn--white gallery__btn" href="#">Показать еще</a>

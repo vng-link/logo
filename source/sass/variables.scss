@@ -18,7 +18,18 @@ $color-summer-sky:              #43abf0;
 $color-summer-sky-2:            #3e9cdc;
 $color-silver:                  #c3c3c3;
 $color-dolphin:                 #6f6d7b;
-
+$color-dodger-blue:             #3f82ff;
+$color-prussian-blue:           #003865;
+$color-silver:                  #c4c4c4;
+$color-gainsboro:               #dadada;
+$color-solitude:                #dce7fd;
+$color-radical-red:             #ff4548;
+$color-venetian-red:            #d21013;
+$color-alizarin:                #f73b3e;
+$color-alice-blue:              #f3f7ff;
+$color-solitude:                #dce7fd;
+$color-dark-gray:               #ababab;
+$color-gray:                    #848484;
 // Gradient
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -57,8 +68,10 @@ $trans-400-ease-in-out:             0.4s $tf-ease-in-out;
 $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-390:                            390px;
+$vp-576:                            576px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1160:                           1160px;
 $vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;

@@ -1,0 +1,29 @@
+mixin advantages()
+
+  section.page__advantages.advantages
+    .container
+      .advantages__wrapper
+        .advantages__item
+          .advantage
+            .advantage__image
+              +icon("specialists", 50, 50)
+            h3.advantage__title Квалифицированные специалисты
+            .advantage__text Профессионалы в сфере ЖБИ изделий с многолетним опытом работы
+        .advantages__item
+          .advantage
+            .advantage__image
+              +icon("shipment", 50, 50)
+            h3.advantage__title Отгрузка в день оплаты
+            .advantage__text Если товар в наличии - отгрузим в день оплаты!
+        .advantages__item
+          .advantage
+            .advantage__image
+              +icon("connection", 50, 50)
+            h3.advantage__title Всегда на связи
+            .advantage__contacts
+              a.advantage__phone(href="tel:89166426203", aria-label="Позвонить по телефону") 8 (916) 642-62-03
+              .advantage__socials
+                a.advantage__whatsapp(href="#", aria-label="Перейти в whatsapp")
+                  +icon("whatsapp-blue", 30, 30)
+                a.advantage__telegram(href="#", aria-label="Перейти в telegram")
+                  +icon("telegram-blue", 30, 30)

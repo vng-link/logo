@@ -1,0 +1,30 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Контакты"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "contacts.html"
+  -
+    const breadcrumbs = [
+      {
+        isLink: true,
+        href: "#",
+        title: "Главная"
+      },
+      {
+        isLink: false,
+        href: "#",
+        title: "Контакты"
+      }
+    ]
+
+block main
+  main.page
+    +page-top("Контакты", breadcrumbs)
+    +contacts()
+    +feedback()
+block modals

@@ -1,0 +1,66 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.contacts {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 50px;
+    @include vp-1199 {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include vp-807 {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__column {
+    border-left: 1px solid #eef1f7;
+    padding-left: 30px;
+    position: relative;
+    &:after {
+      content: '';
+      width: 1px;
+      height: 28px;
+      background-color: #3f82ff;
+      position: absolute;
+      left: -1px;
+      top: 0;
+    }
+  }
+  &__label {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    margin-bottom: 20px;
+    @include vp-807 {
+      font-size: 16px;
+    }
+  }
+  &__phone-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__socials {
+    display: flex;
+    gap: 10px;
+  }
+  &__email {
+    color: #3f82ff;
+    transition: opacity $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+  &__phone {
+    transition: opacity $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}

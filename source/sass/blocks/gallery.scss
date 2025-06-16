@@ -1,0 +1,64 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.gallery {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    @media (max-width: 807px) {
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    @media (max-width: 615px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__item {
+    @include hover-focus {
+      .gallery__image::after {
+        opacity: 1;
+      }
+    }
+  }
+  &__image {
+    height: 262px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    @media (max-width: 1479px) {
+      height: 211px;
+    }
+    @include vp-1199 {
+      height: 139px;
+    }
+    @media (max-width: 807px) {
+      height: 107px;
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: 262px;
+    }
+    &:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      content: url("../img/sprite/gallery-plus.svg");
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity $trans-default;
+    }
+  }
+  &__btn {
+    margin-top: 30px;
+  }
+}

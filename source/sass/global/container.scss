@@ -5,12 +5,20 @@
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
-
-  @include vp-1023 {
-    padding: 0 30px;
+  @media (max-width: 1479px) {
+    max-width: 1200px;
   }
 
-  @include vp-767 {
-    padding: 0 20px;
+  @include vp-1199 {
+    max-width: 808px
   }
+
+  @media (max-width: 807px) {
+    max-width: 616px
+  }
+
+  @media (max-width: 615px) {
+    max-width: 400px
+  }
+
 }

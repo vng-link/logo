@@ -42,11 +42,11 @@
     min-height: 100%;
     padding: 60px 40px;
 
-    @include vp-1023 {
+    @include vp-807 {
       padding: 60px 44px;
     }
 
-    @include vp-767 {
+    @include vp-615 {
       padding: 80px 35px;
     }
   }
@@ -65,17 +65,17 @@
   &__content {
     position: relative;
 
-    width: 475px;
-    padding: 40px;
+    width: 360px;
+    padding: 30px 30px 30px 30px;
 
     border-radius: 10px;
-    background-color: #ffffff;
+    background: #f3f7ff;
 
-    @include vp-1023 {
+    @include vp-807 {
       width: 100%;
     }
 
-    @include vp-767 {
+    @include vp-615 {
       padding: 30px 20px;
     }
   }
@@ -96,7 +96,7 @@
     cursor: pointer;
     user-select: none;
 
-    @include vp-767 {
+    @include vp-615 {
       top: 5px;
       right: 5px;
     }

@@ -13,6 +13,8 @@ export class Modals {
     this._enableScrolling = true;
     this._settingKey = 'default';
 
+    this._productTitle = null;
+
     this._settings = settings;
     this._preventDefault = this._settings[this._settingKey].preventDefault;
     this._stopPlay = this._settings[this._settingKey].stopPlay;
@@ -85,6 +87,11 @@ export class Modals {
 
     this._modalName = target.closest('[data-open-modal]').dataset.openModal;
 
+    if (this._modalName === "modal-order-form") {
+      const productTitle = target.closest('[data-open-modal]').querySelector('[data-product-title]').innerHTML;
+      this._productTitle = productTitle;
+    }
+
     if (!this._modalName) {
       return;
     }
@@ -143,6 +150,11 @@ export class Modals {
     }
 
     this._setSettings(modalName);
+
+    if (this._modalName === "modal-order-form") {
+      modal.querySelector('[data-modal-product-title]').innerHTML = this._productTitle;
+    }
+
     modal.classList.add('is-active');
 
     if (modalName !== this._stackModalElements[this._stackModalElements.length - 1]) {

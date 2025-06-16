@@ -1,0 +1,7 @@
+mixin cookies()
+  .cookies(data-cookies, data-fix-block)
+    .container
+      .cookies__wrapper
+        .cookies__text
+          p Для персонализации сервисов сайт использует cookies, применяя метрические и иные системы аналитик. Запретить эти действия можно в настройках браузера.
+        +btn({type: "button", text: "Принять"})(data-cookies="button").btn.btn--white.cookies__btn

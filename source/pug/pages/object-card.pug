@@ -1,0 +1,35 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Объект"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "object.html"
+  -
+    const breadcrumbs = [
+      {
+        isLink: true,
+        href: "#",
+        title: "Главная"
+      },
+      {
+        isLink: true,
+        href: "#",
+        title: "Объекты"
+      },
+      {
+        isLink: false,
+        href: "#",
+        title: "Жилой комплекс «Лесные Поляны» в Московской области"
+      }
+    ]
+
+block main
+  main.page
+    +page-top("Жилой комплекс «Лесные Поляны» в Московской области", breadcrumbs)
+    +object-card()
+    +feedback()
+block modals

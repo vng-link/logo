@@ -2,20 +2,50 @@
 @use "../variables" as *;
 
 .products {
+  &__title {
+    font-size: 36px;
+    margin: 0 0 30px 0;
+    @include vp-1199 {
+      font-size: 26px;
+    }
+    @include vp-807 {
+      font-size: 24px;
+    }
+  }
   &__wrapper {
-    @include vp-1023 {
+    @include vp-807 {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -20px;
     }
   }
   &__item {
+    :hover {
+      .product__btn {
+        box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+        background: linear-gradient(0deg, #ff4548 0%, #d21013 100%);
+      }
+      .product__title {
+        opacity: 0.8;
+      }
+    }
     margin-bottom: 10px;
-    @include vp-1023 {
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include vp-807 {
       flex-basis: 50%;
       padding: 0 10px;
       margin-bottom: 20px;
     }
+    @include vp-615 {
+      flex-basis: 100%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    margin-top: 30px;
   }
 }
 

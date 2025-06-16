@@ -1,0 +1,20 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.form-success {
+  h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: $color-default-black;
+    margin: 20px 0 10px 0;
+  }
+  &__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-default-black;
+  }
+}

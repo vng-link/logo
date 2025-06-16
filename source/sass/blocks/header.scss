@@ -1,24 +1,22 @@
 @use "../mixins" as *;
 @use "../variables" as *;
 
-/*
 .header {
-  z-index: 11;
+  z-index: 100;
   position: fixed;
 
   top: 0;
-  left: 0;
 
   width: 100%;
 
-  background-color: rgba($color-black-russian, 0.9);
+  transition: top $trans-default;
 
   &.is-open {
     .main-nav__toggle {
       span {
         &:nth-child(1) {
-          top: 10px;
-          transform: rotate(-45deg) translate(0, -50%);
+          top: calc(50% - 1px);
+          transform: rotate(45deg);
         }
 
         &:nth-child(2) {
@@ -27,145 +25,14 @@
         }
 
         &:nth-child(3) {
-          top: 8px;
-          transform: rotate(45deg) translate(0, 50%);
+          bottom: calc(50% - 1px);
+          transform: rotate(-45deg);
         }
       }
     }
 
-    .main-nav__list {
+    .main-nav__menu {
       transform: translateX(0);
     }
-  }
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 33px 0 32px;
-
-    @include vp-1023 {
-      max-width: unset;
-    }
-  }
-
-  &__logo {
-    position: relative;
-    display: block;
-
-    width: 247px;
-    height: 35px;
-    margin-right: 40px;
-
-    @include vp-1023 {
-      margin-right: 20px;
-    }
-
-    @include vp-767 {
-      z-index: 11;
-
-      width: 165px;
-      margin-right: 0;
-    }
-
-    svg {
-      display: block;
-
-      width: 247px;
-      height: 35px;
-
-      @include vp-767 {
-        width: 165px;
-      }
-    }
-  }
-}
-*/
-
-.header {
-  &__top-header {
-  }
-  &__bottom-header {
-
-  }
-}
-
-.top-header {
-  background-color: #003865;
-  padding: 10px 0;
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__email {
-    color: $color-default-white;
-    text-decoration: underline;
-    @include vp-1023 {
-      display: none;
-    }
-  }
-  &__actions {
-    display: flex;
-    align-items: center;
-    @include vp-1023 {
-      flex-grow: 1;
-      justify-content: space-between;
-    }
-  }
-  &__contacts {
-      display: flex;
-  }
-  &__button {
-    color: $color-default-white;
-    text-transform: uppercase;
-    height: 35px;
-    padding: 0 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.23);
-    border-radius: 100px;
-    font-size: 14px;
-    font-weight: 700;
-    margin-right: 40px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-    @include vp-1023 {
-      margin-right: 0;
-    }
-  }
-  &__social-btn {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &--telegram {
-      margin-right: 25px;
-    }
-    &--whatsapp {
-      margin-right: 10px;
-    }
-  }
-  &__phone {
-    font-size: 20px;
-    font-weight: 700;
-    color: $color-default-white;
-  }
-}
-
-.bottom-header {
-  padding: 30px 0;
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__burger {
-
   }
 }

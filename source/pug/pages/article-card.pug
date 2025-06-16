@@ -1,0 +1,30 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Технология производства железобетона: от смеси до готового изделия"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "article-card.html"
+  -
+    const breadcrumbs = [
+      {
+        isLink: true,
+        href: "#",
+        title: "Главная"
+      },
+      {
+        isLink: false,
+        href: "#",
+        title: "Технология производства железобетона: от смеси до готового изделия"
+      }
+    ]
+
+block main
+  main.page
+    +page-top("Технология производства железобетона: от смеси до готового изделия", breadcrumbs)
+    +article-card()
+    +feedback()
+block modals

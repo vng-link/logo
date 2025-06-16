@@ -1,0 +1,27 @@
+mixin articles(articleItems)
+      section(class=articlesHasModifier ? 'page__articles page__articles--another articles' : 'page__articles articles' )
+        .container
+          if (articlesHasHeader)
+            .articles__header
+              h2.articles__title Все статьи
+              a.btn.btn--white(href="#", aria-label="Все статьи") Все статьи
+          .articles__wrapper
+            each item in articleItems
+                .articles__item
+                  +article(item)
+          if (articlesHasPagination)
+            .articles__pagination
+             +pagination
+
+
+
+
+
+
+
+
+
+
+
+
+

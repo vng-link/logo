@@ -1,0 +1,137 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.price {
+  &__sub-category-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-default-black;
+    margin-bottom: 20px;
+  }
+
+  &__sub-category-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #a2a2a2;
+      gap: 10px;
+    @include vp-615 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  }
+
+  &__sub-category-item-label {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-default-black;
+    flex-basis: 50%;
+  }
+
+  &__sub-category-item-price {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: right;
+    color: $color-default-black;
+    white-space: nowrap;
+  }
+
+  &__sub-category {
+    margin-bottom: 30px;
+  }
+
+}
+
+
+.accordion-price {
+  &__content-wrapper {
+    padding: 30px 0 0 48px;
+  }
+  &__element {
+    position: relative;
+    border-top: 1px solid #DEE4F0;
+    padding: 20px 0;
+    &:before {
+      content: "";
+      height: 1px;
+      background-color: #3f82ff;
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 0;
+      transition: all 0.3s;
+    }
+    &.is-active {
+      .plus span {
+        &:last-child {
+          transform: rotate(0);
+        }
+      }
+      &:before {
+        width: 100%;
+      }
+      .accordion-price__button {
+        padding-left: 48px;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    padding-left: 38px;
+    position: relative;
+    transition: all 0.3s;
+    &:after {
+      content: url("../img/sprite/arrow-price.svg");
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+.plus {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  span {
+    transition: all 0.2s;
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #3F82FF;
+    width: 100%;
+    top: calc(50% - 1px);
+    left: 0;
+    &:nth-child(2) {
+      width: 8px;
+      height: 8px;
+      border-radius: 100px;
+      left: 50%;
+      transform: translate(-4px, -3px);
+    }
+    &:last-child {
+      transform: rotate(-90deg);
+    }
+  }
+}

@@ -60,6 +60,8 @@
   }
 }
 
+
+
 @mixin vp-1199 {
   @media (max-width: ($vp-1200 - 1px)) {
     @content;
@@ -78,6 +80,12 @@
   }
 }
 
+@mixin vp-575 {
+  @media (max-width: ($vp-576 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-389 {
   @media (max-width: ($vp-390 - 1px)) {
     @content;
@@ -89,6 +97,29 @@
     @content;
   }
 }
+
+//custom mixins
+
+@mixin vp-807 {
+  @media (max-width: 807px) {
+    @content;
+  }
+}
+
+@mixin vp-615 {
+  @media (max-width: 615px) {
+    @content;
+  }
+}
+
+@include vp-807 {
+
+}
+
+@include vp-615 {
+
+}
+//
 
 // Mobile first
 
@@ -144,3 +175,9 @@
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+
+@mixin focus-within {
+  &:has(.focus-visible) {
+    @content;
+  }
+}

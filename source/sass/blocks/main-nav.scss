@@ -1,53 +1,62 @@
 @use "../mixins" as *;
 @use "../variables" as *;
 
-/*
+
 .main-nav {
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    display: none;
+    font-size: 16px;
+    @include vp-1199 {
+      display: block;
+      width: 100%;
+      margin-top: 40px;
+    }
+    @include vp-615 {
+      margin-top: 20px;
+    }
+  }
+
   &__toggle {
-    z-index: 11;
     position: relative;
     display: none;
-
-    width: 30px;
-    height: 30px;
-
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     user-select: none;
-
     transition: opacity $trans-default;
-
-    @include vp-767 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    position: relative;
+    z-index: 11;
+    border: 1px solid $color-dodger-blue;
+    border-radius: 4px;
+    @include vp-1199 {
+      display: block;
     }
 
     span {
       display: block;
       position: absolute;
-
-      left: 0;
-
-      width: 100%;
-      height: 3px;
-
-      background-color: $color-default-white;
-
-      transition: transform $trans-default, opacity $trans-default, visibility $trans-default;
-
+      left: 9px;
+      width: 20px;
+      height: 2px;
+      background-color: $color-prussian-blue;
+      transition: transform $trans-default, opacity $trans-default,
+      visibility $trans-default;
       &:nth-child(1) {
-        top: 0;
+        top: 12px;
       }
 
       &:nth-child(2) {
         top: 50%;
-
         transform: translateY(-50%);
       }
 
       &:nth-child(3) {
-        bottom: 0;
+        bottom: 12px;
       }
+
     }
 
     @include hover-focus {
@@ -55,188 +64,241 @@
     }
   }
 
-  &__list {
-    display: flex;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-
-    @include vp-767 {
+  &__menu {
+    @include vp-1199 {
       z-index: 10;
       position: fixed;
-      flex-direction: column;
-      justify-content: flex-start;
-
-      top: 100px;
+      overflow: auto;
+      top: 55px;
       right: 0;
       bottom: 0;
       left: 0;
-
       width: 100%;
-      padding: 200px 20px 20px;
-
-      background-color: rgba($color-black-russian, 0.9);
-
+      margin: 0;
+      padding: 80px 0;
+      background-color: $color-default-white;
       transition: transform $trans-default, visibility $trans-default, opacity $trans-default;
       transform: translateX(100%);
     }
+
+
   }
 
-  &__item {
-    margin-right: 60px;
-
-    @include vp-1023 {
-      margin-right: 30px;
-    }
-
-    @include vp-767 {
-      margin-right: 0;
-      margin-bottom: 30px;
-    }
-
-    &:last-child {
-      margin-right: 0;
-
-      @include vp-767 {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &__link {
-    display: block;
-
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    text-transform: uppercase;
-
-    color: $color-default-white;
-
-    transition: opacity $trans-default;
-    transform: translate3d(0, 0, 0);
-
-    &.is-active {
-      color: $color-summer-sky;
-
-      pointer-events: none;
-    }
-
-    @include hover-focus {
-      opacity: 0.8;
-    }
-  }
-}
-*/
-
-
-.main-nav {
-  @include vp-1199 {
-    display: none;
-  }
   &__list {
     display: flex;
-    align-items: center;
-    gap: 30px;
-    @include vp-1439 {
-      gap: 20px;
+    margin-top: 10px;
+    @include vp-1199 {
+      flex-direction: column;
+      margin-top: 0;
     }
+
   }
+
   &__item {
     position: relative;
-    padding: 10px 0;
-    &:hover {
+    margin: 0 1px 0 0;
+
+    @include vp-1199 {
+      border-bottom: 1px dashed $color-silver;
+    }
+
+    &--dropdown {
+      .main-nav__link {
+        &::after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background: url("../img/sprite/dropdown.svg") no-repeat center;
+          transition: transform, background $trans-default;
+          margin-left: 10px;
+          @include vp-1199 {
+            content: "";
+            width: 32px;
+            height: 32px;
+            background: url("../img/sprite/dropdown-mobile.svg") no-repeat center;
+            transition: transform $trans-default;
+          }
+        }
+      }
+
+      @media (min-width: 1199px) {
+        @include focus-within {
+          .main-nav__link {
+            opacity: 0.8;
+            border: 1px solid $color-dodger-blue;
+            &::after {
+              background: url("../img/sprite/dropdown-active.svg") no-repeat center;
+            }
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+
+          .main-nav__sublist {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        @include hover-focus {
+          .main-nav__link {
+            opacity: 0.8;
+            border: 1px solid $color-dodger-blue;
+            &::after {
+              background: url("../img/sprite/dropdown-active.svg") no-repeat center;
+            }
+
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+
+          .main-nav__sublist {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    &--dropdown.is-active {
+      .main-nav__link {
+        svg {
+          @include vp-1199 {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .main-nav__sublist {
+        @include vp-1199 {
+          display: block;
+        }
+      }
+
       .main-nav__link::after {
         transform: rotate(180deg);
       }
-      .main-nav__sublist {
-        opacity: 1;
-        pointer-events: all;
-        transform: translate(0, 0);
-      }
-    }
-  }
-  &__link {
-    line-height: 100%;
-    &--dropdown {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      &::after {
-        content: url("../../img/sprite/dropdown.svg");
-        width: 16px;
-        height: 16px;
-        transition: transform 0.3s;
-      }
-    }
-  }
-  &__sublist {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: max-content;
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(0, 10%);
-    transition: all 0.2s;
 
-    background-color: #003865;
-    display: grid;
-    gap: 16px;
-    font-size: 16px;
-    padding: 20px;
-    border-radius: 20px;
-    z-index: 10;
+    }
+
   }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px 15px;
+    color: $color-default-black;
+    transition: opacity, border $trans-default;
+    border: 1px solid transparent;
+    border-radius: 100px;
+
+    @media (max-width: 1479px) {
+      padding: 5px 12px;
+    }
+
+
+    @include vp-1199 {
+      justify-content: space-between;
+      padding: 19px 0;
+    }
+    @media (min-width: 1199px) {
+      @include hover-focus {
+        opacity: 0.8;
+        border: 1px solid $color-dodger-blue;
+      }
+    }
+
+    svg {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      margin: 0 0 0 10px;
+      transition: transform $trans-default;
+      @include vp-1199 {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &__sublist-handler {
+    padding-top: 10px;
+    @include vp-1199 {
+      padding-top: 0;
+    }
+  }
+
+  &__sublist {
+    z-index: 10;
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    width: max-content;
+    margin: 0;
+    list-style: none;
+    background-color: $color-default-white;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid $color-solitude;
+    border-radius: 20px;
+    transition: transform $trans-default, opacity $trans-default, visibility $trans-default;
+    opacity: 0;
+    visibility: hidden;
+    @include vp-1199 {
+      position: static;
+      display: none;
+      top: 0;
+      left: 0;
+      width: auto;
+      min-width: unset;
+      opacity: 1;
+      visibility: visible;
+      box-shadow: unset;
+      border: unset;
+      padding-bottom: 19px;
+    }
+  }
+
+  &__subitem {
+    display: flex;
+    border-bottom: 1px solid $color-gainsboro;
+    &:last-child {
+      border-bottom: unset;
+    }
+    @include vp-1199 {
+      border-bottom: none;
+    }
+  }
+
   &__sublink {
-    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 14px 20px;
+    color: $color-default-black;
+    transition: opacity $trans-default;
+    width: 100%;
+    @include vp-1199 {
+      padding: 10px 20px;
+    }
+    @media (min-width: 1199px) {
+      @include hover-focus {
+        opacity: 0.8;
+        background: linear-gradient(180deg, $color-radical-red 0%, $color-venetian-red 100%);
+        color: $color-default-white;
+      }
+    }
   }
 }
 
-.burger {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: none;
-  padding: 12px 9px;
-  border: 1px solid #3F82FF;
-  border-radius: 4px;
-  @include vp-1199 {
+.main-nav__menu>.container {
+  display: contents;
+}
+
+@include vp-1199 {
+  .main-nav__menu>.container {
     display: block;
-  }
-  &__lines {
-    position: relative;
-    height: 100%;
-  }
-  span {
-    transition: all 0.2s;
-    position: absolute;
-    display: block;
-    height: 2px;
-    background-color: #003865;
-    width: 100%;
-    top: 0;
-    left: 0;
-    &:nth-child(2) {
-      top: 50%;
-      transform: translate(0, -50%);
-    }
-    &:last-child {
-      top: auto;
-      bottom: 0;
-    }
-  }
-  &.active span {
-    transform: rotate(45deg);
-    top: calc(50% - 1px);
-    &:nth-child(2) {
-      transform: scale(0);
-    }
-    &:last-child {
-      transform: rotate(-45deg);
-      bottom: calc(50% - 1px);
-    }
+    height: auto;
   }
 }

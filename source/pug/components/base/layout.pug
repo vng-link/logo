@@ -4,6 +4,12 @@ include ../components
 
 block variables
 
+-
+    const formSuccess = {
+      title: "Заявка успешно отправлена",
+      text: "Ожидайте звонка. Вас бесплатно проконсультирует наш специалист."
+    }
+
 html(lang="ru")
   head
     title=title
@@ -50,6 +56,20 @@ html(lang="ru")
         +footer(footerMods)
 
     block modals
+
+    +modal()(data-modal="modal-callback-form")
+      +callback()
+
+    +modal()(data-modal="modal-consultation-form")
+      +consultation()
+
+    +modal()(data-modal="modal-order-form")
+      +order()
+
+
+    +modal()(data-modal="success")
+      +form-success(formSuccess)
+
 
     script(src="js/main.min.js")
     script(src="js/vendor.min.js")

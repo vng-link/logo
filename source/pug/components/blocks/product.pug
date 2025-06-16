@@ -1,24 +1,24 @@
 mixin product(data)
-  .product
+  article.product
     .product__content
-      a.product__image
+      a.product__image(href=data.href)
         +img("content/products", data.image.src, data.image.format, data.image.width, data.image.height, data.image.alt)
       .product__body
-        a.product__title!=data.title
+        h3.product__title(href=data.href, data-product-title)!=data.title
         .product__article
-          span__article-label Артикул:
-          span__article-value!=data.article.number
+          span.product__article-label Артикул:
+          span.product__article-value!=data.article.number
     ul.product__characteristics.list-reset
-      li.characteristics
+      li.product__characteristics-item
         span.product__characteristics-label Длина:
         span.product__characteristics-value!=data.characteristics.length
-      li.characteristics
+      li.product__characteristics-item
         span.product__characteristics-label Высота:
         span.product__characteristics-value!=data.characteristics.height
-      li.characteristics
+      li.product__characteristics-item
         span.product__characteristics-label Ширина:
         span.product__characteristics-value!=data.characteristics.width
-      li.characteristics
+      li.product__characteristics-item
         span.product__characteristics-label Вес изделия:
         span.product__characteristics-value!=data.characteristics.weight
     .product__actions
@@ -26,4 +26,5 @@ mixin product(data)
         =" "
         span!=data.price
         =" ₽/шт."
-      a.btn Оформить заявку
+      +btn({type: "button", text: "Оформить заявку"}).btn.product__btn
+    a.product__link(href=data.href)

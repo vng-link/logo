@@ -1,0 +1,103 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.header-top {
+  background-color: $color-prussian-blue;
+  padding: 10px 0;
+  position: relative;
+  z-index: 11;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__email {
+    color: $color-default-white;
+    text-decoration: underline;
+    transition: opacity $trans-default;
+    @include vp-807 {
+      display: none;
+    }
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include vp-807 {
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    svg {
+      transition: opacity, $trans-default;
+      @include hover-focus {
+        opacity: 0.8;
+      }
+    }
+  }
+  &__button {
+    color: $color-default-white;
+    text-transform: uppercase;
+    height: 35px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 40px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: opacity $trans-default;
+    flex-shrink: 0;
+    @include vp-807 {
+      margin-right: 0;
+    }
+    @include vp-615 {
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/sprite/phone.svg"), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    span {
+      @include vp-615 {
+        display: none;
+      }
+    }
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+  &__social-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--telegram {
+      margin-right: 25px;
+    }
+    &--whatsapp {
+      margin-right: 10px;
+    }
+  }
+  &__phone {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-default-white;
+    transition: opacity $trans-default;
+    flex-shrink: 0;
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+}

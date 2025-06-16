@@ -22,7 +22,6 @@
 // ---------------------------------
 
 @use "blocks/header";
-@use "blocks/main-nav";
 @use "blocks/footer";
 @use "blocks/btn";
 @use "blocks/data-accordion";
@@ -35,11 +34,37 @@
 @use "blocks/custom-radio";
 @use "blocks/custom-select";
 @use "blocks/custom-textarea";
+@use "blocks/blocks";
+@use "blocks/header-top";
+@use "blocks/header-bottom";
+@use "blocks/main-nav";
 @use "blocks/categories";
 @use "blocks/category-card";
 @use "blocks/products";
 @use "blocks/product";
-
+@use "blocks/objects";
+@use "blocks/object";
+@use "blocks/advantages";
+@use "blocks/advantage";
+@use "blocks/about";
+@use "blocks/articles";
+@use "blocks/article";
+@use "blocks/feedback";
+@use "blocks/advice";
+@use "blocks/breadcrumbs";
+@use "blocks/price";
+@use "blocks/history";
+@use "blocks/gallery";
+@use "blocks/contacts";
+@use "blocks/custom-pagination";
+@use "blocks/object-card";
+@use "blocks/article-card";
+@use "blocks/not-found";
+@use "blocks/page-top";
+@use "blocks/text-page";
+@use "blocks/modal-form";
+@use "blocks/form-success";
+@use "blocks/cookies";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
@@ -94,11 +119,3 @@
 // transition: $trans-default ❌ ---> transition: color $trans-default ✅
 
 
-.page {
-  &__intro {
-    margin-bottom: 60px;
-  }
-  &__categories {
-    margin-bottom: 60px;
-  }
-}

@@ -1,4 +1,36 @@
 mixin feedback()
-  .feedback
-    h2 Остались вопросы?
-    p Напишите нам
+  .page__feedback.feedback
+    .container
+      .feedback__body
+        .feedback__wrapper
+          .feedback__column
+            h2.feedback__title Остались вопросы? Заполните форму – и получите персональную консультацию специалиста
+            .feedback__text
+              p Если у вас возниклки вопросы, пожалуйста, заполните форму ниже, и мы свяжемся с вами в течении 24 часов. Будьте уверены, что мы никому не передадим вашу информацию.
+            form.feedback__form-body(method="post")
+              .feedback__form-row
+                +custom-input({
+                  type: "text",
+                  name: "name",
+                  placeholder: "Ваше имя*"
+                }).feedback__input
+                +custom-input({
+                  type: "tel",
+                  name: "phone",
+                  placeholder: "Телефон*"
+                }).feedback__input
+                +custom-input({
+                  type: "mail",
+                  name: "mail",
+                  placeholder: "Почта*"
+                }).feedback__input
+              +custom-textarea({
+                type: "textarea",
+                name: "phone",
+                placeholder: "Сообщение*"
+              }).feedback__textarea
+              .feedback__form-footer
+               +btn({type: "submit", text: "Отправить"}).feedback__button
+               span.feedback__agreement Нажимая кнопку &laquo;Отправить&raquo; вы соглашаетесь с <a href="#">политикой конфиденциальности.</a>
+          .feedback__image
+            +img("content/feedback", "feedback", "png", '', '', '')

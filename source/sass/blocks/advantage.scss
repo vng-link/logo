@@ -1,0 +1,51 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.advantage {
+  background-color: $color-alice-blue;
+  height: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  &__image {
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-size: 20px;
+    font-family: "Montserrat";
+    line-height: 140%;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    @include vp-1199 {
+      font-size: 16px;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    @include vp-1199 {
+      display: block;
+    }
+  }
+  &__socials {
+    display: flex;
+    gap: 10px;
+    svg {
+      transition: opacity, $trans-default;
+      @include hover-focus {
+        opacity: 0.8;
+      }
+    }
+  }
+  &__phone {
+    transition: opacity, $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
+    @include vp-1199 {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}

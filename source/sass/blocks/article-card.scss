@@ -1,0 +1,136 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.article-card {
+  h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    @include vp-1199 {
+      margin: 0 0 30px 0;
+      font-size: 26px;
+    }
+    @include vp-615 {
+      font-size: 24px;
+    }
+  }
+
+  h3 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000;
+    margin: 0 0 20px 0;
+  }
+
+  h4 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    margin: 0 0 10px 0;
+  }
+
+
+  ul{
+    margin: 0 0 30px 0;
+    line-height: 150%;
+    list-style: disc;
+    padding-left: 30px;
+    overflow: hidden;
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    ul{
+      padding-top: 10px;
+    }
+  }
+
+
+  ul + h2 {
+    margin: 50px 0 30px 0;
+  }
+
+  ol + h2 {
+    margin: 50px 0 30px 0;
+  }
+
+  ul ul {
+    margin: 0 0 0 0 ;
+    padding-left:  20px;
+  }
+
+  ol {
+    margin: 0 0 30px 0;
+    padding-left: 20px;
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::marker {
+        color: black;
+      }
+    }
+  }
+
+  p {
+    line-height: 150%;
+    margin: 0 0 30px 0;
+  }
+
+  ul + p {
+    margin: -20px 0 30px 0;
+  }
+
+  &__image {
+    width: 510px;
+    height: 310px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    @media (max-width: 1199px) {
+      width: 412px;
+      height: 250px;
+    }
+    @include vp-807 {
+      width: 100%;
+      height: 310px;
+    }
+    @include vp-615 {
+      height: 219px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &--right {
+      float: right;
+      margin-left: 30px;
+      @include vp-807 {
+        float: unset;
+        margin-left: unset;
+      }
+    }
+    &--left {
+      float: left;
+      margin-right: 30px;
+      @include vp-807 {
+        float: unset;
+        margin-left: unset;
+      }
+    }
+  }
+
+}
+
+.clear-fix {
+  clear: both;
+}

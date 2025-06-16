@@ -1,0 +1,57 @@
+mixin footer()
+  footer.page__footer.footer
+    +cookies()
+    .container
+      .footer__grid
+        .footer__column.footer__column--info
+           .footer__label Информация
+           p.footer__inn ИНН 5032301634
+           p.footer__kpp КПП 503201001
+           p.footer__ogrn ОГРН 1185053042503
+           a.footer__policy(href="#", aria-label="Политика обработки пресональных данных")
+            span  Политика обработки персональных данных
+           a.footer__recaptcha(href="#", aria-label="Защита от спама") Этот сайт защищен от спама сервисом reCAPTCHA от компании Google Privacy Policy/Terms of Service
+        .footer__column.footer__column--nav
+          .footer__label Навигация
+          ul.footer__nav-list.list-reset
+            li.footer__nav-list-item
+              a.footer__nav-list-link(href="#", aria-label="Главная") Главная
+            li.footer__nav-list-item
+              a.footer__nav-list-link(href="#", aria-label="Каталог ЖБИ") Каталог ЖБИ
+            li.footer__nav-list-item
+              a.footer__nav-list-link(href="#", aria-label="О заводе") О заводе
+            li.footer__nav-list-item
+              a.footer__nav-list-link(href="#", aria-label="Объекты") Объекты
+            li.footer__nav-list-item
+              a.footer__nav-list-link(href="#", aria-label="Статьи о железобетоне") Статьи о железобетоне
+            li.footer__nav-list-item
+              a.footer__nav-list-link(href="#", aria-label="Контакты") Контакты
+        .footer__column.footer__column--contacts
+          .footer__label Контакты
+          .footer__contacts-item
+            +icon("contacts-location", 50, 50)
+            p.footer__contacts-location 143050,Московская область,Одинцовский р-н, г. Одинцово, ул. Восточная, д. 10, стр 1, Эт 6, ком 608
+          .footer__contacts-item
+            +icon("contacts-phone", 50, 50)
+            a.footer__contacts-phone(href="tel:89166426203", aria-label="Позвонить по телефону") 8 (916) 642-62-03
+            .footer__contacts-socials
+              a(href="#", aria-label="Перейти в whatsapp")
+                +icon("whatsapp", 30, 31)
+              a(href="#", aria-label="Перейти в telegram")
+                +icon("telegram", 30, 30)
+          .footer__contacts-item
+            +icon("contacts-email", 50, 50)
+            a.footer__contacts-email(href="mailto:Flagman.gbi@mail.ru", aria-label="Написать на почту") Flagman.gbi@mail.ru
+      .footer__bottom-row
+        .footer__bottom-column
+          a.footer__logo(href="#")
+            +icon("logo-white", 250, 70)
+          .footer__copyright
+            .footer__copyright-name © ООО “Улица бетонная”
+            .footer__copyright-year 2025 Все права защищены
+        .footer__bottom-column
+           a.footer__developer(href="№", aria-label="Разработать сайт") Сайт разработан веб-студией VanGogh-Link
+
+
+
+

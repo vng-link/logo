@@ -1,0 +1,143 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Статьи"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "objects.html"
+  - const articlesHasHeader = false
+  - const articlesHasPagination= true
+  - const articlesHasModifier = true
+  -
+    const breadcrumbs = [
+      {
+        isLink: true,
+        href: "#",
+        title: "Главная"
+      },
+      {
+        isLink: false,
+        href: "#",
+        title: "Статьи"
+      }
+    ]
+  -
+    const articleItems = [
+      {
+        href: "#",
+        title: "Технология производства железобетона: от смеси до готового изделия",
+        text: "Описание процесса изготовления ЖБИ: состав бетона, армирование, формовка, сушка и контроль качества.",
+        image: {
+          src: "article-4",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Долговечность железобетона: как продлить срок службы конструкций",
+        text: "Факторы, влияющие на износ ЖБИ (влажность, перепады температур, нагрузки), и способы защиты.",
+        image: {
+          src: "article-2",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Частые ошибки при монтаже ЖБИ и как их избежать",
+        text: "Разбор типичных проблем при установке железобетонных изделий и советы по правильному монтажу.",
+        image: {
+          src: "article-3",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Технология производства железобетона: от смеси до готового изделия",
+        text: "Описание процесса изготовления ЖБИ: состав бетона, армирование, формовка, сушка и контроль качества.",
+        image: {
+          src: "article-5",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Долговечность железобетона: как продлить срок службы конструкций",
+        text: "Факторы, влияющие на износ ЖБИ (влажность, перепады температур, нагрузки), и способы защиты.",
+        image: {
+          src: "article-6",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Частые ошибки при монтаже ЖБИ и как их избежать",
+        text: "Разбор типичных проблем при установке железобетонных изделий и советы по правильному монтажу.",
+        image: {
+          src: "article-3",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Технология производства железобетона: от смеси до готового изделия",
+        text: "Описание процесса изготовления ЖБИ: состав бетона, армирование, формовка, сушка и контроль качества.",
+        image: {
+          src: "article-4",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Долговечность железобетона: как продлить срок службы конструкций",
+        text: "Факторы, влияющие на износ ЖБИ (влажность, перепады температур, нагрузки), и способы защиты.",
+        image: {
+          src: "article-8",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Частые ошибки при монтаже ЖБИ и как их избежать",
+        text: "Разбор типичных проблем при установке железобетонных изделий и советы по правильному монтажу.",
+        image: {
+          src: "article-9",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+    ]
+block main
+  main.page
+    +page-top("Статьи", breadcrumbs)
+    +articles(articleItems)
+    +feedback()
+block modals

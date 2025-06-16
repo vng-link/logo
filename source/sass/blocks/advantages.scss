@@ -1,0 +1,18 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.advantages {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    @include vp-1199 {
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    @include vp-807 {
+      grid-template-columns: 1fr;
+    }
+  }
+}

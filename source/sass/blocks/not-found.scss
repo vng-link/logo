@@ -1,0 +1,84 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.not-found {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 250px;
+    line-height: 120%;
+    text-align: center;
+    color: #003865;
+    position: relative;
+    @include vp-807 {
+      font-size: 194px;
+    }
+    @include vp-615 {
+      font-size: 148px;
+    }
+    &:after {
+      content: url("../img/content/not-found/not-found-icon.svg");
+      width: 68px;
+      height: 176px;
+      position: absolute;
+      left: 183px;
+      top: -2px;
+      @include vp-807 {
+        content: url("../img/content/not-found/not-found-icon-middle.svg");
+        width: 53px;
+        height: 136px;
+        left: 143px;
+      }
+      @include vp-615 {
+        content: url("../img/content/not-found/not-found-icon-small.svg");
+        width: 40px;
+        height: 103px;
+        left: 108px;
+      }
+    }
+  }
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: #272a33;
+    margin-bottom: 10px;
+    @include vp-1199 {
+      font-size: 26px;
+    }
+    @include vp-807 {
+      font-size: 24px;
+    }
+  }
+  &__description {
+    margin-bottom: 20px;
+    line-height: 150%;
+    text-align: center;
+  }
+  &__image {
+    position: absolute;
+    left: 137px;
+    top: 78px;
+    width: 289px;
+    height: 156px;
+    @include vp-807 {
+      width: 223px;
+      height: 120px;
+      left: 109px;
+      top: 62px;
+    }
+    @include vp-615 {
+      width: 168px;
+      height: 90px;
+      left: 83px;
+      top: 49px;
+    }
+  }
+}

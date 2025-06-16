@@ -9,10 +9,248 @@ block variables
   - const hasFooter = false
   - const footerMods = ""
   - const currentUrl = "index.html"
+  - const objectsHasHeader = true
+  - const objectsHasPagination = false
+  - const articlesHasHeader = true
+  - const articlesHasPagination= false
+  - const articlesHasModifier = false
+  - const categoriesHasModifier = false
+  - const productsHasModifier = false
+  - const productsHasTitle = true
+
+  -
+    const articleItems = [
+      {
+        href: "#",
+        title: "Технология производства железобетона: от смеси до готового изделия",
+        text: "Описание процесса изготовления ЖБИ: состав бетона, армирование, формовка, сушка и контроль качества.",
+        image: {
+          src: "article-1",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Долговечность железобетона: как продлить срок службы конструкций",
+        text: "Факторы, влияющие на износ ЖБИ (влажность, перепады температур, нагрузки), и способы защиты.",
+        image: {
+          src: "article-2",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Частые ошибки при монтаже ЖБИ и как их избежать",
+        text: "Разбор типичных проблем при установке железобетонных изделий и советы по правильному монтажу.",
+        image: {
+          src: "article-3",
+          format: "png",
+          width: "460",
+          height: "280",
+          alt: "image"
+        }
+      },
+    ]
+
+
+  -
+    const categoryItems = [
+      {
+        href: "#",
+        title: "Сваи железобетонные",
+        image: {
+          src: "svai-zhelezobetonnye",
+          format: "png",
+          width: "460",
+          height: "120",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Плиты дорожные",
+        image: {
+          src: "plity-dorozhnye",
+          format: "png",
+          width: "460",
+          height: "120",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Плиты аэродромные ПАГ-14 ПАГ-18",
+        image: {
+          src: "plity-aerodromnye",
+          format: "png",
+          width: "460",
+          height: "120",
+          alt: "image"
+        }
+      },
+      {
+        href: "#",
+        title: "Забор бетонный",
+        image: {
+          src: "zabor-betonnyj",
+          format: "png",
+          width: "460",
+          height: "120",
+          alt: "image"
+        }
+      },
+          {
+            href: "#",
+            title: "Плиты перекрытия пустотелые",
+            image: {
+              src: "plity-perekrytiya-pustotelye",
+              format: "png",
+              width: "460",
+              height: "120",
+              alt: "image"
+            }
+          },
+      {
+        href: "#",
+        title: "Другая продукция",
+        image: {
+          src: "drugaya-produkciya",
+          format: "png",
+          width: "460",
+          height: "120",
+          alt: "image"
+        }
+      }
+    ]
+
+
+  -
+    const productItems = [
+      {
+        href: "#",
+        title: "Свая забивная бетонная СБ 30-3 Серия 1.011.1-10",
+        price: "2 970",
+        image: {
+          src: "svaya-zabivnaya-betonnaya",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        characteristics: {
+          length: "3000 мм.",
+          height: "300 мм.",
+          width: "300 мм.",
+          weight: "700 кг.",
+        },
+        article: {
+          number: "240297",
+        },
+      },
+
+      {
+        href: "#",
+        title: "Бетонные заборы П6В с фартуком Серия 3.017-1, Альбом ИЖ 31-77",
+        price: "4 510",
+        image: {
+          src: "betonnye-zabory",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        characteristics: {
+          length: "4000 мм.",
+          height: "150 мм.",
+          width: "2500 мм.",
+          weight: "1 600 кг.",
+        },
+        article: {
+          number: "240297",
+        },
+      },
+      {
+        href: "#",
+        title: "Плиты 2П 30-18-30 ТУ",
+        price: "8 231",
+        image: {
+          src: "plity-2P",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        characteristics: {
+          length: "3000 мм.",
+          height: "1750 мм.",
+          width: "170 мм.",
+          weight: "2 200 кг.",
+        },
+        article: {
+          number: "240297",
+        },
+      },
+      {
+        href: "#",
+        title: "Плиты 2П 30-18-30 ТУ",
+        price: "12 173",
+        image: {
+          src: "plity-2P-2",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        characteristics: {
+          length: "3000 мм.",
+          height: "1750 мм.",
+          width: "170 мм.",
+          weight: "2 200 кг.",
+        },
+        article: {
+          number: "240297",
+        },
+      },
+      {
+        href: "#",
+        title: "Плиты 2П 30-15-15 (H=160) ГОСТ 21924.2-84",
+        price: "4 510",
+        image: {
+          src: "plity-2P",
+          format: "png",
+          width: "100",
+          height: "100",
+          alt: "image"
+        },
+        characteristics: {
+          length: "2990 мм.",
+          height: "1490 мм.",
+          width: "160 мм.",
+          weight: "2 000 кг.",
+        },
+        article: {
+          number: "240297",
+        },
+      }
+    ]
+
 
 block main
   main.page
     +intro()
-    +categories()
-    +products()
+    +categories(categoryItems)
+    +products(productItems)
+    +objects()
+    +advice()
+    +advantages()
+    +about()
+    +articles(articleItems)
+    +feedback()
+    +footer()
 block modals

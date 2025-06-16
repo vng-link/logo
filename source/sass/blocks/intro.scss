@@ -3,80 +3,83 @@
 
 
 .intro {
-  &__background {
-    position: relative;
-    background:
-      url("../../img/content/intro/background-left.svg") left no-repeat,
-      url("../../img/content/intro/background-right.svg") right no-repeat;
-    height: 372px;
-    border-radius: 20px;
-    overflow: hidden;
-    &:before {
-      content: url("../../img/content/intro/circle-top.svg");
-      position: absolute;
-      top: 0;
-      right: 290px;
-      z-index: 1;
+    &__background {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      min-height: 375px;
+      @include vp-807 {
+        background: linear-gradient(233deg, #3f82ff 0%, #003865 100%);
+        min-height: unset;
+      }
     }
-    &:after {
-      content: url("../../img/content/intro/circle-bottom.svg");
-      position: absolute;
-      bottom: -3px;
-      right: 0;
-    }
-  }
-  &__image-bg {
-    position: absolute;
-    &--draft-bottom {
-      left: 570px;
-      bottom: 0;
-      mix-blend-mode: multiply;
-    }
-    &--draft-top {
-      top:0;
-      right: 0;
-      mix-blend-mode: multiply;
-    }
-    &--picture-top {
-      right: 337px;
-      top: 16px;
+    &__content {
+      position: relative;
       z-index: 2;
-      width: 388px;
-      height: 233px;
+      padding: 40px;
+      max-width: 669px;
+      @include vp-1199 {
+        max-width: 540px;
+      }
+      @include vp-807 {
+        max-width: unset;
+      }
+      @include vp-615 {
+        padding: 20px;
+      }
     }
-    &--picture-bottom {
-      right: 0;
-      top: 86px;
-      z-index: 2;
-      width: 490px;
-      height: 286px;
-    }
-  }
-
-  &__wrapper {
-    padding-top: 45px;
-    padding-bottom: 45px;
-    padding-left: 40px;
-  }
-
-  &__content {
-    max-width: 669px;
-  }
 
   &__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: $color-default-white;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    @include vp-1199 {
+      font-size: 30px;
+    }
+    @include vp-807 {
+      font-size: 28px;
+    }
   }
 
   &__text {
     color: $color-default-white;
     margin-bottom: 20px;
     line-height: 150%;
+    text-align: justify;
   }
 
+    &__image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      @include vp-807 {
+        display: none;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        @include vp-807 {
+          object-fit: unset;
+          width: unset;
+          max-width: unset;
+        }
+      }
+    }
+
+    &__btn {
+      font-size: 16px;
+      @include vp-615 {
+        width: 100%;
+      }
+      @include vp-575 {
+        padding: 0 20px;
+      }
+    }
 }
 
 

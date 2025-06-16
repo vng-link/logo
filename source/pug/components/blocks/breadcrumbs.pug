@@ -1,0 +1,11 @@
+mixin breadcrumbs(list)
+    .breadcrumbs
+      .container
+        .breadcrumbs__wrapper
+          ul.breadcrumbs__list.list-reset
+            each item in list
+              li.breadcrumbs__item
+                if item.isLink
+                  a(href=item.href).breadcrumbs__link #{item.title}
+                else
+                  span.breadcrumbs__link.is-active #{item.title}

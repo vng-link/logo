@@ -1,0 +1,7 @@
+mixin article(data)
+    .article
+      a.article__image(href=data.href)
+        +img("content/articles", data.image.src, data.image.format, data.image.width, data.image.height, data.image.alt)
+      a.article__title(href=data.href)!=data.title
+      .article__text!=data.text
+      a.btn.btn--white.article__btn(href=data.href) Подробнее

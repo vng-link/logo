@@ -1,0 +1,97 @@
+mixin header-bottom()
+  -
+    const headerLinks = [
+      {
+        href: "#",
+        text: "Главная",
+      },
+      {
+        href: "#",
+        text: "Каталог ЖБИ",
+        dropdown: [
+          {
+            href: "#",
+            text: "Сваи железобетонные"
+          },
+          {
+            href: "#",
+            text: "Плиты дорожные"
+          },
+          {
+            href: "#",
+            text: "Плиты аэродромные ПАГ-14 ПАГ-18"
+          },
+          {
+            href: "#",
+            text: "Забор бетонный"
+          },
+          {
+            href: "#",
+            text: "Плиты перекрытия пустотелые"
+          },
+          {
+            href: "#",
+            text: "Другая продукция"
+          },
+        ]
+      },
+      {
+        href: "#",
+        text: "Цены"
+      },
+
+      {
+        href: "#",
+        text: "О заводе",
+        dropdown: [
+          {
+            href: "#",
+            text: "О заводе 1"
+          },
+          {
+            href: "#",
+            text: "О заводе 2"
+          },
+          {
+            href: "#",
+            text: "О заводе 3"
+          }
+        ]
+      },
+      {
+        href: "#",
+        text: "Объекты"
+      },
+      {
+        href: "#",
+        text: "Статьи о железобетоне"
+      },
+      {
+        href: "#",
+        text: "Контакты"
+      },
+    ]
+
+  .header-bottom
+    .container
+      .header-bottom__wrapper
+        a.header-bottom__logo.logo(href="#")
+          +icon("logo", 160, 45)
+        .main-nav
+          .main-nav__menu
+            .container
+              ul.list-reset.main-nav__list(data-header-accordion)
+                each item in headerLinks
+                  li.main-nav__item(class={"main-nav__item--dropdown" : item.dropdown} data-header-accordion-item=!!item.dropdown)
+                    a.main-nav__link(href=item.href data-header-link=!item.dropdown data-header-accordion-link=!!item.dropdown)!=item.text
+                    if (item.dropdown)
+                      .main-nav__sublist-handler
+                        ul.list-reset.main-nav__sublist
+                          each subitem in item.dropdown
+                            li.main-nav__subitem
+                              a.main-nav__sublink(href=subitem.href)!=subitem.text
+              +btn({type: "button", text: "Получить консультацию"}).btn.main-nav__btn
+          button(type="button" aria-label="Переключатель отображения меню", aria-pressed="false" data-toggle-menu).btn-reset.main-nav__toggle
+            span
+            span
+            span
