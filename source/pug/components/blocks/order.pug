@@ -3,7 +3,8 @@ mixin order()
     const formData = {
       title: "Оформить заявку",
       desc: 'Оставьте заявку – мы перезвоним, проконсультируем по цене, доставке и ответим на вопросы.',
-      isMailInput: true
+      isMailInput: true,
+      hasProductTitle: true
     }
   section.order
     +modal-form(formData)

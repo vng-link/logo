@@ -6229,6 +6229,15 @@ button,
   padding-right: 10px;
 }
 
+.modal-form__product-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #003865;
+  margin-bottom: 10px;
+}
+
 .modal-form__desc {
   font-family: "Montserrat";
   font-weight: 400;

@@ -13,6 +13,15 @@
     padding-right: 10px;
   }
 
+  &__product-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-prussian-blue;
+    margin-bottom: 10px;
+  }
+
   &__desc {
     font-family: "Montserrat";
     font-weight: 400;
@@ -38,9 +47,9 @@
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 14px;
-    color: #848484;
+    color: $color-gray;
     a {
-      color: #848484;
+      color: $color-gray;
       text-decoration: underline;
     }
   }

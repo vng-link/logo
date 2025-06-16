@@ -1,6 +1,8 @@
 mixin modal-form(form)
   section.modal-form
     h2.modal-form__title #{form.title}
+    if form.hasProductTitle
+      .modal-form__product-title(data-modal-product-title)
     if form.desc
       p.modal-form__desc #{form.desc}
     form(action="#")

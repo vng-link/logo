@@ -4,7 +4,7 @@ mixin product(data)
       a.product__image(href=data.href)
         +img("content/products", data.image.src, data.image.format, data.image.width, data.image.height, data.image.alt)
       .product__body
-        h3.product__title(href=data.href)!=data.title
+        h3.product__title(href=data.href, data-product-title)!=data.title
         .product__article
           span.product__article-label Артикул:
           span.product__article-value!=data.article.number
