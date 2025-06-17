@@ -2012,6 +2012,7 @@ html.with-fancybox body.hide-scrollbar {
 
 .fancybox__content {
   -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2106,6 +2107,7 @@ html.with-fancybox body.hide-scrollbar {
 
 .fancybox__caption {
   -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   max-width: 100%;
   -ms-flex-negative: 0;
@@ -3265,7 +3267,9 @@ button,
 }
 
 .footer__grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: minmax(200px, 550px) minmax(200px, 280px) minmax(200px, 550px);
   grid-template-columns: minmax(200px, 550px) minmax(200px, 280px) minmax(200px, 550px);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -4587,7 +4591,9 @@ button,
 }
 
 .categories__wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
@@ -4827,7 +4833,9 @@ button,
 }
 
 .objects__wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 30px;
   -webkit-column-gap: 30px;
@@ -4939,7 +4947,9 @@ button,
 }
 
 .advantages__wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
@@ -5066,7 +5076,9 @@ button,
 }
 
 .articles__wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 30px;
   -webkit-column-gap: 30px;
@@ -5618,7 +5630,9 @@ button,
 }
 
 .gallery__wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
@@ -5669,7 +5683,9 @@ button,
 }
 
 .contacts__wrapper {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
@@ -6533,22 +6549,33 @@ button,
   }
 
   .footer__grid {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 30px;
   }
 
   .footer__column--contacts {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
     padding-top: 40px;
   }
 
   .footer__column--nav {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
 
   .footer__column--info {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
 
@@ -6741,6 +6768,7 @@ button,
   }
 
   .categories__wrapper {
+    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
@@ -6765,6 +6793,7 @@ button,
   }
 
   .objects__wrapper {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
@@ -6817,6 +6846,7 @@ button,
   }
 
   .articles__wrapper {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
@@ -6874,6 +6904,7 @@ button,
   }
 
   .contacts__wrapper {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -7039,6 +7070,7 @@ button,
   }
 
   .advantages__wrapper {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -7098,6 +7130,7 @@ button,
   }
 
   .contacts__wrapper {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -7201,16 +7234,22 @@ button,
 
   .footer__column--contacts {
     grid-row: unset;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
     padding-top: 0;
   }
 
   .footer__column--nav {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
     margin-bottom: 30px;
   }
 
   .footer__column--info {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
     margin-bottom: 30px;
   }
@@ -7389,6 +7428,7 @@ button,
   }
 
   .objects__wrapper {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 40px;
   }
@@ -7415,6 +7455,7 @@ button,
 
   .articles__wrapper {
     row-gap: 40px;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -7451,6 +7492,7 @@ button,
   }
 
   .gallery__wrapper {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
