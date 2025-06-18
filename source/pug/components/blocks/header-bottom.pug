@@ -83,7 +83,9 @@ mixin header-bottom()
               ul.list-reset.main-nav__list(data-header-accordion)
                 each item in headerLinks
                   li.main-nav__item(class={"main-nav__item--dropdown" : item.dropdown} data-header-accordion-item=!!item.dropdown)
-                    a.main-nav__link(href=item.href data-header-link=!item.dropdown data-header-accordion-link=!!item.dropdown)!=item.text
+                    a.main-nav__link(href=item.href)!=item.text
+                    if (item.dropdown)
+                      button.btn-reset.main-nav__item-btn(type="button" data-header-link=!item.dropdown data-header-accordion-link=!!item.dropdown)
                     if (item.dropdown)
                       .main-nav__sublist-handler
                         ul.list-reset.main-nav__sublist

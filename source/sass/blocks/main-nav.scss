@@ -6,6 +6,18 @@
   display: flex;
   align-items: center;
 
+
+  &__item-btn {
+      width: 32px;
+      height: 32px;
+      background: url(../img/sprite/dropdown-mobile.svg) no-repeat center;
+      display: none; 
+      transition: transform $trans-default;
+      @include vp-1199 {
+        display: block;
+      }
+  }
+
   &__btn {
     display: none;
     font-size: 16px;
@@ -100,6 +112,10 @@
 
     @include vp-1199 {
       border-bottom: 1px dashed $color-silver;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     &--dropdown {
@@ -112,11 +128,7 @@
           transition: transform, background $trans-default;
           margin-left: 10px;
           @include vp-1199 {
-            content: "";
-            width: 32px;
-            height: 32px;
-            background: url("../img/sprite/dropdown-mobile.svg") no-repeat center;
-            transition: transform $trans-default;
+            content: unset;
           }
         }
       }
@@ -134,10 +146,6 @@
             }
           }
 
-          .main-nav__sublist {
-            opacity: 1;
-            visibility: visible;
-          }
         }
 
         @include hover-focus {
@@ -162,21 +170,13 @@
     }
 
     &--dropdown.is-active {
-      .main-nav__link {
-        svg {
-          @include vp-1199 {
-            transform: rotate(180deg);
-          }
-        }
-      }
-
       .main-nav__sublist {
         @include vp-1199 {
           display: block;
         }
       }
 
-      .main-nav__link::after {
+      .main-nav__item-btn {
         transform: rotate(180deg);
       }
 
@@ -228,6 +228,7 @@
     padding-top: 10px;
     @include vp-1199 {
       padding-top: 0;
+      flex-basis: 100%;
     }
   }
 
