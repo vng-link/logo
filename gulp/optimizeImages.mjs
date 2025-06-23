@@ -17,9 +17,9 @@ const sprite = () =>
 
 const optimizeSvg = () =>
   gulp
-      .src('build/img/**/*.svg')
+      .src('build/img/sprite/*.svg')
       .pipe(svgo())
-      .pipe(gulp.dest('build/img'));
+      .pipe(gulp.dest('build/img/sprite'));
 
 const optimizeJpg = () =>
   gulp

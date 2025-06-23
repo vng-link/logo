@@ -10,6 +10,7 @@ import {initHeaderAccordion} from "./modules/header-accordion/init-header-accord
 import {initFancybox} from "./modules/fancybox/init-fancybox";
 import {initObjectSlider} from './modules/sliders/init-object-slider.js';
 import {cookiesBannerHandler} from "./modules/cookies-banner-handler";
+import {initVideo} from "./modules/init-video.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initHeaderAccordion();
   initFancybox();
   cookiesBannerHandler();
+  initVideo();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
@@ -64,18 +66,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
-
-const videoFile = document.querySelector('#video-story');
-const videoBtn = document.querySelector('.history__btn-play');
-const videoOverlay = document.querySelector('.history__overlay');
-
-if (videoBtn) {
-  videoBtn.addEventListener('click', function() {
-    if(videoFile.paused) {
-      videoFile.play()
-      videoBtn.style.display = 'none';
-      videoOverlay.style.display = 'none';
-    }
-  });
-
-}

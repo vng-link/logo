@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Global">
+    <meta name="description" content="Global"><link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
+<link rel="manifest" href="/img/favicon/site.webmanifest" crossorigin="use-credentials"/>
     <meta property="og:title" content="Заголовок">
     <meta property="og:image" content="https://test.ru/img/open-graph.png">
     <meta property="og:type" content="website">
@@ -13,10 +18,24 @@
     <meta property="og:description" content="Описание">
     <meta property="og:image:width" content="1200">
     <meta property="og:description" content="630">
-    <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Lato-SemiBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Lato-ExtraBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Oswald-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Oswald-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -265,9 +284,10 @@
                 <div class="main-nav__menu">
                   <div class="container">
                     <ul class="list-reset main-nav__list" data-header-accordion>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Главная</a>
+                      <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a>
                       </li>
-                      <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#" data-header-accordion-link>Каталог ЖБИ</a>
+                      <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#">Каталог ЖБИ</a>
+                        <button class="btn-reset main-nav__item-btn" type="button" data-header-accordion-link></button>
                         <div class="main-nav__sublist-handler">
                           <ul class="list-reset main-nav__sublist">
                             <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">Сваи железобетонные</a></li>
@@ -279,9 +299,10 @@
                           </ul>
                         </div>
                       </li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Цены</a>
+                      <li class="main-nav__item"><a class="main-nav__link" href="#">Цены</a>
                       </li>
-                      <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#" data-header-accordion-link>О заводе</a>
+                      <li class="main-nav__item main-nav__item--dropdown" data-header-accordion-item><a class="main-nav__link" href="#">О заводе</a>
+                        <button class="btn-reset main-nav__item-btn" type="button" data-header-accordion-link></button>
                         <div class="main-nav__sublist-handler">
                           <ul class="list-reset main-nav__sublist">
                             <li class="main-nav__subitem"><a class="main-nav__sublink" href="#">О заводе 1</a></li>
@@ -290,11 +311,11 @@
                           </ul>
                         </div>
                       </li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Объекты</a>
+                      <li class="main-nav__item"><a class="main-nav__link" href="#">Объекты</a>
                       </li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Статьи о железобетоне</a>
+                      <li class="main-nav__item"><a class="main-nav__link" href="#">Статьи о железобетоне</a>
                       </li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#" data-header-link>Контакты</a>
+                      <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a>
                       </li>
                     </ul>
                     <button class="btn btn main-nav__btn" type="button">Получить консультацию
