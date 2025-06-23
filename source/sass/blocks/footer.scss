@@ -183,6 +183,9 @@
     }
   }
   &__recaptcha {
+
+  }
+  &__info-link {
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.4);
     transition: opacity, $trans-default;

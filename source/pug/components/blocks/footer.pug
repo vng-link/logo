@@ -10,7 +10,10 @@ mixin footer()
            p.footer__ogrn ОГРН 1185053042503
            a.footer__policy(href="#", aria-label="Политика обработки пресональных данных")
             span  Политика обработки персональных данных
-           a.footer__recaptcha(href="#", aria-label="Защита от спама") Этот сайт защищен от спама сервисом reCAPTCHA от компании Google Privacy Policy/Terms of Service
+           p.footer_recaptcha Этот сайт защищен от спама сервисом reCAPTCHA от компании&nbsp;
+             a.footer__info-link(href="https://policies.google.com/privacy", aria-label="Защита от спама", target="_blank", rel="nofollow noopener noreferrer") Google Privacy Policy 
+             span /
+             a.footer__info-link(href="https://policies.google.com/terms", aria-label="Защита от спама", target="_blank", rel="nofollow noopener noreferrer") Terms of Service        
         .footer__column.footer__column--nav
           .footer__label Навигация
           ul.footer__nav-list.list-reset
