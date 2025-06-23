@@ -4713,10 +4713,6 @@ button,
   opacity: 0.8;
 }
 
-.products__item:last-child {
-  margin-bottom: 0;
-}
-
 .products__btn {
   margin-top: 30px;
 }
@@ -6751,7 +6747,7 @@ button,
   }
 
   .categories__wrapper {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
