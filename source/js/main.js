@@ -66,3 +66,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
+
