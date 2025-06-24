@@ -3907,6 +3907,11 @@ button,
   border: 1px solid #a7cfff;
 }
 
+.custom-input.is-error input {
+  border-color: #e5140b;
+  color: #e5140b;
+}
+
 .custom-radio label {
   position: relative;
   display: -webkit-inline-box;
@@ -6370,6 +6375,35 @@ button,
 
 .cookies__btn {
   background: #f3f7ff;
+}
+
+.errors__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.errors__item:last-child {
+  margin-bottom: 15px;
+}
+
+.errors__item svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.errors__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f00;
+  margin: 0 0 0 0;
 }
 
 /* @mixin hover-focus {

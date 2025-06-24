@@ -1,19 +1,21 @@
 mixin modal-form(form)
-  section.modal-form
+  section.modal-form(data-feedback)
     h2.modal-form__title #{form.title}
     if form.hasProductTitle
       .modal-form__product-title(data-modal-product-title)
     if form.desc
       p.modal-form__desc #{form.desc}
-    form(action="#")
+    form(action="#", data-feedback-form, data-recaptcha-form, novalidate)
       .modal-form__form-wrapper
         .modal-form__inputs
-          +custom-input({type: "text", name: "name", placeholder: "Ваше имя*"})
+          +custom-input({type: "text", name: "user_name", placeholder: "Ваше имя*"})(data-validate-type="text")
           if form.isMailInput
-            +custom-input({type: "mail", name: "mail", placeholder: "Почта*"})
-          +custom-input({type: "tel", name: "phone", placeholder: "Телефон*"})
+            +custom-input({type: "mail", name: "user_mail", placeholder: "Почта*"})(data-validate-type="email")
+          +custom-input({type: "tel", name: "user_phone", placeholder: "Телефон*"})(data-validate-type="phone")
+          +custom-input({type: "hidden", name: "recaptchaResponse"})(data-recaptcha-token)
         .modal-form__textarea
           +custom-textarea({name: 'name', value: 'value', placeholder: "Сообщение"})
+      .errors(data-feedback-errors)  
       .modal-form__bottom
         +btn({text: "Отправить", type: "submit"}).btn.modal-form__button
         .modal-form__info
