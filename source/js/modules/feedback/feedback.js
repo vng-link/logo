@@ -23,6 +23,7 @@ export class Feedback {
   }
 
   _onSubmitForm(evt) {
+    console.log('hello')
     evt.preventDefault();
     const feedback = evt.target.parentElement;
     const errors = evt.target.querySelector('[data-feedback-errors]');
