@@ -11,6 +11,7 @@ import {initFancybox} from "./modules/fancybox/init-fancybox";
 import {initObjectSlider} from './modules/sliders/init-object-slider.js';
 import {cookiesBannerHandler} from "./modules/cookies-banner-handler";
 import {initVideo} from "./modules/init-video.js";
+import {initFeedback} from './modules/feedback/init-feedback';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initFancybox();
   cookiesBannerHandler();
   initVideo();
+  initFeedback();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

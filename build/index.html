@@ -174,6 +174,9 @@
 <circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.59"/>
 <path d="M29.4961 15V44" stroke="white" stroke-width="2" stroke-linecap="round"/>
 <path d="M44 29.495L15 29.495" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</g></symbol><symbol id="icon-attention" viewBox="0 0 20 20"><g fill="none">
+<rect x="1" y="1" width="18" height="18" rx="9" stroke="#E5140B" stroke-width="2"/>
+<path d="M11.32 7.476C11.32 8.36133 11.288 9.172 11.224 9.908C11.16 10.644 11.08 11.3853 10.984 12.132H9.608C9.50133 11.3853 9.416 10.644 9.352 9.908C9.288 9.16133 9.256 8.35067 9.256 7.476V4.5H11.32V7.476ZM11.56 14.532C11.56 14.9053 11.4373 15.2093 11.192 15.444C10.9467 15.6787 10.6427 15.796 10.28 15.796C9.928 15.796 9.624 15.6787 9.368 15.444C9.12267 15.2093 9 14.9053 9 14.532C9 14.1587 9.12267 13.8547 9.368 13.62C9.624 13.3747 9.928 13.252 10.28 13.252C10.6427 13.252 10.9467 13.3747 11.192 13.62C11.4373 13.8547 11.56 14.1587 11.56 14.532Z" fill="#E5140B"/>
 </g></symbol><symbol id="logo-white" viewBox="0 0 250 70"><g fill="none">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M29.7835 54.4444L77.2957 58.0901V70H0V56.875L29.7835 54.4444ZM32.2636 67.5271H74.8156V60.3798L32.2636 57.1149V67.5271Z" fill="white"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M163.202 41.2804C164.607 41.2804 165.889 41.503 167.046 41.9481C168.22 42.3932 169.237 43.028 170.097 43.8522C170.956 44.66 171.626 45.6078 172.105 46.6958C172.601 47.7838 172.85 48.9791 172.85 50.2815C172.85 51.5839 172.601 52.7873 172.105 53.8918C171.626 54.9798 170.956 55.9279 170.097 56.7357C169.237 57.5435 168.22 58.1698 167.046 58.6149C165.889 59.0601 164.607 59.2827 163.202 59.2827C161.813 59.2826 160.532 59.06 159.358 58.6149C158.184 58.1698 157.159 57.5435 156.283 56.7357C155.423 55.9115 154.753 54.9553 154.274 53.8672C153.794 52.7792 153.554 51.5839 153.554 50.2815C153.554 48.9791 153.794 47.7838 154.274 46.6958C154.753 45.6078 155.423 44.66 156.283 43.8522C157.159 43.028 158.184 42.3932 159.358 41.9481C160.532 41.503 161.813 41.2804 163.202 41.2804ZM163.202 45.3358C162.54 45.3358 161.92 45.4511 161.342 45.6819C160.78 45.9127 160.284 46.2507 159.854 46.6958C159.441 47.1244 159.11 47.6438 158.862 48.2538C158.63 48.8473 158.515 49.5232 158.515 50.2815C158.515 51.0233 158.63 51.6993 158.862 52.3092C159.11 52.9192 159.441 53.4467 159.854 53.8918C160.284 54.3204 160.78 54.6503 161.342 54.8811C161.92 55.1119 162.54 55.2272 163.202 55.2272C163.863 55.2272 164.475 55.1119 165.037 54.8811C165.616 54.6503 166.112 54.3204 166.525 53.8918C166.955 53.4467 167.286 52.9192 167.517 52.3092C167.765 51.6993 167.889 51.0234 167.889 50.2815C167.889 49.5232 167.765 48.8473 167.517 48.2538C167.286 47.6438 166.955 47.1244 166.525 46.6958C166.112 46.2507 165.616 45.9127 165.037 45.6819C164.475 45.4511 163.863 45.3358 163.202 45.3358Z" fill="white"/>
@@ -812,20 +815,25 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <section class="callback">
-            <section class="modal-form">
+            <section class="modal-form" data-feedback>
               <h2 class="modal-form__title">Заказать обратный звонок</h2>
               <p class="modal-form__desc">Оставьте заявку – мы перезвоним, проконсультируем по цене, доставке и ответим на вопросы.</p>
-              <form action="#">
+              <form action="#" data-feedback-form data-recaptcha-form novalidate>
                 <div class="modal-form__form-wrapper">
                   <div class="modal-form__inputs">
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="text">
                       <label>
-                        <input type="text" name="name" placeholder="Ваше имя*">
+                        <input type="text" name="user_name" placeholder="Ваше имя*">
                       </label>
                     </div>
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="phone">
                       <label>
-                        <input type="tel" name="phone" placeholder="Телефон*">
+                        <input type="tel" name="user_phone" placeholder="Телефон*">
+                      </label>
+                    </div>
+                    <div class="custom-input" data-recaptcha-token>
+                      <label>
+                        <input type="hidden" name="recaptchaResponse">
                       </label>
                     </div>
                   </div>
@@ -837,6 +845,7 @@
                     </div>
                   </div>
                 </div>
+                <div class="errors" data-feedback-errors> </div>
                 <div class="modal-form__bottom">
                   <button class="btn btn modal-form__button" type="submit">Отправить
                   </button>
@@ -860,25 +869,30 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <section class="consultation">
-            <section class="modal-form">
+            <section class="modal-form" data-feedback>
               <h2 class="modal-form__title">Получить консультацию</h2>
               <p class="modal-form__desc">Если у вас появились вопросы о наших продуктах, пожалуйста, заполните форму ниже, и мы свяжемся с вами в течении 24 часов. Будьте уверены, что мы никому не передадим вашу информацию.</p>
-              <form action="#">
+              <form action="#" data-feedback-form data-recaptcha-form novalidate>
                 <div class="modal-form__form-wrapper">
                   <div class="modal-form__inputs">
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="text">
                       <label>
-                        <input type="text" name="name" placeholder="Ваше имя*">
+                        <input type="text" name="user_name" placeholder="Ваше имя*">
                       </label>
                     </div>
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="email">
                       <label>
-                        <input type="mail" name="mail" placeholder="Почта*">
+                        <input type="mail" name="user_mail" placeholder="Почта*">
                       </label>
                     </div>
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="phone">
                       <label>
-                        <input type="tel" name="phone" placeholder="Телефон*">
+                        <input type="tel" name="user_phone" placeholder="Телефон*">
+                      </label>
+                    </div>
+                    <div class="custom-input" data-recaptcha-token>
+                      <label>
+                        <input type="hidden" name="recaptchaResponse">
                       </label>
                     </div>
                   </div>
@@ -890,6 +904,7 @@
                     </div>
                   </div>
                 </div>
+                <div class="errors" data-feedback-errors> </div>
                 <div class="modal-form__bottom">
                   <button class="btn btn modal-form__button" type="submit">Отправить
                   </button>
@@ -913,26 +928,31 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <section class="order">
-            <section class="modal-form">
+            <section class="modal-form" data-feedback>
               <h2 class="modal-form__title">Оформить заявку</h2>
               <div class="modal-form__product-title" data-modal-product-title></div>
               <p class="modal-form__desc">Оставьте заявку – мы перезвоним, проконсультируем по цене, доставке и ответим на вопросы.</p>
-              <form action="#">
+              <form action="#" data-feedback-form data-recaptcha-form novalidate>
                 <div class="modal-form__form-wrapper">
                   <div class="modal-form__inputs">
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="text">
                       <label>
-                        <input type="text" name="name" placeholder="Ваше имя*">
+                        <input type="text" name="user_name" placeholder="Ваше имя*">
                       </label>
                     </div>
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="email">
                       <label>
-                        <input type="mail" name="mail" placeholder="Почта*">
+                        <input type="mail" name="user_mail" placeholder="Почта*">
                       </label>
                     </div>
-                    <div class="custom-input">
+                    <div class="custom-input" data-validate-type="phone">
                       <label>
-                        <input type="tel" name="phone" placeholder="Телефон*">
+                        <input type="tel" name="user_phone" placeholder="Телефон*">
+                      </label>
+                    </div>
+                    <div class="custom-input" data-recaptcha-token>
+                      <label>
+                        <input type="hidden" name="recaptchaResponse">
                       </label>
                     </div>
                   </div>
@@ -944,6 +964,7 @@
                     </div>
                   </div>
                 </div>
+                <div class="errors" data-feedback-errors> </div>
                 <div class="modal-form__bottom">
                   <button class="btn btn modal-form__button" type="submit">Отправить
                   </button>
