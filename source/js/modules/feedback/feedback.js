@@ -59,7 +59,7 @@ export class Feedback {
       formData.append('token', token);
 
       try {
-        const response = await fetch('/local/templates/zhbi/ajax/feedback.php', {
+        const response = await fetch('/local/templates/zhbi-street/ajax/feedback.php', {
           method: 'POST',
           body: formData,
         });
