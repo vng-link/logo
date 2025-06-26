@@ -153,6 +153,7 @@ export class Modals {
 
     if (this._modalName === "modal-order-form") {
       modal.querySelector('[data-modal-product-title]').innerHTML = this._productTitle;
+      modal.querySelector('[data-modal-product-value]').value = this._productTitle;
     }
 
     modal.classList.add('is-active');

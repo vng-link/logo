@@ -12,7 +12,8 @@ mixin modal-form(form)
           if form.isMailInput
             +custom-input({type: "mail", name: "user_mail", placeholder: "Почта*"})(data-validate-type="email")
           +custom-input({type: "tel", name: "user_phone", placeholder: "Телефон*"})(data-validate-type="phone")
-          +custom-input({type: "hidden", name: "recaptchaResponse"})(data-recaptcha-token)
+          if form.hasProductTitle
+            <input type="hidden" name="product_value" data-modal-product-value>
         .modal-form__textarea
           +custom-textarea({name: 'name', value: 'value', placeholder: "Сообщение"})
       .errors(data-feedback-errors)  
