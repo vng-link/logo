@@ -238,3 +238,17 @@
   opacity: 1;
 }
 
+
+
+
+
+
+.object-card .swiper-thumbs {
+    height: 260px;
+    @include vp-807 {
+      height: 183px;
+    }
+    @include vp-615 {
+      height: 75px;
+    }
+}   

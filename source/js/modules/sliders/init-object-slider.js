@@ -28,7 +28,6 @@ const initObjectSlider = () => {
   });
 
   const mainObjectSlider = new Swiper(objectSlider, {
-    slidesPerView: 3,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,
