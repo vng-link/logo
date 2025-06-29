@@ -58,11 +58,6 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
     border-radius: 100px;
     border: 1px solid $color-alizarin;
     cursor: pointer;
@@ -96,6 +91,11 @@
     font-size: 14px;
     text-transform: uppercase;
     color: $color-prussian-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
   }
 
 }

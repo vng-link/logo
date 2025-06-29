@@ -175,3 +175,29 @@
   }
 
 }
+
+
+div[id^=wait_] {
+    display: none!important;
+    background: 0 0!important;
+    border: 0!important;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 11px;
+    font-style: normal!important;
+    font-variant: normal!important;
+    letter-spacing: normal!important;
+    line-height: normal;
+    padding: 0!important;
+    position: absolute;
+    text-align: center!important;
+    text-indent: 0!important;
+    width: 0!important;
+    height: 0!important;
+    word-spacing: normal!important;
+    z-index: 0;
+    content: ""
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}

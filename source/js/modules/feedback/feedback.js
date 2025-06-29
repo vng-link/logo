@@ -1,5 +1,8 @@
+import {modals} from '../modal/init-modals';
+
 export class Feedback {
   constructor() {
+    this._modals = modals;
     this._feedback = document.querySelectorAll('[data-feedback]');
 
     this._onSubmitForm = this._onSubmitForm.bind(this);
@@ -14,7 +17,6 @@ export class Feedback {
       return;
     }
 
-    
     this._feedback.forEach((element) => {
       const form = element.querySelector('[data-feedback-form]');
 
@@ -22,30 +24,80 @@ export class Feedback {
     });
   }
 
-  _onSubmitForm(evt) {
+  async _getToken() {
+    await new Promise((resolve, reject) => {
+      grecaptcha.ready(resolve);
+    });
+
+    const token = await grecaptcha.execute('6Leyv2srAAAAAGn0HxWmAbFXhO7Qky6eYc21Ps60', {
+      action: 'submit',
+    });
+
+    return token;
+  }
+
+  async _onSubmitForm(evt) {
     evt.preventDefault();
-    const feedback = evt.target.parentElement;
-    const errors = evt.target.querySelector('[data-feedback-errors]');
+
+    const form = evt.target;
+    const feedback = form.closest('[data-feedback]');
+    const errors = form.querySelector('[data-feedback-errors]');
+
     feedback.classList.remove('is-error');
     errors.innerHTML = '';
 
-    this._validateForm(evt.target);
+    this._validateForm(form);
 
     if (this._errors.size) {
-      evt.preventDefault();
-
       this._setErrors(errors);
       feedback.classList.add('is-error');
     } else {
-      const recaptchaToken = evt.target.querySelector('[data-recaptcha-token]');
+      const token = await this._getToken();
 
-      grecaptcha.execute('6Leyv2srAAAAAGn0HxWmAbFXhO7Qky6eYc21Ps60', {
-        action: 'submit',
-      })
-        .then(function (token) {
-          recaptchaToken.value = token;
-          evt.target.submit();
+      const formData = new FormData(form);
+      formData.append('action', 'feedback');
+      formData.append('token', token);
+
+      try {
+        const response = await fetch('/local/templates/zhbi-street/ajax/feedback.php', {
+          method: 'POST',
+          body: formData,
         });
+
+        const result = await response.json();
+
+        if (result.TYPE === 'success') {
+          if (feedback.dataset.feedback === 'modal') {
+            const modal = document.querySelector('[data-modal].is-active');
+
+            if (modal) {
+              this._modals.close(modal.dataset.modal);
+              this._modals.open('success');
+
+              setTimeout(() => {
+                this._modals.close('success');
+              }, 3000);
+            }
+          } else {
+            feedback.classList.add('is-success');
+            setTimeout(() => {
+              feedback.classList.remove('is-success');
+            }, 3000);
+          }
+          form.reset();
+        } else if (result.TYPE === 'error') {
+          let errorResult = '';
+
+          Array.from(result.RESULT).forEach((error) => {
+            errorResult += this._createError(error);
+          });
+
+          errors.innerHTML = errorResult;
+          feedback.classList.add('is-error');
+        }
+      } catch (err) {
+        console.log('Error: ' + err);
+      }
     }
   }
 
@@ -83,7 +135,6 @@ export class Feedback {
   }
 
   _validatePhoneField(field) {
-
     const input = field.querySelector('input');
 
     if (!input.value) {
