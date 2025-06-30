@@ -34,3 +34,12 @@ mixin feedback()
                span.feedback__agreement Нажимая кнопку &laquo;Отправить&raquo; вы соглашаетесь с <a href="#">политикой конфиденциальности.</a>
           .feedback__image
             +img("content/feedback", "feedback", "png", '', '', '')
+          .success
+                .success__wrapper
+                  .success__icon
+                   +icon('modal-success', 60, 60)
+                  h2.success__title Заявка успешно отправлена
+                  .success__description
+                    p В ближайшее время с Вами свяжется наш менеджер
+                  button.btn-reset.success__close-button(type="button" arial-label="Закрыть попап" data-close-modal)
+                    +icon("modal-close", 40, 40)
