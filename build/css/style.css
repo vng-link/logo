@@ -5245,7 +5245,7 @@ div[id^=wait_] {
 
 .feedback__textarea {
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .feedback__form-row {
@@ -7242,6 +7242,7 @@ div[id^=wait_] {
 
   .feedback__textarea {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .feedback__form-row {

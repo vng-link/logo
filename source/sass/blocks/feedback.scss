@@ -44,9 +44,10 @@
   }
   &__textarea {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     @include vp-807 {
       margin-top: 10px;
+      margin-bottom: 10px;
     }
   }
 
