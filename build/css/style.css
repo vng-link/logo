@@ -5207,6 +5207,7 @@ div[id^=wait_] {
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 30px;
+  position: relative;
 }
 
 .feedback__column {
@@ -5244,6 +5245,7 @@ div[id^=wait_] {
 
 .feedback__textarea {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .feedback__form-row {
@@ -5294,6 +5296,59 @@ div[id^=wait_] {
 
 .feedback__text {
   padding-bottom: 15px;
+}
+
+.feedback.is-success .success {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.success {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.success__wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 30px 30px;
+  border-radius: 20px;
+  background-color: #f3f7ff;
+  position: relative;
+  width: 572px;
+}
+
+.success__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.success__close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.success h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  margin: 20px 0 10px 0;
 }
 
 .advice__background {
@@ -6997,6 +7052,10 @@ div[id^=wait_] {
     grid-template-columns: 1fr 1fr;
   }
 
+  .contacts__label {
+    margin-bottom: 10px;
+  }
+
   .object-card h2 {
     font-size: 26px;
   }
@@ -7183,6 +7242,7 @@ div[id^=wait_] {
 
   .feedback__textarea {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .feedback__form-row {
@@ -7587,6 +7647,10 @@ div[id^=wait_] {
   .feedback__button {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .success__wrapper {
+    width: 360px;
   }
 
   .advice__btn {

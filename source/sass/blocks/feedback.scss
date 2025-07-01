@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     gap:30px;
+    position: relative;
   }
   &__column {
     flex-basis: 824px;
@@ -43,8 +44,10 @@
   }
   &__textarea {
     margin-top: 20px;
+    margin-bottom: 20px;
     @include vp-807 {
       margin-top: 10px;
+      margin-bottom: 10px;
     }
   }
 
@@ -103,5 +106,56 @@
   }
   &__text {
     padding-bottom: 15px;
+  }
+
+  &.is-success {
+    .success {
+      opacity: 1;
+      pointer-events: auto;
+    }
+}
+
+
+}
+
+.success {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+  &__wrapper {
+    flex-direction: column;
+    padding: 30px 30px;
+    border-radius: 20px;
+    background-color: #f3f7ff;
+    position: relative;
+    width: 572px;
+    @include vp-615 {
+      width: 360px;
+    }
+  }
+  &__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-default-black;
+  }
+  &__close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: $color-default-black;
+    margin: 20px 0 10px 0;
   }
 }
