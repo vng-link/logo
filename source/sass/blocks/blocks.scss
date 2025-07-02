@@ -3,95 +3,126 @@
 
 .page {
   padding-top: 165px;
+
   @media (max-width: 615px) {
     padding-top: 164px;
   }
+
   &__intro {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
   }
+
   &__categories {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
+
     &--another {
       margin-bottom: 60px;
+
       @media (max-width: 615px) {
         margin-bottom: 30px;
       }
     }
   }
+
   &__products {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
+
     &--another {
       margin-bottom: 60px;
+
       @media (max-width: 615px) {
         margin-bottom: 30px;
       }
     }
   }
+
   &__objects {
     margin-bottom: 30px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
+
     &--another {
       margin-bottom: 80px;
+
       @media (max-width: 1479px) {
         margin-bottom: 60px;
       }
+
       @include vp-1199 {
         margin-bottom: 40px;
       }
+
       @media (max-width: 615px) {
         margin-bottom: 30px;
       }
     }
   }
+
   &__advice {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
   }
+
   &__advantages {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
   }
+
   &__about {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
   }
+
   &__articles {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
+
     &--another {
       margin-bottom: 80px;
+
       @media (max-width: 1479px) {
         margin-bottom: 60px;
       }
+
       @include vp-1199 {
         margin-bottom: 40px;
       }
+
       @media (max-width: 615px) {
         margin-bottom: 30px;
       }
     }
   }
+
   &__feedback {
     margin-bottom: 60px;
+
     @media (max-width: 615px) {
       margin-bottom: 50px;
     }
@@ -99,35 +130,59 @@
 
   &__price {
     margin-bottom: 60px;
+
     @include vp-1199 {
       margin-bottom: 40px;
     }
+
     @media (max-width: 615px) {
       margin-bottom: 30px;
     }
   }
 
   &__history {
-      margin-bottom: 80px;
-      @media (max-width: 1479px) {
-        margin-bottom: 60px;
-      }
-      @include vp-1199 {
-        margin-bottom: 40px;
-      }
-      @media (max-width: 615px) {
-        margin-bottom: 30px;
-      }
+    margin-bottom: 60px;
+
+    @media (max-width: 1479px) {
+      margin-bottom: 60px;
+    }
+
+    @include vp-1199 {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 615px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__gallery {
+    margin-bottom: 80px;
+
+    @media (max-width: 1479px) {
+      margin-bottom: 60px;
+    }
+
+    @include vp-1199 {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 615px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__contacts {
     margin-bottom: 80px;
+
     @media (max-width: 1479px) {
       margin-bottom: 60px;
     }
+
     @include vp-1199 {
       margin-bottom: 40px;
     }
+
     @media (max-width: 615px) {
       margin-bottom: 30px;
     }
@@ -135,12 +190,15 @@
 
   &__object-card {
     margin-bottom: 80px;
+
     @media (max-width: 1479px) {
       margin-bottom: 60px;
     }
+
     @include vp-1199 {
       margin-bottom: 40px;
     }
+
     @media (max-width: 615px) {
       margin-bottom: 30px;
     }
@@ -148,12 +206,15 @@
 
   &__article-card {
     margin-bottom: 80px;
+
     @media (max-width: 1479px) {
       margin-bottom: 60px;
     }
+
     @include vp-1199 {
       margin-bottom: 40px;
     }
+
     @media (max-width: 615px) {
       margin-bottom: 30px;
     }
@@ -166,9 +227,11 @@
 
   &__text-page {
     margin-bottom: 60px;
+
     @include vp-1199 {
       margin-bottom: 40px;
     }
+
     @media (max-width: 615px) {
       margin-bottom: 30px;
     }
@@ -178,26 +241,26 @@
 
 
 div[id^=wait_] {
-    display: none!important;
-    background: 0 0!important;
-    border: 0!important;
-    font-family: Verdana,Arial,sans-serif;
-    font-size: 11px;
-    font-style: normal!important;
-    font-variant: normal!important;
-    letter-spacing: normal!important;
-    line-height: normal;
-    padding: 0!important;
-    position: absolute;
-    text-align: center!important;
-    text-indent: 0!important;
-    width: 0!important;
-    height: 0!important;
-    word-spacing: normal!important;
-    z-index: 0;
-    content: ""
+  display: none !important;
+  background: 0 0 !important;
+  border: 0 !important;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal !important;
+  font-variant: normal !important;
+  letter-spacing: normal !important;
+  line-height: normal;
+  padding: 0 !important;
+  position: absolute;
+  text-align: center !important;
+  text-indent: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  word-spacing: normal !important;
+  z-index: 0;
+  content: ""
 }
 
 .grecaptcha-badge {
-    visibility: hidden;
+  visibility: hidden;
 }

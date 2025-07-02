@@ -4247,6 +4247,10 @@ button,
 }
 
 .page__history {
+  margin-bottom: 60px;
+}
+
+.page__gallery {
   margin-bottom: 80px;
 }
 
@@ -5725,6 +5729,14 @@ div[id^=wait_] {
   clear: both;
 }
 
+.gallery__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0 0 30px;
+  line-height: 120%;
+}
+
 .gallery__wrapper {
   display: -ms-grid;
   display: grid;
@@ -6659,6 +6671,10 @@ div[id^=wait_] {
     margin-bottom: 60px;
   }
 
+  .page__gallery {
+    margin-bottom: 60px;
+  }
+
   .page__contacts {
     margin-bottom: 60px;
   }
@@ -6784,6 +6800,10 @@ div[id^=wait_] {
   }
 
   .page__history {
+    margin-bottom: 60px;
+  }
+
+  .page__gallery {
     margin-bottom: 40px;
   }
 
@@ -7543,6 +7563,10 @@ div[id^=wait_] {
   }
 
   .page__history {
+    margin-bottom: 60px;
+  }
+
+  .page__gallery {
     margin-bottom: 30px;
   }
 

@@ -2,6 +2,15 @@
 @use "../variables" as *;
 
 .gallery {
+
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 30px;
+    line-height: 120%;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

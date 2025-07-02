@@ -12,6 +12,7 @@ import {initVideo} from "./modules/init-video.js";
 import {initFeedback} from './modules/feedback/init-feedback';
 import {initMoreBtn} from './modules/init-more-btn.js';
 import {initProductHandler} from './modules/init-product-handler.js';
+import {initShowMore} from './modules/show-more/init-show-more.js';
 
 
 
@@ -36,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initFeedback();
   initMoreBtn();
   initProductHandler();
+  initShowMore();
   
 
 
