@@ -7595,6 +7595,10 @@ div[id^=wait_] {
     margin-bottom: 20px;
   }
 
+  .products__item:last-child {
+    margin-bottom: 0;
+  }
+
   .product__content {
     display: -webkit-box;
     display: -ms-flexbox;
