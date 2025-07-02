@@ -4749,6 +4749,10 @@ div[id^=wait_] {
   opacity: 0.8;
 }
 
+.products__item:last-child {
+  margin-bottom: 0;
+}
+
 .products__btn {
   margin-top: 30px;
 }
@@ -7580,10 +7584,14 @@ div[id^=wait_] {
     padding: 10px;
   }
 
+  .products__wrapper {
+    margin: 0;
+  }
+
   .products__item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    padding: 0 10px;
+    padding: 0;
     margin-bottom: 20px;
   }
 

@@ -11,6 +11,8 @@ import {cookiesBannerHandler} from "./modules/cookies-banner-handler";
 import {initVideo} from "./modules/init-video.js";
 import {initFeedback} from './modules/feedback/init-feedback';
 import {initMoreBtn} from './modules/init-more-btn.js';
+import {initProductHandler} from './modules/init-product-handler.js';
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -33,6 +35,9 @@ window.addEventListener('DOMContentLoaded', () => {
   initPhoneMask();
   initFeedback();
   initMoreBtn();
+  initProductHandler();
+  
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

@@ -13,7 +13,8 @@ mixin modal-form(form)
             +custom-input({type: "mail", name: "user_mail", placeholder: "Почта*"})(data-validate-type="email")
           +custom-input({type: "tel", name: "user_phone", placeholder: "Телефон*"})(data-validate-type="phone")
           if form.hasProductTitle
-            <input type="hidden" name="product_value" data-modal-product-value>
+            <input type="hidden" name="product_title" data-modal-input-product-title>
+            <input type="hidden" name="product_price" data-modal-input-product-price>
         .modal-form__textarea
           +custom-textarea({name: 'name', value: 'value', placeholder: "Сообщение"})
       .errors(data-feedback-errors)  

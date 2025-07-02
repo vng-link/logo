@@ -24,7 +24,7 @@ mixin product(data)
     .product__actions
       .product__price от
         =" "
-        span!=data.price
+        span(data-product-price)!=data.price
         =" ₽/шт."
       +btn({type: "button", text: "Оформить заявку"}).btn.product__btn
     a.product__link(href=data.href)

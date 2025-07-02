@@ -18,6 +18,9 @@
       flex-wrap: wrap;
       margin: 0 -20px;
     }
+    @include vp-615 {
+      margin: 0;
+    }
   }
   &__item {
     :hover {
@@ -37,8 +40,11 @@
     }
     @include vp-615 {
       flex-basis: 100%;
-      padding: 0 10px;
+      padding: 0;
       margin-bottom: 20px;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
   &__btn {
